@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body style="background-color: #ffe180; color:#602b00">
+		<h2 align="center"><b style="color:red">Invata sa programezi in Python</b></h2>
+		<p>Acesta este un text</p>	
+		<div id="header" style="border:1px">
+Header content goes here.
+</div>
+<div id="bodyCopy">
+Body copy goes here.
+</div>
+<div id="footer">
+Footer content goes here.
+</div>	
+		
+	</body>
+
+
+</html>
