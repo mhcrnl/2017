@@ -3,14 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="myScript.js"></script>
 <title>Prima pagina html5</title>
 </head>
 <body>
 	<h1>Prima pagina html5</h1>
-	
-	<p id="demo1">Paragraf de modificat</p>
-	<button type="button" onclick="myFunction()">Modifica!</button>
 	
 	<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Apasati afisare data!</button>
 	<p id="demo"></p>
