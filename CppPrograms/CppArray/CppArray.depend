@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1482754546 source:/home/mhcrnl/Documents/2017/CppPrograms/CppArray/main.cpp
+	<iostream>
+	<array>
+
