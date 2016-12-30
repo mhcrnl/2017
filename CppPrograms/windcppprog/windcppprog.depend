@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1482770329 source:c:\users\mhcrnl\documents\2017\cppprograms\windcppprog\main.cpp
+	<iostream>
+	<deque>
+
