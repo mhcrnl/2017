@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1483275167 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\895carte\main.cpp
+	<iostream>
+	<string.h>
+	<iomanip>
+	<stdio.h>
+	<conio.h>
+

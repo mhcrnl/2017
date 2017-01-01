@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1483288884 source:c:\users\mhcrnl\documents\2017\cppprograms\stltemplates\1stldeque\main.cpp
+	<iostream>
+	<deque>
+	<cstring>
+
