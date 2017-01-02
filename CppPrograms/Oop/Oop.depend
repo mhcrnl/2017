@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1483349905 source:c:\users\mhcrnl\documents\2017\cppprograms\oop\biblioteca.cpp
+	"biblioteca.h"
+	<time.h>
+
+1483349905 c:\users\mhcrnl\documents\2017\cppprograms\oop\biblioteca.h
+	<stdio.h>
+	<list>
+	"carte.h"
+
+1483349913 c:\users\mhcrnl\documents\2017\cppprograms\oop\carte.h
+	"stare.h"
+
+1483345442 c:\users\mhcrnl\documents\2017\cppprograms\oop\stare.h
+	<time.h>
+
+1483349978 source:c:\users\mhcrnl\documents\2017\cppprograms\oop\carte.cpp
+	"carte.h"
+	<stdio.h>
+
+1483349905 source:c:\users\mhcrnl\documents\2017\cppprograms\oop\main.cpp
+	<iostream>
+	"biblioteca.h"
+
+1483350085 source:c:\users\mhcrnl\documents\2017\cppprograms\oop\stare.cpp
+	"stare.h"
+	"carte.h"
+
