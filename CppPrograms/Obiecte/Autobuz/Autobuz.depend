@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1483544902 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\autobuz\autobuz.cpp
+	"autobuz.h"
+
+1483550575 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\autobuz\autobuz.h
+	<iostream>
+	<fstream>
+
+1483549960 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\autobuz\main.cpp
+	<iostream>
+	"autobuz.h"
+	"sector.h"
+
+1483550450 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\autobuz\sector.h
+	<iostream>
+	"autobuz.h"
+
+1483549960 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\autobuz\sector.cpp
+	"sector.h"
+

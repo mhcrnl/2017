@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1483547200 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\avion\avion.cpp
+	"avion.h"
+
+1483547200 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\avion\avion.h
+	<iostream>
+	<string>
+	<fstream>
+
+1483547200 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\avion\main.cpp
+	<iostream>
+	"avion.h"
+
+1483466776 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\avion\scfila.cpp
+	"scfila.h"
+
+1483466663 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\avion\scfila.h
+	<iostream>
+	<fstream>
+	<string>
+	"avion.h"
+
