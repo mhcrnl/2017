@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1484145901 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\catalog\catalog.cpp
+	"catalog.h"
+	"elev.h"
+	<iostream>
+
+1484145901 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\catalog\catalog.h
+
+1484145902 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\catalog\elev.h
+
+1484145902 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\catalog\elev.cpp
+	"elev.h"
+	"catalog.h"
+	"profesor.h"
+
+1484145902 c:\users\mhcrnl\documents\2017\cppprograms\obiecte\catalog\profesor.h
+
+1484145902 source:c:\users\mhcrnl\documents\2017\cppprograms\obiecte\catalog\main.cpp
+	<iostream>
+	"catalog.h"
+	"profesor.h"
+	"elev.h"
+

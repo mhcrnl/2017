@@ -1,0 +1,22 @@
+#barameniu {
+	margin:0 auto;
+	padding: 0;
+	position: relative;
+	width: 750px;
+	height:28px;
+	background: #foo;
+	font:bold 12px tahoma, Arial, Helvetica, sans-serif; 
+}
+#barameniu ul{
+	margin:0;
+	padding: 0;
+	float: none;
+}
+#barameniu li{
+	padding: 0 2px 0 0;
+	margin: 0;
+	float: left;
+	background-color: red;
+	width: 2;
+	height: 4;
+}
