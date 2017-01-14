@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1484374316 source:c:\users\mhcrnl\documents\2017\cprogram\agendatelefonica\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

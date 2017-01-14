@@ -37,6 +37,7 @@ public class SetColl {
             System.out.println(lhs);
             System.out.println("Dimensiunea in elemente a lhs: "+lhs.size());
             int total =0;
+            //int myArr[] =lhs.toArray();
             for(int i=0; i<lhs.size(); i++){
                 lhs.toArray();
                 //total += lhs[i] ;
