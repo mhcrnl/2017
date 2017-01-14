@@ -70,6 +70,14 @@ int getNume(char* nume);
 */
 void Meniu(void);
 /**
+    6. void Control(void)
+*/
+void Control(void);
+/**
+    7.void getNume(CONTACT* pContact);
+*/
+void getNume1(CONTACT* pContact);
+/**
     -------------------------------MAIN------------------------------------
 */
 int main()
@@ -82,6 +90,8 @@ int main()
     Afisare();
     printf("CONTACT: %d\n", getNume("Mihai"));
     printf("CONTACT: %d", getNume("Vasile"));
+
+    Control();
     return 0;
 }
 
@@ -147,4 +157,36 @@ void Meniu(void){
     printf("1. Adaugare Contact.  \n");
     printf("2. Cautare Contact.  \n");
     printf("3. Modificare Contact.\n");
+}
+/**
+    6.void Control(void);
+*/
+void Control(void){
+    Meniu();
+    int optiune;
+    do{
+
+    printf("Introduceti o optiune conforma cu meniul: ");
+    scanf("%d", &optiune);
+        switch(optiune){
+            case 1:
+                Afisare();
+                break;
+            case 2:
+                Adaugare(789345678, "Vasile", "Muraru");
+                break;
+            case 3:
+                Afisare();
+                exit(0);
+
+
+        }
+    }while(optiune!= 3);
+
+}
+/**
+    7. void getNume(CONTACT* pContact);
+*/
+void getNume1(CONTACT* pContact){
+    char* nume;
 }
