@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1485190644 source:c:\users\mhcrnl\documents\2017\cppprograms\vectorap\main.cpp
+	<iostream>
+	<vector>
+	"persoana.h"
+
+1485190865 source:c:\users\mhcrnl\documents\2017\cppprograms\vectorap\persoana.cpp
+	"persoana.h"
+
+1485190830 c:\users\mhcrnl\documents\2017\cppprograms\vectorap\persoana.h
+	<iostream>
+	<string>
+

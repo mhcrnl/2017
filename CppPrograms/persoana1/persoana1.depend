@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1485066447 source:c:\users\mhcrnl\documents\2017\cppprograms\persoana1\main.cpp
+	<iostream>
+	"persoana.h"
+	"contact.h"
+
+1485066625 c:\users\mhcrnl\documents\2017\cppprograms\persoana1\persoana.h
+	<iostream>
+	<string>
+
+1485066625 source:c:\users\mhcrnl\documents\2017\cppprograms\persoana1\persoana.cpp
+	"persoana.h"
+
+1485066021 source:c:\users\mhcrnl\documents\2017\cppprograms\persoana1\contact.cpp
+	"contact.h"
+
+1485065940 c:\users\mhcrnl\documents\2017\cppprograms\persoana1\contact.h
+	<iostream>
+	<string>
+	"persoana.h"
+

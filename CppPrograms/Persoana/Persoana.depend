@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1484853991 source:c:\users\mhcrnl\documents\2017\cppprograms\persoana\main.cpp
+	<iostream>
+	"persoana.h"
+	"controlVector.h"
+
+1484848858 c:\users\mhcrnl\documents\2017\cppprograms\persoana\persoana.h
+	<iostream>
+	<string>
+
+1484849368 source:c:\users\mhcrnl\documents\2017\cppprograms\persoana\persoana.cpp
+	"persoana.h"
+
+1484852925 source:c:\users\mhcrnl\documents\2017\cppprograms\persoana\control.cpp
+	"control.h"
+
+1484852798 c:\users\mhcrnl\documents\2017\cppprograms\persoana\control.h
+	<iostream>
+	<string>
+	<stdlib.h>
+	"persoana.h"
+
+1484854070 c:\users\mhcrnl\documents\2017\cppprograms\persoana\controlvector.h
+	"persoana.h"
+	<vector>
+

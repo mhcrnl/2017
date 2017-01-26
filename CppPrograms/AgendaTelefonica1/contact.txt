@@ -1,0 +1,24 @@
+Nume...........: Mihai
+Prenume........: Cornel
+Numar Telefon..: 0987654321
+
+Nume...........: Mihai
+Prenume........: Radu
+Numar Telefon..: 0789654321
+
+Nume...........: Mihai
+Prenume........: Cornel
+Numar Telefon..: 0722270796
+
+Nume...........: Radu
+Prenume........: Vasile
+Numar Telefon..: 234567890
+
+Nume...........: radu
+Prenume........: Doi
+Numar Telefon..: 345678908
+
+Nume...........: Mihai
+Prenume........: cornel
+Numar Telefon..: 234589790
+

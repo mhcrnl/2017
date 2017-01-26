@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1485448785 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.cpp
+	"contact.h"
+
+1485448785 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.h
+	<iostream>
+	<string>
+
+1485447234 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\main.cpp
+	<iostream>
+	"contact.h"
+	"agenda.h"
+	"controler.h"
+
+1485448785 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\agenda.cpp
+	"agenda.h"
+
+1485448785 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\agenda.h
+	"contact.h"
+
+1485447234 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.h
+	"agenda.h"
+
+1485448879 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.cpp
+	"controler.h"
+
