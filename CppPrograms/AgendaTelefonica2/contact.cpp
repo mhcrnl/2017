@@ -6,12 +6,18 @@
     set/get functii
 */
 void Contact::setNume(string nume){
+//    locale loc;
+//    for(string::size_type i=0; i<nume.length(); ++i){
+//        toupper(nume[i], loc);
+//    }
+    transform(nume.begin(), nume.end(), nume.begin(), ::toupper);
     _nume = nume;
 }
 string Contact::getNume(void){
     return _nume;
 }
 void Contact::setPrenume(string prenume){
+    transform(prenume.begin(), prenume.end(), prenume.begin(), ::toupper);
     _prenume= prenume;
 }
 string Contact::getPrenume(void){

@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <string>
+#include <locale> //locale, toupper
+#include <algorithm>
 using namespace std;
 
 class Agenda;

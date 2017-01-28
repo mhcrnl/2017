@@ -39,6 +39,8 @@
 		<Unit filename="controler.cpp" />
 		<Unit filename="controler.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="persistenta.cpp" />
+		<Unit filename="persistenta.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

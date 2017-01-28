@@ -2,6 +2,8 @@
 #define CONTROLER_H_INCLUDED
 
 #include "agenda.h"
+#include "persistenta.h"
+
 void meniu();
 class Controler{
 public:

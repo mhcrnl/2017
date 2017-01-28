@@ -17,10 +17,10 @@ public class AgendaTelefonica {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Salut din Agenda Telefonica.");
-        //ReadmeFile readme = new ReadmeFile();
+        ReadmeFile readme = new ReadmeFile();
         Contact con = new Contact("Mihai", "Cornel", "0722270796");
         System.out.println("CONTACT: "+con.toString());
-        //readme.scrieReadme();
+        readme.scrieReadme();
         while(true){
             Control.meniu();
         }

@@ -2,9 +2,11 @@
 1485448785 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.cpp
 	"contact.h"
 
-1485448785 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.h
+1485593477 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.h
 	<iostream>
 	<string>
+	<locale>
+	<algorithm>
 
 1485447234 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\main.cpp
 	<iostream>
@@ -12,15 +14,25 @@
 	"agenda.h"
 	"controler.h"
 
-1485448785 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\agenda.cpp
+1485449372 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\agenda.cpp
 	"agenda.h"
 
 1485448785 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\agenda.h
 	"contact.h"
 
-1485447234 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.h
+1485584134 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.h
 	"agenda.h"
+	"persistenta.h"
 
-1485448879 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.cpp
+1485588183 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.cpp
 	"controler.h"
+
+1485588138 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\persistenta.h
+	<iostream>
+	<string>
+	<fstream>
+	"contact.h"
+
+1485588138 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\persistenta.cpp
+	"persistenta.h"
 

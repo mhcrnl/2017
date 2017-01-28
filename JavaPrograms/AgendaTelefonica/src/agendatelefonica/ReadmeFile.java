@@ -54,6 +54,10 @@ public class ReadmeFile {
     
         try {
             File readme = new File(file);
+            if(readme.exists()){
+                System.out.println("Fila "+file+" este creata.");
+                return;
+            }
             FileOutputStream fis = new FileOutputStream(readme);
             OutputStreamWriter osw = new OutputStreamWriter(fis);
             Writer w = new BufferedWriter(osw);
