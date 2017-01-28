@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1485448785 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.cpp
+1485594004 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.cpp
 	"contact.h"
 
 1485593477 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\contact.h
@@ -24,15 +24,24 @@
 	"agenda.h"
 	"persistenta.h"
 
-1485588183 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.cpp
+1485622026 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\controler.cpp
 	"controler.h"
+	"readme.h"
 
-1485588138 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\persistenta.h
+1485620462 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\persistenta.h
 	<iostream>
 	<string>
 	<fstream>
 	"contact.h"
 
-1485588138 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\persistenta.cpp
+1485620474 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\persistenta.cpp
 	"persistenta.h"
+
+1485624715 c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\readme.h
+	<iostream>
+	<string>
+	<fstream>
+
+1485624095 source:c:\users\mhcrnl\documents\2017\cppprograms\agendatelefonica2\readme.cpp
+	"readme.h"
 

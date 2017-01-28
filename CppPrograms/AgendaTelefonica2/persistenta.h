@@ -14,6 +14,8 @@ class Persistenta{
 public:
     void salveazaInFila( char const* fila,  Contact con);
     void citesteDinFila(char const* fila);
+    void salveazaInFila(string fila, Contact con);
+    void citesteDinFila(string fila);
 };
 
 #endif // PERSISTENTA_H_INCLUDED
