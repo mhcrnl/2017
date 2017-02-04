@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1479940430 source:c:\users\mhcrnl\documents\2017\rssreader\pugixml\pugixmltest1\pugixml.cpp
+	"pugixml.hpp"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<limits.h>
+	<wchar.h>
+	<math.h>
+	<float.h>
+	<setjmp.h>
+	<istream>
+	<ostream>
+	<string>
+	<new>
+	<stdint.h>
+
+1479940430 c:\users\mhcrnl\documents\2017\rssreader\pugixml\pugixmltest1\pugixml.hpp
+	"pugiconfig.hpp"
+	<stddef.h>
+	<exception>
+	<iterator>
+	<iosfwd>
+	<string>
+
+1479940430 c:\users\mhcrnl\documents\2017\rssreader\pugixml\pugixmltest1\pugiconfig.hpp
+
