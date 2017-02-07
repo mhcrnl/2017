@@ -1,0 +1,64 @@
+#!/usr/bin python
+
+class Persoana(object):
+    def __init__(self, nume=None, prenume=None):
+        self.nume = nume;
+        self.prenume = prenume
+
+    def __str__(self):
+        return self.nume+" "+self.prenume
+    # Afiseaza persoanele din list in format string
+    def __repr__(self):
+        return str(self)
+
+meniu = [
+         '1. Adauga contact',
+         '2. Sterge contact',
+         '3. Afiseaza contacte',
+         '4. Iesire aplicatie'
+         ]
+listaContacte = []
+
+def afiseazamMeniu(list):
+    print "Ce doriti sa faceti?"
+    for i in meniu:
+        print i
+
+def controler():
+    alegere = True
+    while alegere:
+        afiseazamMeniu(meniu)
+        alegere = raw_input("Introduceti alegerea dvs: ")
+        if alegere =="1":
+            print "Adauga contact"
+            adauga()
+        elif alegere == "2":
+            print "Sterge contact"
+        elif alegere == "3":
+            print "Afiseaza Contacte"
+            afiseazaPersoane()
+        elif alegere == "4":
+            print "Iesire aplicatie"
+            alegere = None
+
+def afiseazaPersoane():
+    print "Contactele din agenda sunt: "
+    #print "".join([str(x) for x in listaContacte])
+
+    for p in listaContacte:
+        print str(p)
+
+def adauga():
+    print "Introduceti numele persoanei: "
+    nume = raw_input()
+    print "Introduceti prenumele persoanei:"
+    prenume = raw_input()
+    pers = Persoana(nume, prenume)
+    listaContacte.append(pers)
+    print listaContacte
+if __name__ == "__main__":
+    x = Persoana("Marvin", "Radu")
+    print x
+    controler()
+
+
