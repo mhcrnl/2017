@@ -1,0 +1,42 @@
+
+<html>
+   <head>
+      <title>Online PHP Script Execution</title>
+   </head>
+   
+   <body>
+   
+      <?php
+      
+         echo "<h1>Hello, PHP!</h1>";
+         #Comentariu pe o linie
+         //Al doilea comentariu
+         print "Acesta este un text de afisat in pagina cu PHP";
+          # First Example
+   print <<<END
+   This uses the "here document" syntax to output
+   multiple lines with $variable interpolation. Note
+   that the here document terminator must appear on a
+   line with just a semicolon no extra whitespace!
+   END;
+   
+   # Second Example
+   print "This spans
+   multiple lines. The newlines will be
+   output as well";
+   /* This is a comment with multiline
+      Author : Mohammad Mohtashim
+      Purpose: Multiline Comments Demo
+      Subject: PHP
+   */
+   
+   print "An example with multi line comments";
+   
+   $capital = 67;
+         print("Variable capital is $capital<br>");
+         print("Variable CaPiTaL is $CaPiTaL<br>");
+      
+      ?>
+   
+   </body>
+</html>
