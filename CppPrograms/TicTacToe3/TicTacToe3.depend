@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1487387490 source:c:\users\mhcrnl\documents\2017\cppprograms\tictactoe3\board.cpp
+	"Board.h"
+
+1487387490 c:\users\mhcrnl\documents\2017\cppprograms\tictactoe3\board.h
+	<iostream>
+	<vector>
+	"math.h"
+	<string>
+	<sstream>
+
+1487387490 source:c:\users\mhcrnl\documents\2017\cppprograms\tictactoe3\main.cpp
+	"Board.h"
+

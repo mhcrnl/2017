@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1487390775 source:c:\users\mhcrnl\documents\2017\cppprograms\tictactoe4\main.cpp
+	<iostream>
+	"tictactoe.h"
+	"player.h"
+
+1487391977 c:\users\mhcrnl\documents\2017\cppprograms\tictactoe4\tictactoe.h
+	"player.h"
+
+1487390793 c:\users\mhcrnl\documents\2017\cppprograms\tictactoe4\player.h
+
+1487390803 source:c:\users\mhcrnl\documents\2017\cppprograms\tictactoe4\player.cpp
+	<iostream>
+	"player.h"
+
+1487391952 source:c:\users\mhcrnl\documents\2017\cppprograms\tictactoe4\tictactoe.cpp
+	<iostream>
+	<string>
+	"tictactoe.h"
+	"player.h"
+
