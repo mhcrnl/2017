@@ -1,0 +1,21 @@
+classdef ClassFibonacci
+    %UNTITLED4 Summary of this class goes here
+    %   Detailed explanation goes here
+    
+    properties
+    end
+    
+    methods
+        function f = fibonacci(obj, n)
+           if(n ==1)
+               f = 1;
+           elseif(n==2)
+               f =2;
+           else
+               f = (fibonacci(n-1)+fibonacci(n-2));
+           end
+        end
+    end
+    
+end
+

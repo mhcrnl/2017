@@ -1,0 +1,1615 @@
+
+<response>
+	<version>0.1</version>
+	<termsofService>http://www.wunderground.com/weather/api/d/terms.html</termsofService>
+	<features>
+		<feature>history</feature>
+	</features>
+		<history>
+		<date>
+		<pretty>June 25, 2015</pretty>
+			<year>2015</year>
+			<mon>06</mon>
+			<mday>25</mday>
+			<hour>12</hour>
+			<min>00</min>
+			<tzname>America/Los_Angeles</tzname>
+		</date>
+		<utcdate>
+			<pretty>June 25, 2015</pretty>
+			<year>2015</year>
+			<mon>06</mon>
+			<mday>25</mday>
+			<hour>19</hour>
+			<min>00</min>
+			<tzname>UTC</tzname>
+		</utcdate>
+		<observations>
+			
+				<observation> 
+					<date>
+						<pretty>12:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>00</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>7:53 AM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>07</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>21.1</tempm>
+						<tempi>70.0</tempi>
+					
+						<dewptm>13.3</dewptm>
+						<dewpti>55.9</dewpti>
+					<hum>61</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.7</pressurem>
+						<pressurei>29.88</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 250753Z AUTO 00000KT 10SM CLR 21/13 A2993 RMK AO2 SLP117 T02110133 403560183]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>1:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>01</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>8:53 AM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>08</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>20.6</tempm>
+						<tempi>69.1</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>65</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.9</pressurem>
+						<pressurei>29.88</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 250853Z AUTO 00000KT 10SM CLR 21/14 A2994 RMK AO2 SLP119 T02060139 51006]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>2:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>02</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>9:53 AM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>09</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>19.4</tempm>
+						<tempi>66.9</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>70</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.6</pressurem>
+						<pressurei>29.88</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 250953Z AUTO 00000KT 10SM CLR 19/14 A2993 RMK AO2 SLP116 T01940139]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>3:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>03</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>10:53 AM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>10</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>18.9</tempm>
+						<tempi>66.0</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>73</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.5</pressurem>
+						<pressurei>29.87</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251053Z AUTO 00000KT 10SM CLR 19/14 A2992 RMK AO2 SLP115 T01890139]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>4:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>04</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>11:53 AM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>11</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>18.3</tempm>
+						<tempi>64.9</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>75</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.7</pressurem>
+						<pressurei>29.88</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251153Z AUTO 00000KT 10SM CLR 18/14 A2993 RMK AO2 SLP117 T01830139 10222 20183 55003]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>5:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>05</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>12:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>12</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>17.2</tempm>
+						<tempi>63.0</tempi>
+					
+						<dewptm>13.3</dewptm>
+						<dewpti>55.9</dewpti>
+					<hum>78</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.2</pressurem>
+						<pressurei>29.89</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251253Z AUTO 00000KT 10SM CLR 17/13 A2994 RMK AO2 SLP122 T01720133]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>6:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>06</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>1:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>13</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>19.4</tempm>
+						<tempi>66.9</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>70</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.5</pressurem>
+						<pressurei>29.90</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251353Z 00000KT 10SM CLR 19/14 A2995 RMK AO2 SLP125 T01940139]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>7:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>07</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>2:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>14</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>21.1</tempm>
+						<tempi>70.0</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>63</hum>
+					
+						<wspdm>5.6</wspdm>
+						<wspdi>3.5</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>230</wdird>
+					<wdire>SW</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.9</pressurem>
+						<pressurei>29.91</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251453Z 23003KT 10SM CLR 21/14 A2996 RMK AO2 SLP129 T02110139 53011]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>8:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>08</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>3:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>15</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>22.8</tempm>
+						<tempi>73.0</tempi>
+					
+						<dewptm>14.4</dewptm>
+						<dewpti>57.9</dewpti>
+					<hum>59</hum>
+					
+						<wspdm>7.4</wspdm>
+						<wspdi>4.6</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>Variable</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.9</pressurem>
+						<pressurei>29.91</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251553Z VRB04KT 10SM CLR 23/14 A2996 RMK AO2 SLP129 T02280144]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>9:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>09</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>4:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>16</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>25.6</tempm>
+						<tempi>78.1</tempi>
+					
+						<dewptm>13.3</dewptm>
+						<dewpti>55.9</dewpti>
+					<hum>46</hum>
+					
+						<wspdm>0.0</wspdm>
+						<wspdi>0.0</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>North</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.9</pressurem>
+						<pressurei>29.91</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251653Z 00000KT 10SM CLR 26/13 A2996 RMK AO2 SLP129 T02560133]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>10:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>10</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>5:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>17</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>29.4</tempm>
+						<tempi>84.9</tempi>
+					
+						<dewptm>11.7</dewptm>
+						<dewpti>53.1</dewpti>
+					<hum>33</hum>
+					
+						<wspdm>7.4</wspdm>
+						<wspdi>4.6</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>270</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.6</pressurem>
+						<pressurei>29.91</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>28.4</heatindexm>
+						<heatindexi>83.2</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251753Z 27004KT 10SM CLR 29/12 A2995 RMK AO2 SLP126 T02940117 10294 20172 58002]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>11:53 AM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>11</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>6:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>18</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>32.2</tempm>
+						<tempi>90.0</tempi>
+					
+						<dewptm>9.4</dewptm>
+						<dewpti>48.9</dewpti>
+					<hum>24</hum>
+					
+						<wspdm>9.3</wspdm>
+						<wspdi>5.8</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>Variable</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.4</pressurem>
+						<pressurei>29.90</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251853Z VRB05KT 10SM CLR 32/09 A2995 RMK AO2 SLP124 T03220094]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>12:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>12</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>7:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>19</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>33.9</tempm>
+						<tempi>93.0</tempi>
+					
+						<dewptm>10.0</dewptm>
+						<dewpti>50.0</dewpti>
+					<hum>23</hum>
+					
+						<wspdm>7.4</wspdm>
+						<wspdi>4.6</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>0</wdird>
+					<wdire>Variable</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.9</pressurem>
+						<pressurei>29.88</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 251953Z VRB04KT 10SM CLR 34/10 A2994 RMK AO2 SLP119 T03390100]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>1:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>13</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>8:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>20</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>34.4</tempm>
+						<tempi>93.9</tempi>
+					
+						<dewptm>12.8</dewptm>
+						<dewpti>55.0</dewpti>
+					<hum>27</hum>
+					
+						<wspdm>14.8</wspdm>
+						<wspdi>9.2</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>290</wdird>
+					<wdire>WNW</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.4</pressurem>
+						<pressurei>29.87</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>33.3</heatindexm>
+						<heatindexi>92.0</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 252053Z 29008KT 250V320 10SM CLR 34/13 A2992 RMK AO2 SLP114 T03440128 58010]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>2:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>14</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>9:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>21</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>35.0</tempm>
+						<tempi>95.0</tempi>
+					
+						<dewptm>12.2</dewptm>
+						<dewpti>54.0</dewpti>
+					<hum>25</hum>
+					
+						<wspdm>16.7</wspdm>
+						<wspdi>10.4</wspdi>
+					
+						<wgustm>27.8</wgustm>
+						<wgusti>17.3</wgusti>
+					<wdird>280</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.0</pressurem>
+						<pressurei>29.86</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>33.7</heatindexm>
+						<heatindexi>92.7</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 252153Z 28009G15KT 250V330 10SM CLR 35/12 A2991 RMK AO2 SLP110 T03500122]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>3:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>15</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>10:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>22</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>34.4</tempm>
+						<tempi>93.9</tempi>
+					
+						<dewptm>11.7</dewptm>
+						<dewpti>53.1</dewpti>
+					<hum>25</hum>
+					
+						<wspdm>16.7</wspdm>
+						<wspdi>10.4</wspdi>
+					
+						<wgustm>31.5</wgustm>
+						<wgusti>19.6</wgusti>
+					<wdird>270</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1010.7</pressurem>
+						<pressurei>29.85</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>33.0</heatindexm>
+						<heatindexi>91.4</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 252253Z 27009G17KT 10SM CLR 34/12 A2990 RMK AO2 SLP107 T03440117]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>4:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>16</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>11:53 PM GMT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>23</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>33.9</tempm>
+						<tempi>93.0</tempi>
+					
+						<dewptm>11.1</dewptm>
+						<dewpti>52.0</dewpti>
+					<hum>25</hum>
+					
+						<wspdm>14.8</wspdm>
+						<wspdi>9.2</wspdi>
+					
+						<wgustm>31.5</wgustm>
+						<wgusti>19.6</wgusti>
+					<wdird>270</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1010.3</pressurem>
+						<pressurei>29.84</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 252353Z 27008G17KT 10SM CLR 34/11 A2989 RMK AO2 SLP103 T03390111 10350 20294 58012]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>5:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>17</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>12:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>00</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>33.3</tempm>
+						<tempi>91.9</tempi>
+					
+						<dewptm>10.6</dewptm>
+						<dewpti>51.1</dewpti>
+					<hum>25</hum>
+					
+						<wspdm>18.5</wspdm>
+						<wspdi>11.5</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>280</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1010.1</pressurem>
+						<pressurei>29.83</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260053Z AUTO 28010KT 10SM CLR 33/11 A2988 RMK AO2 SLP101 T03330106]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>6:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>18</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>1:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>01</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>31.1</tempm>
+						<tempi>88.0</tempi>
+					
+						<dewptm>11.1</dewptm>
+						<dewpti>52.0</dewpti>
+					<hum>29</hum>
+					
+						<wspdm>16.7</wspdm>
+						<wspdi>10.4</wspdi>
+					
+						<wgustm>25.9</wgustm>
+						<wgusti>16.1</wgusti>
+					<wdird>280</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1010.4</pressurem>
+						<pressurei>29.84</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260153Z AUTO 28009G14KT 10SM CLR 31/11 A2989 RMK AO2 SLP104 T03110111]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>7:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>19</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>2:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>02</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>28.3</tempm>
+						<tempi>82.9</tempi>
+					
+						<dewptm>12.2</dewptm>
+						<dewpti>54.0</dewpti>
+					<hum>37</hum>
+					
+						<wspdm>9.3</wspdm>
+						<wspdi>5.8</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>270</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1010.6</pressurem>
+						<pressurei>29.85</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>27.7</heatindexm>
+						<heatindexi>81.9</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260253Z AUTO 27005KT 10SM CLR 28/12 A2989 RMK AO2 SLP106 T02830122 53002]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>8:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>20</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>3:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>03</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>27.2</tempm>
+						<tempi>81.0</tempi>
+					
+						<dewptm>12.8</dewptm>
+						<dewpti>55.0</dewpti>
+					<hum>41</hum>
+					
+						<wspdm>7.4</wspdm>
+						<wspdi>4.6</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>270</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.4</pressurem>
+						<pressurei>29.87</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>27.1</heatindexm>
+						<heatindexi>80.7</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260353Z 27004KT 10SM CLR 27/13 A2992 RMK AO2 SLP114 T02720128]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>9:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>21</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>4:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>04</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>25.0</tempm>
+						<tempi>77.0</tempi>
+					
+						<dewptm>13.9</dewptm>
+						<dewpti>57.0</dewpti>
+					<hum>50</hum>
+					
+						<wspdm>7.4</wspdm>
+						<wspdi>4.6</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>280</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1011.9</pressurem>
+						<pressurei>29.88</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260453Z AUTO 28004KT 10SM CLR 25/14 A2993 RMK AO2 SLP119 T02500139]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>10:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>22</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>5:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>05</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>23.3</tempm>
+						<tempi>73.9</tempi>
+					
+						<dewptm>14.4</dewptm>
+						<dewpti>57.9</dewpti>
+					<hum>57</hum>
+					
+						<wspdm>5.6</wspdm>
+						<wspdi>3.5</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>280</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.4</pressurem>
+						<pressurei>29.90</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260553Z AUTO 28003KT 10SM CLR 23/14 A2995 RMK AO2 SLP124 T02330144 10344 20233 51018]]></metar>
+					
+				</observation>
+			
+				<observation> 
+					<date>
+						<pretty>11:53 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>23</hour>
+						<min>53</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<utcdate>
+						<pretty>6:53 AM GMT on June 26, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>26</mday>
+						<hour>06</hour>
+						<min>53</min>
+						<tzname>UTC</tzname>
+					</utcdate>
+					
+						<tempm>21.7</tempm>
+						<tempi>71.1</tempi>
+					
+						<dewptm>15.0</dewptm>
+						<dewpti>59.0</dewpti>
+					<hum>66</hum>
+					
+						<wspdm>5.6</wspdm>
+						<wspdi>3.5</wspdi>
+					
+						<wgustm>-9999.0</wgustm>
+						<wgusti>-9999.0</wgusti>
+					<wdird>270</wdird>
+					<wdire>West</wdire>
+					
+						<vism>16.1</vism>
+						<visi>10.0</visi>
+					
+						<pressurem>1012.9</pressurem>
+						<pressurei>29.91</pressurei>
+					
+						<windchillm>-999</windchillm>
+						<windchilli>-999</windchilli>
+					
+						<heatindexm>-9999</heatindexm>
+						<heatindexi>-9999</heatindexi>
+					
+						<precipm>-9999.00</precipm>
+						<precipi>-9999.00</precipi>
+					<conds>Clear</conds>
+					<icon>clear</icon>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					<metar><![CDATA[METAR KRAL 260653Z AUTO 27003KT 10SM CLR 22/15 A2997 RMK AO2 SLP129 T02170150]]></metar>
+					
+				</observation>
+			
+		</observations>
+		<dailysummary>
+			
+				<summary>
+					<date>
+						<pretty>12:00 PM PDT on June 25, 2015</pretty>
+						<year>2015</year>
+						<mon>06</mon>
+						<mday>25</mday>
+						<hour>12</hour>
+						<min>00</min>
+						<tzname>America/Los_Angeles</tzname>
+					</date>
+					<fog>0</fog>
+					<rain>0</rain>
+					<snow>0</snow>
+					
+						<snowfallm>0.00</snowfallm>
+						<snowfalli>0.00</snowfalli>
+					
+						<monthtodatesnowfallm>0.00</monthtodatesnowfallm>
+						<monthtodatesnowfalli>0.00</monthtodatesnowfalli>
+					
+						<since1julsnowfallm>0.00</since1julsnowfallm>
+						<since1julsnowfalli>0.00</since1julsnowfalli>
+					
+						<snowdepthm>0.00</snowdepthm>
+						<snowdepthi>0.00</snowdepthi>
+					<hail>0</hail>
+					<thunder>0</thunder>
+					<tornado>0</tornado>
+					
+						<meantempm>26</meantempm>
+						<meantempi>79</meantempi>
+					
+						<meandewptm>13</meandewptm>
+						<meandewpti>55</meandewpti>
+					
+						<meanpressurem>1012</meanpressurem>
+						<meanpressurei>29.88</meanpressurei>
+					
+						<meanwindspdm>6</meanwindspdm>
+						<meanwindspdi>4</meanwindspdi>
+					<meanwdire></meanwdire>
+					<meanwdird>273</meanwdird>
+					
+						<meanvism>16</meanvism>
+						<meanvisi>10</meanvisi>
+					<humidity></humidity>
+					
+						<maxtempm>35</maxtempm>
+						<maxtempi>95</maxtempi>
+					
+						<mintempm>17</mintempm>
+						<mintempi>63</mintempi>
+					<maxhumidity>78</maxhumidity>
+					<minhumidity>23</minhumidity>
+					
+						<maxdewptm>15</maxdewptm>
+						<maxdewpti>59</maxdewpti>
+					
+						<mindewptm>9</mindewptm>
+						<mindewpti>49</mindewpti>
+					
+						<maxpressurem>1013</maxpressurem>
+						<maxpressurei>29.91</maxpressurei>
+					
+						<minpressurem>1010</minpressurem>
+						<minpressurei>29.83</minpressurei>
+					
+						<maxwspdm>24</maxwspdm>
+						<maxwspdi>15</maxwspdi>
+					
+						<minwspdm>0</minwspdm>
+						<minwspdi>0</minwspdi>
+					
+						<maxvism>16</maxvism>
+						<maxvisi>10</maxvisi>
+					
+						<minvism>16</minvism>
+						<minvisi>10</minvisi>
+					<gdegreedays>29</gdegreedays>
+					<heatingdegreedays>0</heatingdegreedays>
+					<coolingdegreedays>14</coolingdegreedays>
+					
+						<precipm>0.00</precipm>
+						<precipi>0.00</precipi>
+					<precipsource></precipsource>
+					<heatingdegreedaysnormal>0</heatingdegreedaysnormal>
+					<monthtodateheatingdegreedays>0</monthtodateheatingdegreedays>
+					<monthtodateheatingdegreedaysnormal>0</monthtodateheatingdegreedaysnormal>
+					<since1sepheatingdegreedays></since1sepheatingdegreedays>
+					<since1sepheatingdegreedaysnormal></since1sepheatingdegreedaysnormal>
+					<since1julheatingdegreedays>764</since1julheatingdegreedays>
+					<since1julheatingdegreedaysnormal>1444</since1julheatingdegreedaysnormal>
+					<coolingdegreedaysnormal>9</coolingdegreedaysnormal>
+					<monthtodatecoolingdegreedays>277</monthtodatecoolingdegreedays>
+					<monthtodatecoolingdegreedaysnormal>170</monthtodatecoolingdegreedaysnormal>
+					<since1sepcoolingdegreedays></since1sepcoolingdegreedays>
+					<since1sepcoolingdegreedaysnormal></since1sepcoolingdegreedaysnormal>
+					<since1jancoolingdegreedays>586</since1jancoolingdegreedays>
+					<since1jancoolingdegreedaysnormal>347</since1jancoolingdegreedaysnormal>
+					
+				</summary>
+			
+		</dailysummary>
+	</history>
+
+        
+	
+	
+	
+	
+    
+    
+
+
+    
+    
+    
+    
+</response>
+	

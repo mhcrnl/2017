@@ -1,0 +1,9 @@
+classdef MatriceTest
+    properties
+        x =[1:10];
+        y =[-10:-1];
+    end
+    methods
+        function r = afisare( 
+    end
+end

@@ -1,0 +1,3 @@
+b = Bursa;
+b.grafic
+

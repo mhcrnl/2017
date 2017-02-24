@@ -1,0 +1,3 @@
+This repository contains various usefull m-files, scripts for the computational program Matlab. The ImageProcessing folder contains a script which adjusts figures (specific plots) and saves them as pdf in order to use it in a report or whatever. 
+
+The DataProcessing folder contains various fitting scripts for linear fitting the fmlsq* will do that. The files data, scraper and analyse are a framework for browsing through a large volume of datafiles and analysing and collecting the right information from them. 
