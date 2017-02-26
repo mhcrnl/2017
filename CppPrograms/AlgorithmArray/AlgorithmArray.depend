@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1488107857 source:/home/mhcrnl/Documents/2017/CppPrograms/AlgorithmArray/main.c
+	<stdio.h>
+	<stdlib.h>
+
