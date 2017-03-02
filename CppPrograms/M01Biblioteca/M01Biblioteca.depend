@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1488474196 source:c:\users\mhcrnl\documents\2017\cppprograms\m01biblioteca\main.cpp
+	<iostream>
+	"carte.h"
+
+1488474163 c:\users\mhcrnl\documents\2017\cppprograms\m01biblioteca\carte.h
+	<iostream>
+	<string>
+
+1488474329 source:c:\users\mhcrnl\documents\2017\cppprograms\m01biblioteca\carte.cpp
+	"carte.h"
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1488430682 source:c:\users\mhcrnl\documents\2017\cppprograms\opengltest1\main.c
+	<windows.h>
+	<gl/gl.h>
+
