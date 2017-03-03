@@ -18,7 +18,8 @@ Carte::Carte(string titlu="", string autor="", string editura="", int an=0, int 
 int Carte::getNrCrt(){
     return _nrCrt;
 }
-ostream& Carte::operator<<(ostream& os, Carte const& carte){
+//Supraincarcarea operatorului<< intr-o functie friend
+ostream& operator<<(ostream& os, const Carte& carte){
     os<<carte._titlu<<" "<<carte._autor<<" "<<carte._editura<<" "<<carte._an<<" "<<carte._nrPagini<<endl;
     return os;
 }

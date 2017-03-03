@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1488506251 source:c:\users\mhcrnl\documents\2017\cppprograms\m01win32gui\main.cpp
+	<tchar.h>
+	<windows.h>
+

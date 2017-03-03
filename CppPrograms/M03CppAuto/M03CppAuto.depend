@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1488507452 source:c:\users\mhcrnl\documents\2017\cppprograms\m03cppauto\automobil.cpp
+	"automobil.h"
+
+1488507452 c:\users\mhcrnl\documents\2017\cppprograms\m03cppauto\automobil.h
+	<iostream>
+	<string>
+	<fstream>
+
+1488507473 source:c:\users\mhcrnl\documents\2017\cppprograms\m03cppauto\main.cpp
+	<iostream>
+	"automobil.h"
+

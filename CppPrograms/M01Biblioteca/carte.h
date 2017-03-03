@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-
+#include <fstream>
 using namespace std;
 /**
     Clasa Carte utilizata pentru pastrerea unei carti
@@ -24,7 +24,7 @@ public:
     //Metoda statica a clasei care acceseaza valoarea atributului _nrCrt;
     static int getNrCrt();
     //Supraincarcarea operator<< de afisare ca functie membra
-    friend ostream& operator<<(ostream& os, Carte const& carte);
+    friend ostream& operator<<(ostream& os, const Carte& carte);
     void setTitlu(const string& titlu);
     string getTitlu() const;
 };
