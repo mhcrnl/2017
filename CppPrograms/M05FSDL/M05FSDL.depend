@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1488687682 source:/home/mhcrnl/Documents/2017/CppPrograms/M05FSDL/main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<string>
+

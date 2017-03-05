@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1488696836 source:/home/mhcrnl/Documents/2017/Grafica/OpenGL/M04FOpenGL/main.c
+	<stdio.h>
+	<stdlib.h>
+	<GL/glx.h>
+	<GL/gl.h>
+	<X11/X.h>
+	<X11/keysym.h>
+
