@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Aplicatie	appfer.py	/^class Aplicatie(Frame):$/;"	c
+Aplication	aplicatiepython.py	/^class Aplication(tk.Frame):$/;"	c
+Tkinter	aplicatiepython.py	/^import Tkinter$/;"	i
+__init__	aplicatiepython.py	/^    def __init__(self, master=None):$/;"	m	class:Aplication
+__init__	appfer.py	/^    def __init__(self, master=None):$/;"	m	class:Aplicatie
+app	HTMLjavascript/myApp.js	/^var app = angular.module("myApp", []); /;"	v
+app	aplicatiepython.py	/^app= Aplication(tk.Frame)$/;"	v
+app	appfer.py	/^app=Aplicatie(master=root)$/;"	v
+createWidgets	aplicatiepython.py	/^    def createWidgets(self):$/;"	m	class:Aplication
+createWidgets	appfer.py	/^    def createWidgets(self):$/;"	m	class:Aplicatie
+javaVim	javaVim.java	/^public class javaVim {$/;"	c
+main	javaVim.java	/^	public static void main(String[] args){$/;"	m	class:javaVim
+root	appfer.py	/^root=Tk()$/;"	v
+salut	appfer.py	/^    def salut(self):$/;"	m	class:Aplicatie
+tk	aplicatiepython.py	/^import Tkinter as tk$/;"	i
