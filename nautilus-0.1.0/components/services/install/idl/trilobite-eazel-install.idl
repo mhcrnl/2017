@@ -1,0 +1,160 @@
+#include <Bonobo.idl>
+
+module Trilobite {
+	module Eazel {
+
+		enum PackageStatusEnum {
+			UNKNOWN_STATUS,
+			SOURCE_NOT_SUPPORTED, /* bad: we don't install source packages */
+			DEPENDENCY_FAIL,      /* bad: a dependency failed in next level */
+			BREAKS_DEPENDENCY,    /* bad: installing this breaks something, see PackageDataStruct.breaks */
+			INVALID,              /* bad: this is not a rpm, go away */
+			CANNOT_OPEN,          /* bad: cannot open/fetch/imagine this file */
+			PARTLY_RESOLVED,      /* perhaps: the immediate deps where ok, check all in PackageDataStruct.soft/hard_depends */
+			RESOLVED              /* good: all deps ok */
+		};
+		
+		enum ProtocolEnum {
+			PROTOCOL_HTTP,
+			PROTOCOL_FTP,
+			PROTOCOL_LOCAL
+		};
+
+		struct DistributionStruct {
+			string name;
+			long major;
+			long minor;
+		};
+
+		exception NoAccess {};         /* Raised if access to the package system wasn't allowed */
+		exception PackagesFailed {};   /* Raised if some packages failed (un)install */
+
+		struct PackageDataStruct {
+			/*
+			  These fields should be set when passed to 
+			   Eazel:Install::install () 
+			*/
+			string name;
+			string version;
+			/* or set this you want to install a local file and
+			   still use eg. protocol HTTP to do dep stuff */
+			string filename;
+
+			/*
+			  Eazel:Install::install ()
+			   will set these if not set.
+			*/
+			string archtype;
+			DistributionStruct distribution;
+
+			/*
+			  Not needed for 
+			  Eazel:Install::install (), but will
+			  (if available) be set when callbacks are called.
+			 */
+			string release;
+			string summary;
+			long bytesize;
+			boolean toplevel;
+
+			/* When Eazel::IntallCallback::install_failed is
+			   called, this is set. The toplevel will have
+			   PARTLY_RESOLVED and in soft_ & hard_depends,
+			   packages will have typically eiter
+			   RESOLVED for the good deps, 
+			   bad deps will have one of the
+			   bad: deps.
+			*/
+			PackageStatusEnum status;
+
+			/* FIXME bugzilla.eazel.com 1542:
+			   This is legal IDL, but not supported by wannabe idl compiler
+			   orbit-idl. Therefore I have to encode these
+			   trees as xml...
+			   When orbit-idl parses IDL, we can loose the xml.
+			sequence <PackageDataStruct> soft_depends;
+			sequence <PackageDataStruct> hard_depends;
+			sequence <PackageDataStruct> breaks;
+			*/			
+		};		
+		typedef sequence <PackageDataStruct> PackageDataStructList;
+
+		struct CategoryStruct {
+			string name;
+			PackageDataStructList packages;
+		};
+		typedef sequence <CategoryStruct> CategoryStructList;
+
+		interface InstallCallback : Bonobo::Unknown {
+			/* Called during download of a file */
+			oneway void download_progress (in string file, in long amount, in long total);
+
+			/* Called when dependency check is being handled */
+			oneway void dependency_check (in PackageDataStruct package, in PackageDataStruct needs);
+
+			/* Called after download is complete, and before the (un)install begins.
+			   Typically while heating up RPM */
+			oneway void preflight_check (in long total_size, in long num_packages);
+			
+			/* Called during (un)installation of a package */
+			oneway void install_progress (in PackageDataStruct package, 
+							in long package_num, in long num_packages, 
+							in long package_size_completed, in long package_size_total,
+							in long total_size_completed, in long total_size);
+			oneway void uninstall_progress (in PackageDataStruct package, 
+							in long amount, in long total);
+
+			/* Called whenever a package (un)install fails
+			*/
+			void download_failed (in string file);
+			/* FIXME bugzilla.eazel.com 1542:
+			   This is what they should be, but orbit-idl's lack of
+			   recursive structures, forces us to encode the structures
+			   as xml and transfer these instead. 
+			void install_failed (in PackageDataStruct package);
+			void uninstall_failed (in PackageDataStruct package);
+			*/
+			void install_failed (in string xml_package);
+			void uninstall_failed (in string xml_package);
+
+			/* Called to find out whether to delete the rpms or not, after finishing */
+			boolean delete_files ();
+
+			/* Called when the operation is finished */
+			void done ();
+		};
+
+		interface Install : Bonobo::Unknown {
+			attribute boolean verbose;     /* Mucho log output */
+			attribute boolean silent;      /* Minimal log output */
+			attribute boolean test_mode;   /* dry run, do not install, but act as if... */
+			attribute boolean force;       /* force install specified package (DANGER WILL ROBINSON) */
+			attribute boolean update;      /* enable update (default is FALSE) */
+			attribute boolean downgrade;   /* enable update (default is FALSE) */
+			attribute string package_list; /* Local package list to use, rather then download 
+							  from server */
+
+			attribute string server;      /* server to use for both file and package list download */
+			attribute long server_port;   /*  */
+
+			attribute string log_file;  /* where to put the logfile (otherwise it blurps to stdout */
+			attribute string tmp_dir;   /* directory to store tmp files in (/tmp/eazel-install) */
+
+			attribute ProtocolEnum protocol; /* */
+			
+			/* Install/uninstall using the packagelist from the server */
+			oneway void install (in string packagelist, in InstallCallback cb);
+			oneway void uninstall (in string packagelist, in InstallCallback cb);
+
+			/* These are for installing/uninstalling specific packages */
+			oneway void install_packages (in CategoryStructList categories, in InstallCallback cb);
+			oneway void uninstall_packages (in CategoryStructList categories, in InstallCallback cb);
+
+			/* Run a query to the package sys */
+			PackageDataStructList simple_query (in string query);
+
+			/* Revert a operation */
+			oneway void revert_transaction (in string xml, in InstallCallback cb);
+		};
+	};
+};

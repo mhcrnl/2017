@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Todo
+Name[pl]=Zadania
+Name[sk]=Úlohy
+Comment=Manage your personal tasks
+Comment[pl]=Zarządzanie zadaniami
+Comment[sk]=Spravujte vaše osobné úlohy
+Exec=gnome-todo
+Icon=gnome-todo
+Terminal=false
+Type=Application
+StartupNotify=true
+OnlyShowIn=GNOME;
+Categories=GNOME;GTK;Utility;
+Keywords=Task;Productivity;
+Keywords[pl]=Zadanie;Produktywność;Biuro;
+Keywords[sk]=úloha;produktivita;
+DBusActivatable=true

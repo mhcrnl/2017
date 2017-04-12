@@ -1,0 +1,3644 @@
+# -------------------------------------------------------
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Fatih Demir <kabalak@gmx.net>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus 0.1.0\n"
+"POT-Creation-Date: 2000-08-15 01:47-0700\n"
+"PO-Revision-Date: 2000-08-05 10:48+0200\n"
+"Last-Translator: Fatih Demir <kabalak@gmx.net>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-9\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. * From 'man(7)':
+#.
+#. The manual sections are traditionally defined as follows:
+#.
+#. 1 Commands
+#. Those  commands that can be executed by the
+#. user from within a shell.
+#.
+#. 2 System calls
+#. Those functions which must be performed  by
+#. the kernel.
+#.
+#. 3 Library calls
+#. Most   of   the  libc  functions,  such  as
+#. sort(3))
+#.
+#. 4 Special files
+#. Files found in /dev)
+#.
+#. 5 File formats and conventions
+#. The format for /etc/passwd and other human-
+#. readable files.
+#.
+#. 6 Games
+#.
+#. 7 Macro packages and conventions
+#. A  description  of the standard file system
+#. layout, this man page, and other things.
+#.
+#. 8 System management commands
+#. Commands like mount(8), which only root can
+#. execute.
+#.
+#. 9 Kernel routines
+#. This  is  a non-standard manual section and
+#. is included because the source code to  the
+#. Linux  kernel is freely available under the
+#. GNU Public  License  and  many  people  are
+#. working on changes to the kernel)
+#. **
+#: components/help/hyperbola-filefmt.c:396
+msgid "Manual"
+msgstr "Kýlavuzlar"
+
+#: components/help/hyperbola-filefmt.c:397
+msgid "System"
+msgstr "Sistem"
+
+#: components/help/hyperbola-filefmt.c:397
+msgid "Configuration"
+msgstr "Ayarlama"
+
+#: components/help/hyperbola-filefmt.c:397
+msgid "Config files"
+msgstr "Ayar dosyalarý"
+
+#: components/help/hyperbola-filefmt.c:398
+#: components/help/hyperbola-filefmt.c:671
+msgid "Applications"
+msgstr "Uygulamalar"
+
+#: components/help/hyperbola-filefmt.c:398
+msgid "Command Line"
+msgstr "Komuta"
+
+#: components/help/hyperbola-filefmt.c:399
+#: components/help/hyperbola-filefmt.c:400
+msgid "Development"
+msgstr "Yazýlým geliþtirimi"
+
+#: components/help/hyperbola-filefmt.c:399
+#: components/help/hyperbola-filefmt.c:400
+msgid "APIs"
+msgstr "APIler"
+
+#: components/help/hyperbola-filefmt.c:399
+msgid "Miscellaneous"
+msgstr "Karýþýk"
+
+#: components/help/hyperbola-filefmt.c:400
+msgid "System Calls"
+msgstr "Sistem çaðrýlarý"
+
+#: components/help/hyperbola-filefmt.c:556
+msgid "Info"
+msgstr "Bilgi sayfalarý"
+
+#: components/help/hyperbola-nav-index.c:124
+msgid "see "
+msgstr "bakýnýz"
+
+#: components/help/hyperbola-nav-index.c:128
+msgid "see also "
+msgstr "ve buraya da bakýnýz"
+
+#: components/help/hyperbola-nav-index.c:212
+msgid "No matches."
+msgstr "Eþleþme yoktur ."
+
+#: components/help/hyperbola-nav-index.c:479
+msgid " (see \""
+msgstr " ( bakýnýz \" "
+
+#: components/help/hyperbola-nav-index.c:484
+msgid " (see also \""
+msgstr " ( bakýnýz \""
+
+#: components/html/gnome-dialogs.c:87
+msgid "Transfer Progress"
+msgstr "Transfer ilerlemesi"
+
+#: components/html/gnome-dialogs.c:141
+#, c-format
+msgid "Looking up %s"
+msgstr "%s'yi araþtýrýyorum"
+
+#: components/html/gnome-dialogs.c:147
+#, c-format
+msgid "Contacting %s"
+msgstr "%s'ye iletiþim kuruyorum"
+
+#: components/html/gnome-dialogs.c:154
+msgid "Waiting for a connection..."
+msgstr "Baðlantý için bekliyorum ..."
+
+#: components/html/gnome-dialogs.c:158
+msgid "Logging in..."
+msgstr "Giriþ yapýyorum ..."
+
+#: components/html/gnome-dialogs.c:167
+msgid "Read %d%%%% of %ld"
+msgstr "%ld bayttan %d%%%% bayt okundu"
+
+#: components/html/gnome-dialogs.c:177
+#, c-format
+msgid "Read %ld bytes"
+msgstr "%ld bayt okundu"
+
+#: components/html/gnome-dialogs.c:179
+#, c-format
+msgid "Read %d bytes"
+msgstr "%d bayt okundu"
+
+#: components/html/gnome-dialogs.c:181
+msgid "Reading..."
+msgstr "Okunuyor ..."
+
+#: components/html/gnome-dialogs.c:196
+msgid "Writing %d%%%% of %ld"
+msgstr "%ld bayttan %d%%%% bayt okundu"
+
+#: components/html/gnome-dialogs.c:206
+#, c-format
+msgid "Writing %ld bytes"
+msgstr "%ld bayt yazýldý"
+
+#: components/html/gnome-dialogs.c:208
+#, c-format
+msgid "Writing %d bytes"
+msgstr "%d bayt yazýldý"
+
+#: components/html/gnome-dialogs.c:210
+msgid "Writing..."
+msgstr "Yazýlýyor ..."
+
+#: components/html/gnome-dialogs.c:218
+msgid "Done!"
+msgstr "Oldu !"
+
+#: components/html/gnome-dialogs.c:222
+msgid "Interrupted!"
+msgstr "Durduruldu !"
+
+#: components/html/gnome-dialogs.c:226
+msgid "Please wait..."
+msgstr "Lütfen bekle ..."
+
+#: components/html/gnome-dialogs.c:230
+msgid "Request timeout!"
+msgstr "Zaman aþýmý !"
+
+#: components/html/gnome-dialogs.c:234
+msgid "Unknown"
+msgstr "Bilinmiyor"
+
+#: components/html/gnome-dialogs.c:277
+msgid "Enter Text"
+msgstr "Metni ver"
+
+#: components/html/gnome-dialogs.c:318 components/html/gnome-dialogs.c:359
+msgid "Enter Password"
+msgstr "Parolayý ver"
+
+#: components/loser/content/nautilus-content-loser.c:140
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"This is a Nautilus content view that fails on demand."
+msgstr ""
+"%s\n"
+"\n"
+"Bu bir örnek Nautilus içerik bakýþýdýr ve gerekirse baþarýsýz olur."
+
+#: components/loser/content/nautilus-content-loser.c:199
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"You clicked the Kill Content View toolbar button."
+msgstr ""
+"%s\n"
+"\n"
+"Içerik bakýþýný öldür basmasýný bastýn ."
+
+#. BonoboUIHandler
+#. menu item path, must start with /some-existing-menu-path and be otherwise unique
+#: components/loser/content/nautilus-content-loser.c:245
+msgid "_Kill Content View"
+msgstr "_Içerik bakýþýný öldür"
+
+#. menu item user-displayed label
+#: components/loser/content/nautilus-content-loser.c:246
+msgid "Kill the Loser content view"
+msgstr "Matrak içerik bakýþýný öldür"
+
+#. BonoboUIHandler
+#. button path, must start with /some-existing-toolbar-path and be otherwise unique
+#: components/loser/content/nautilus-content-loser.c:265
+msgid "Kill Content View"
+msgstr "Içerik bakýþýný öldür"
+
+#. button user-displayed label
+#: components/loser/content/nautilus-content-loser.c:266
+msgid "Kill the Loser content view."
+msgstr "Matrak içerik bakýþýný öldür."
+
+#: components/loser/sidebar/nautilus-sidebar-loser.c:143
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"Loser sidebar."
+msgstr ""
+"%s\n"
+"\n"
+"Matrak yan çubuðu ."
+
+#: components/loser/sidebar/nautilus-sidebar-loser.c:202
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"You clicked the Kill Sidebar View toolbar button."
+msgstr ""
+"%s\n"
+"\n"
+"Araç çubuðunda Yan çubuðunu öldür basmasýný týkladýn."
+
+#. BonoboUIHandler
+#. menu item path, must start with /some-existing-menu-path and be otherwise unique
+#: components/loser/sidebar/nautilus-sidebar-loser.c:248
+msgid "_Kill Sidebar View"
+msgstr "_Yan çubudu bakýþýný öldür"
+
+#. menu item user-displayed label
+#: components/loser/sidebar/nautilus-sidebar-loser.c:249
+msgid "Kill the Loser sidebar view"
+msgstr "Matrak yan çubuðu bakýþýný öldür"
+
+#. BonoboUIHandler
+#. button path, must start with /some-existing-toolbar-path and be otherwise unique
+#: components/loser/sidebar/nautilus-sidebar-loser.c:268
+msgid "Loser"
+msgstr "Matrak"
+
+#. button user-displayed label
+#: components/loser/sidebar/nautilus-sidebar-loser.c:269
+msgid "Kill the Loser sidebar view."
+msgstr "Matrak yan çubuk bakýþýný öldür."
+
+#.
+#. * Create our mozilla menu item.
+#. *
+#. * Note that it's sorta bogus that we know Nautilus has a menu whose
+#. * path is "/File", and also that we know a sensible position to use within
+#. * that menu. Nautilus should publish this information somehow.
+#.
+#. BonoboUIHandler
+#. menu item path, must start with /some-existing-menu-path and be otherwise unique
+#: components/mozilla/nautilus-mozilla-content-view.c:337
+msgid "_Mozilla"
+msgstr "_Mozilla"
+
+#. menu item user-displayed label
+#: components/mozilla/nautilus-mozilla-content-view.c:338
+msgid "This is a mozilla merged menu item"
+msgstr "Bu bir örnek mozilla birleþtirilmiþ mönü birimidir"
+
+#. hint that appears in status bar
+#. position within menu; -1 means last
+#. pixmap type
+#. pixmap data
+#. accelerator key, couldn't bear the thought of using Control-S for anything except Save
+#. accelerator key modifiers
+#. callback function
+#. callback function data
+#.
+#. * Create our mozilla toolbar button.
+#. *
+#. * Note that it's sorta bogus that we know Nautilus has a toolbar whose
+#. * path is "/Main". Nautilus should publish this information somehow.
+#.
+#. BonoboUIHandler
+#. button path, must start with /Main/ and be otherwise unique
+#: components/mozilla/nautilus-mozilla-content-view.c:355
+msgid "Mozilla"
+msgstr "Mozilla"
+
+#. button user-displayed label
+#: components/mozilla/nautilus-mozilla-content-view.c:356
+msgid "This is a mozilla merged toolbar button"
+msgstr "Bu bir mozilla yönetim çubuðu örneðidir ."
+
+#: components/music/nautilus-music-view.c:198
+msgid "Track "
+msgstr "Parça "
+
+#: components/music/nautilus-music-view.c:198
+msgid "Title"
+msgstr "Isim"
+
+#: components/music/nautilus-music-view.c:198
+msgid "Artist"
+msgstr "Sanatçý"
+
+#: components/music/nautilus-music-view.c:198
+msgid "Year"
+msgstr "Yýl"
+
+#: components/music/nautilus-music-view.c:198
+msgid "Bitrate "
+msgstr "Derleme oraný "
+
+#: components/music/nautilus-music-view.c:198
+msgid "Time "
+msgstr "Süre "
+
+#: components/music/nautilus-music-view.c:198
+msgid "Album"
+msgstr "Rumuz"
+
+#: components/music/nautilus-music-view.c:198
+msgid "Comment"
+msgstr "Anlatým"
+
+#: components/music/nautilus-music-view.c:198
+msgid "Channels"
+msgstr "Kanallar"
+
+#: components/music/nautilus-music-view.c:198
+msgid "Sample Rate"
+msgstr "Derleme oraný"
+
+#. allocate a widget for the album title
+#: components/music/nautilus-music-view.c:223
+msgid "Album Title"
+msgstr "Rumuz ismi"
+
+#: components/music/nautilus-music-view.c:1070
+msgid "Song Title"
+msgstr "Parça ismi"
+
+#: components/music/nautilus-music-view.c:1122
+msgid "Previous"
+msgstr "Geri"
+
+#: components/music/nautilus-music-view.c:1134
+msgid "Play"
+msgstr "Çal"
+
+#: components/music/nautilus-music-view.c:1146
+msgid "Pause"
+msgstr "Durdur"
+
+#: components/music/nautilus-music-view.c:1158
+#: src/file-manager/dfos-xfer.c:352 src/file-manager/dfos-xfer.c:372
+#: src/nautilus-window-toolbars.c:156
+msgid "Stop"
+msgstr "Dur"
+
+#: components/music/nautilus-music-view.c:1170
+msgid "Next"
+msgstr "Ileri"
+
+#: components/rpmview/nautilus-rpm-view.c:125
+msgid "Package Contents"
+msgstr "Pakaj içeriði"
+
+#. allocate the name field
+#: components/rpmview/nautilus-rpm-view.c:153
+msgid "Package Title"
+msgstr "Pakaj ismi"
+
+#: components/rpmview/nautilus-rpm-view.c:183
+msgid "Size: "
+msgstr "Boyut : "
+
+#: components/rpmview/nautilus-rpm-view.c:187
+msgid "<size>"
+msgstr "<boyut>"
+
+#: components/rpmview/nautilus-rpm-view.c:192
+msgid "Install Date: "
+msgstr "Yüklenme tarihi : "
+
+#: components/rpmview/nautilus-rpm-view.c:196
+#: components/rpmview/nautilus-rpm-view.c:205
+#: components/rpmview/nautilus-rpm-view.c:214
+#: components/rpmview/nautilus-rpm-view.c:223
+#: components/rpmview/nautilus-rpm-view.c:233
+msgid "<unknown>"
+msgstr "<bilinmiyor>"
+
+#: components/rpmview/nautilus-rpm-view.c:201
+msgid "License: "
+msgstr "Lisans : "
+
+#: components/rpmview/nautilus-rpm-view.c:210
+msgid "Build Date: "
+msgstr "Denetleme tarihi : "
+
+#: components/rpmview/nautilus-rpm-view.c:219
+msgid "Distribution: "
+msgstr "Daðýtým : "
+
+#: components/rpmview/nautilus-rpm-view.c:229
+msgid "Vendor: "
+msgstr "Imalatçý : "
+
+#: components/rpmview/nautilus-rpm-view.c:261
+msgid "Install"
+msgstr "Yükle"
+
+#: components/rpmview/nautilus-rpm-view.c:277
+msgid "Update"
+msgstr "Yenile"
+
+#: components/rpmview/nautilus-rpm-view.c:286
+msgid "Uninstall"
+msgstr "Kaldýr"
+
+#: components/rpmview/nautilus-rpm-view.c:325
+msgid "Go to selected file"
+msgstr "Seçili dosyaya git"
+
+#. add the description
+#: components/rpmview/nautilus-rpm-view.c:336
+msgid "Description"
+msgstr "Anlatým"
+
+#: components/rpmview/nautilus-rpm-view.c:485
+#, c-format
+msgid "Package \"%s\" "
+msgstr "Pakaj \"%s\" "
+
+#: components/rpmview/nautilus-rpm-view.c:539
+#, c-format
+msgid "version %s-%s"
+msgstr "nesil %s-%s"
+
+#: components/rpmview/nautilus-rpm-view.c:599
+#, c-format
+msgid "Package Contents: %d files"
+msgstr "Pakaj %d dosya içeriyor"
+
+#: components/sample/nautilus-sample-content-view.c:85
+msgid "(none)"
+msgstr "( yok )"
+
+#: components/sample/nautilus-sample-content-view.c:147
+#: components/services/time/nautilus-view/trilobite-eazel-time-view.c:492
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"This is a sample Nautilus content view component."
+msgstr ""
+"%s\n"
+"\n"
+"Bu bir örnek Nautilus içerik bakýþýdýr ."
+
+#: components/sample/nautilus-sample-content-view.c:205
+#: components/services/time/nautilus-view/trilobite-eazel-time-view.c:528
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"You clicked the Sample toolbar button."
+msgstr ""
+"%s\n"
+"\n"
+"Örnek yönetim çubuðu örneðine týkladýn ."
+
+#. menu item path, must start with /some-existing-menu-path and be otherwise unique
+#: components/sample/nautilus-sample-content-view.c:243
+#: components/services/time/nautilus-view/trilobite-eazel-time-view.c:573
+msgid "_Sample"
+msgstr "Ö_rnek"
+
+#. menu item user-displayed label
+#: components/sample/nautilus-sample-content-view.c:244
+#: components/services/time/nautilus-view/trilobite-eazel-time-view.c:574
+msgid "This is a sample merged menu item"
+msgstr "Bu bir örnek birleþtirilmiþ mönü birimidir"
+
+#. button path, must start with /some-existing-toolbar-path and be otherwise unique
+#: components/sample/nautilus-sample-content-view.c:259
+#: components/services/time/nautilus-view/trilobite-eazel-time-view.c:593
+msgid "Sample"
+msgstr "Örnek"
+
+#. button user-displayed label
+#: components/sample/nautilus-sample-content-view.c:260
+#: components/services/time/nautilus-view/trilobite-eazel-time-view.c:594
+msgid "This is a sample merged toolbar button"
+msgstr "Bu bir yönetim çubuðu örneðidir ."
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:80
+#: components/services/install/command-line/eazel-revert.c:85
+#: components/services/install/command-line/eazel-uninstall.c:71
+msgid "Specify config file (/var/eazel/services/eazel-services-config.xml)"
+msgstr ""
+"Kullanýlýnacak ayar dosyasýný belirt / "
+"/var/eazel/services/eazel-services-config.xml )"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:81
+#: components/services/install/command-line/eazel-gen-xml.c:43
+#: components/services/install/command-line/eazel-revert.c:75
+#: components/services/install/command-line/eazel-uninstall.c:68
+msgid "Show debug output"
+msgstr "Bilgilendirmeleri göster"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:82
+#: components/services/install/command-line/eazel-revert.c:76
+#: components/services/install/command-line/eazel-uninstall.c:70
+msgid "10 sec delay after starting service"
+msgstr "Servisi baþlattýktan 10 saniye sonra"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:83
+msgid "Allow downgrades"
+msgstr "Geriye dönük yenilemelere izin ver"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:84
+msgid "Erase packages"
+msgstr "Pakajlarý kaldýr"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:85
+#: components/services/install/command-line/eazel-revert.c:84
+msgid "RPM args are filename"
+msgstr "RPM argümanlarý bir dosya adýdýr"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:86
+msgid "Force install"
+msgstr "Yüklemeyi zorunlu yap"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:87
+#: components/services/install/command-line/eazel-revert.c:82
+msgid "Use ftp"
+msgstr "ftp'yi kullan"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:88
+#: components/services/install/command-line/eazel-revert.c:83
+msgid "Use local"
+msgstr "Yerel sunucuyu kullan"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:89
+#: components/services/install/command-line/eazel-revert.c:81
+msgid "Use http"
+msgstr "http'yi kullan"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:90
+#, fuzzy
+msgid "Specify package file"
+msgstr "Pakaj ismi"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:91
+#: components/services/install/command-line/eazel-revert.c:77
+msgid "Set port numer (80)"
+msgstr "Kapý numarasýný belirt ( 80 )"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:92
+msgid "Run Query"
+msgstr ""
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:93
+#: components/services/install/command-line/eazel-revert.c:80
+msgid "Specify server"
+msgstr "Sunucuyu belirle"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:94
+#: components/services/install/command-line/eazel-revert.c:78
+#: components/services/install/command-line/eazel-uninstall.c:69
+msgid "Test run"
+msgstr "Deneme turlarýný dön"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:95
+#: components/services/install/command-line/eazel-revert.c:79
+msgid "Set tmp dir (/tmp/eazel-install)"
+msgstr "Geçici dosyalar dizin ( /tmp/eazel-install )"
+
+#: components/services/install/command-line/eazel-alt-install-corba.c:96
+msgid "Allow upgrades"
+msgstr "Yenilemelere izin ver"
+
+#: components/services/install/command-line/eazel-gen-xml.c:41
+msgid "Specify package list to use (/var/eazel/service/package-list.xml)"
+msgstr ""
+"Kullanýlýcak pakaj listesini belirt ( /var/eazel/service/package-list.xml )"
+
+#: components/services/install/command-line/eazel-gen-xml.c:42
+msgid "Use specified file to generate a package list, requires --packagelist"
+msgstr ""
+"Belirtilen dosyayý pakaj listesini yaratýrken kullan, --packagelist "
+"argümanýný gerektirir"
+
+#: components/services/install/command-line/eazel-package-query.c:40
+msgid "Lookup package in the db"
+msgstr "Pakajý bilgi tabanýnda ara"
+
+#: components/services/install/command-line/eazel-package-query.c:41
+msgid "Who owns specified files"
+msgstr "Belirtilen dosyalarýn iyesi kim"
+
+#: components/services/install/command-line/eazel-package-query.c:42
+msgid "Who provides specified files"
+msgstr "Belirtilen dosyalarý kim sunuyor"
+
+#: components/services/install/command-line/eazel-package-query.c:43
+msgid "Who requires specified packages"
+msgstr "Belirtilen pakajlarý kim gerektiriyor"
+
+#: components/services/install/lib/eazel-install-metadata.c:46
+msgid "Creating default configuration file ...\n"
+msgstr "Önayarlý ayar dosyasýný yaratýyorum ...\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:54
+#: components/services/install/lib/eazel-install-metadata.c:62
+#, c-format
+msgid "*** Could not create services directory (%s)! ***\n"
+msgstr "*** Servisler dizini %s'yi yaratamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:69
+msgid "*** Could not create the default configuration file! ***\n"
+msgstr "*** Önayarlý ayar dosyasýný yaratamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:102
+msgid "*** Error generating default configuration file! ***\n"
+msgstr "*** Önayarlý ayar dosyasýný yaratýrken hata oldu ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:119
+msgid "*** Unable to open config file! ***\n"
+msgstr "*** Ayar dosyasýný açamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:126
+msgid "*** The config file contains no data! ***\n"
+msgstr "*** Ayar dosyasý hiç bir bilgi içermiyor ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:131
+msgid "*** Cannot find the EAZEL_INSTALLER xmlnode! ***\n"
+msgstr "*** EAZEL_INSTALLER xml-birimini bulamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:133
+msgid "*** Bailing from xmlparse! ***\n"
+msgstr "*** xml dosyasýný tararken hatalar oluþtu ! ***\n"
+
+#: components/services/install/lib/eazel-install-metadata.c:155
+msgid "Could not set URLType from config file!"
+msgstr "Ayar dosyasýndan URL tipini belirleyemedim !"
+
+#: components/services/install/lib/eazel-install-object.c:566
+msgid "Creating temporary download directory ...\n"
+msgstr "Geçici yükleme dizinini yaratýyorum ...\n"
+
+#: components/services/install/lib/eazel-install-object.c:571
+msgid "Could not create temporary directory!\n"
+msgstr "Geçici yükleme dizinini yaratamadým !\n"
+
+#: components/services/install/lib/eazel-install-object.c:584
+msgid "Getting package list from remote server ...\n"
+msgstr "Sunucu'dan pakaj listesini alýyorum ...\n"
+
+#: components/services/install/lib/eazel-install-object.c:594
+msgid "Unable to retrieve package-list.xml!\n"
+msgstr "package-list.xml'i alamadým !\n"
+
+#: components/services/install/lib/eazel-install-object.c:638
+#, c-format
+msgid "Cannot write to file %s, using default log handler"
+msgstr "%s dosyasýna yazamadým, önayarlý kayýt yöneticisini kullanýyorum"
+
+#: components/services/install/lib/eazel-install-object.c:661
+#: components/services/install/lib/eazel-install-object.c:718
+msgid "ftp install not supported"
+msgstr "ftp'den yükleme þimdilik desteklenmiyor"
+
+#: components/services/install/lib/eazel-install-object.c:668
+msgid "Install failed"
+msgstr "Yükleme baþarýsýz oldu"
+
+#: components/services/install/lib/eazel-install-object.c:725
+msgid "Uninstall failed"
+msgstr "Kaldýrma baþarýsýz oldu"
+
+#: components/services/install/lib/eazel-install-protocols.c:70
+#: components/services/install/lib/eazel-install-protocols.c:172
+#, c-format
+msgid "Downloading %s..."
+msgstr "%s'yi yükliyorum ..."
+
+#: components/services/install/lib/eazel-install-protocols.c:77
+#, c-format
+msgid "*** Could not create tmp directory (%s)! ***\n"
+msgstr "*** Geçici dosyalar dizinini (%s'yi) yaratamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-protocols.c:93
+#, c-format
+msgid "Could not open target file %s"
+msgstr "Hedef dosya %s'yi açamadým"
+
+#: components/services/install/lib/eazel-install-protocols.c:100
+#: components/services/install/lib/eazel-install-protocols.c:373
+msgid "Could not create an http request !"
+msgstr "Bir http isteðini yaratamadým !"
+
+#: components/services/install/lib/eazel-install-protocols.c:105
+msgid "Invalid uri !"
+msgstr "Geçersiz URI !"
+
+#: components/services/install/lib/eazel-install-protocols.c:112
+#: components/services/install/lib/eazel-install-protocols.c:380
+msgid "Could not prepare http request !"
+msgstr "Http isteðini hazýrlayamadým !"
+
+#: components/services/install/lib/eazel-install-protocols.c:116
+msgid "Couldn't get async mode "
+msgstr "Eþit olmayan türünü alamadým "
+
+#: components/services/install/lib/eazel-install-protocols.c:137
+#, c-format
+msgid "HTTP error: %d %s"
+msgstr "HTTP hatasý : %d %s"
+
+#: components/services/install/lib/eazel-install-protocols.c:147
+msgid "Could not get request body!"
+msgstr "Istek içeriðini alamadým !"
+
+#: components/services/install/lib/eazel-install-protocols.c:173
+msgid "FTP not supported yet"
+msgstr "FTP þimdilik mevcut deðildir"
+
+#: components/services/install/lib/eazel-install-protocols.c:185
+#, c-format
+msgid "Checking local file %s..."
+msgstr "Yerel dosya %s'yi gözden geçiriyorum ..."
+
+#: components/services/install/lib/eazel-install-protocols.c:269
+#: components/services/install/lib/eazel-install-protocols.c:317
+#, c-format
+msgid "Could not get a URL for %s"
+msgstr "%s için bir adres alamadým"
+
+#: components/services/install/lib/eazel-install-protocols.c:311
+msgid "Using local protocol cannot resolve library dependencies"
+msgstr "Yerel protokolu kullanark kütüphane gereksenimleri çözemedim"
+
+#: components/services/install/lib/eazel-install-protocols.c:369
+#, c-format
+msgid "Search URL: %s"
+msgstr "Arama adresi : %s"
+
+#: components/services/install/lib/eazel-install-protocols.c:377
+msgid "Invalid uri"
+msgstr "Geçersiz URI"
+
+#: components/services/install/lib/eazel-install-protocols.c:391
+#: components/services/install/lib/eazel-install-protocols.c:395
+#, c-format
+msgid "Could not retrieve a URL for %s"
+msgstr "%s için bir adres alamadým"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:105
+#: components/services/install/lib/eazel-install-rpm-glue.c:317
+msgid "Dry Run Mode Activated.  Packages will not actually be installed ..."
+msgstr "Kuru yükleme yapýlacak. Pakajlar essah yüklenmeyecektir ..."
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:132
+msgid "Reading the install package list ..."
+msgstr "YÜklenecek pakajlar listesini okuyorum ..."
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:166
+#: components/services/install/lib/eazel-install-rpm-glue.c:292
+#, c-format
+msgid "Category = %s"
+msgstr "Rumuz = %s"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:200
+#, c-format
+msgid "Failed to retreive %s!"
+msgstr "%s'yi alýrken hata oldu !"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:267
+#, c-format
+msgid "Category = %s, %d packages"
+msgstr "Rumuz = %s, %d pakaj"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:667
+#, c-format
+msgid "*** Could not create transaction directory (%s)! ***\n"
+msgstr "*** Iletiþim dizini %s'yi yaratamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:824
+#, c-format
+msgid "Removing package %s"
+msgstr "%s pakajý kaldýrýlýyor"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:942
+#, c-format
+msgid "Cannot open %s"
+msgstr "%s'yi açamadým"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:1040
+msgid "RPM package database query failed !"
+msgstr "RPM pakaj bilgi tabanýný sorgulayamadým !"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:1287
+#, c-format
+msgid "%s %s breaks %s"
+msgstr "%s %s %s'yi kaldýrmayý gerektiriyor"
+
+#. If we end here, it's a conflict is going to break something
+#. FIXME bugzilla.eazel.com 1514:
+#. Need to handle this more intelligently
+#: components/services/install/lib/eazel-install-rpm-glue.c:1334
+#, c-format
+msgid "%s conflicts %s-%s"
+msgstr "%s %s-%s ile catýþýyor"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:1346
+#: components/services/install/lib/eazel-install-rpm-glue.c:1354
+#, c-format
+msgid "Processing dep for %s : requires %s"
+msgstr "%s için gereksenimler taranýyor : %s'yi gerektirir"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:1585
+#, c-format
+msgid "%d dependencies failed!"
+msgstr "%d gereksenimler bulunamadý !"
+
+#: components/services/install/lib/eazel-install-rpm-glue.c:1648
+msgid "Dependencies are ok"
+msgstr "Gereksenimler hep bulundu"
+
+#: components/services/install/lib/eazel-install-tests.c:33
+msgid "*** Begin pkg dump ***\n"
+msgstr "*** Pakaj dökümüne baþlaýyorum ***\n"
+
+#: components/services/install/lib/eazel-install-tests.c:40
+msgid "*** End pkg dump ***\n"
+msgstr "*** Pakaj dökümü sonu ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:124
+msgid "*** No package nodes! ***\n"
+msgstr "*** Pakaj içerikleri yok ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:126
+msgid "*** Bailing from package parse! ***\n"
+msgstr "*** Pakaj taramasýný hatalardan dolayý býrakýyorum ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:150
+msgid "*** The pkg list file contains no data! ***\n"
+msgstr "*** Pakaj liste dosyasý bilgi içermiyor ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:155
+msgid "*** Cannot find the CATEGORIES xmlnode! ***\n"
+msgstr "*** CATEGORIES xml içeriðini bulamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:157
+msgid "*** Bailing from categories parse! ***\n"
+msgstr "*** Türler taramasýný hatalardan dolayý býrakýyorum ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:163
+msgid "*** No Categories! ***\n"
+msgstr "*** Türler yok ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:165
+msgid "*** Bailing from category parse! ***\n"
+msgstr "*** Tür taramasýný hatalardan dolayý býrakýyorum ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:216
+msgid "*** Cannot find the TRANSACTION xmlnode! ***\n"
+msgstr "*** TRANSACTIONS xml içeriðini bulamadým ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:218
+#: components/services/install/lib/eazel-install-xml-package-list.c:226
+msgid "*** Bailing from transaction parse! ***\n"
+msgstr "*** Iletiþim taramasýný hatalardan dolayý býrakýyorum ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:224
+msgid "*** No packages! ***\n"
+msgstr "*** Pakajlar yok ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:328
+msgid "*** Error generating xml package list! ***\n"
+msgstr "*** Xml pakaj listesini yaratýrken hata oldu ! ***\n"
+
+#: components/services/install/lib/eazel-install-xml-package-list.c:375
+msgid "*** Error reading package list! ***\n"
+msgstr "*** Pakaj listesi okurken hata oldu ! ***\n"
+
+#. Add package information
+#. Package Name
+#: components/services/install/nautilus-view/nautilus-service-install-view.c:92
+msgid "Installing \"The Gimp\""
+msgstr "\"GIMP\"'i yükliyorum"
+
+#: components/services/install/nautilus-view/nautilus-service-install-view.c:340
+#, c-format
+msgid "Installing \"%s\" "
+msgstr "\"%s\"'yi yükliyorum"
+
+#: components/services/install/nautilus-view/nautilus-service-install-view.c:381
+#, c-format
+msgid "Version %s-%s"
+msgstr "Nesil %s-%s"
+
+#: components/services/time/command-line/main.c:43
+msgid "display service name and such"
+msgstr "servis adýný göster"
+
+#: components/services/time/command-line/main.c:44
+msgid "maximum allowed difference in seconds"
+msgstr "azami zaman farký ( saniye olarak )"
+
+#: components/services/time/command-line/main.c:45
+msgid "update the system clock"
+msgstr "sistem saatini yenile"
+
+#: components/services/time/command-line/main.c:46
+msgid "specify time url"
+msgstr "zaman URL'unu belirle"
+
+#: components/services/trilobite/libtrilobite/trilobite-core-utils.c:197
+msgid "Could not initialize Bonobo"
+msgstr "Bonobo'yu baþlatamadým"
+
+#: components/services/trilobite/libtrilobite/trilobite-core-utils.c:212
+#, c-format
+msgid "Can't write logfile %s -- using default log handler"
+msgstr ""
+"Kayýt dosyasý %s'yi yazamadým -- önayarlý kayýt yöneticisini kullanýyorum"
+
+#: components/services/vault/command-line/main.c:37
+msgid "Enable debugging"
+msgstr "Çözümlemeyi aç"
+
+#: components/services/vault/command-line/main.c:38
+msgid "Vault location"
+msgstr "Gizem mekaný"
+
+#: components/services/vault/command-line/main.c:46
+msgid "Valid operations:"
+msgstr "Geçerli iþlemler :"
+
+#: components/services/vault/command-line/main.c:86
+msgid "Error: No operation supplied\n"
+msgstr "Hata : Iþlem belirtilmedi\n"
+
+#: components/services/vault/command-line/main.c:94
+#, c-format
+msgid "Error: Invalid operation supplied (%s)\n"
+msgstr "Hata : Geçersiz iþlem ( %s ) belirtildi\n"
+
+#: components/services/vault/command-line/main.c:119
+#, c-format
+msgid ""
+"Error: Invalid syntax\n"
+"Syntax: %s\n"
+msgstr ""
+"Hata : Geçersiz yapý\n"
+"Yapý : %s\n"
+
+#: components/websearch/ntl-web-search.c:164
+#: libnautilus-extensions/nautilus-global-preferences.c:276
+#: src/nautilus-window-toolbars.c:144
+msgid "Search"
+msgstr "Ara"
+
+#. For now we just display the results as HTML
+#. Results list
+#: components/websearch/ntl-web-search.c:184
+msgid "Results"
+msgstr "Sonuçlar"
+
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-edge.c:265
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-finish.c:244
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-standard.c:241
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-start.c:262
+msgid "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-*"
+msgstr "-adobe-helvetica-bold-r-normal-*-*-180-*-*-p-*-*-9"
+
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-edge.c:274
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-finish.c:251
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid-page-start.c:271
+msgid "-adobe-helvetica-medium-r-normal-*-*-120-*-*-p-*-*-*"
+msgstr "-adobe-helvetica-medium-r-normal-*-*-120-*-*-p-*-*-9"
+
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid.c:145
+#: src/nautilus-window-toolbars.c:117
+msgid "Back"
+msgstr "Geri"
+
+#: cut-n-paste-code/widgets/nautilus-druid/nautilus-druid.c:153
+msgid "Finish"
+msgstr "Bitir"
+
+#. today, use special word
+#: libnautilus-extensions/nautilus-file.c:1557
+msgid "today %-I:%M %p"
+msgstr "bugün %-I:%M %p"
+
+#. yesterday, use special word
+#: libnautilus-extensions/nautilus-file.c:1560
+msgid "yesterday %-I:%M %p"
+msgstr "dün saat %-H:%M'de %p"
+
+#. current week, include day of week
+#: libnautilus-extensions/nautilus-file.c:1563
+msgid "%A %-m/%-d/%y %-I:%M %p"
+msgstr "%A %-m/%-d/%y %-H:%M %p"
+
+#: libnautilus-extensions/nautilus-file.c:1565
+msgid "%-m/%-d/%y %-I:%M %p"
+msgstr "%-m/%-d/%y %-H:%M %p"
+
+#: libnautilus-extensions/nautilus-file.c:2585
+msgid "0 items"
+msgstr "0 birim "
+
+#: libnautilus-extensions/nautilus-file.c:2585
+msgid "0 directories"
+msgstr "0 dizin"
+
+#: libnautilus-extensions/nautilus-file.c:2586
+msgid "0 files"
+msgstr "0 dosya"
+
+#: libnautilus-extensions/nautilus-file.c:2590
+msgid "1 item"
+msgstr "1 birim"
+
+#: libnautilus-extensions/nautilus-file.c:2590
+msgid "1 directory"
+msgstr "1 dizin"
+
+#: libnautilus-extensions/nautilus-file.c:2591
+msgid "1 file"
+msgstr "1 dosya"
+
+#: libnautilus-extensions/nautilus-file.c:2594
+#, c-format
+msgid "%u items"
+msgstr "%u birim"
+
+#: libnautilus-extensions/nautilus-file.c:2594
+#, c-format
+msgid "%u directories"
+msgstr "%u dizin"
+
+#: libnautilus-extensions/nautilus-file.c:2595
+#, c-format
+msgid "%u files"
+msgstr "%u dosya"
+
+#. This means no contents at all were readable
+#: libnautilus-extensions/nautilus-file.c:2917
+#: libnautilus-extensions/nautilus-file.c:2925
+msgid "xxx"
+msgstr "xxx"
+
+#: libnautilus-extensions/nautilus-file.c:2917
+#: libnautilus-extensions/nautilus-file.c:2927
+#: src/file-manager/fm-properties-window.c:850
+msgid "--"
+msgstr "--"
+
+#: libnautilus-extensions/nautilus-file.c:2929
+msgid "unknown type"
+msgstr "bilinmeyen tip"
+
+#: libnautilus-extensions/nautilus-file.c:2931
+msgid "unknown MIME type"
+msgstr "bilinmeyen MIME türü"
+
+#. Fallback, use for both unknown attributes and attributes
+#. * for which we have no more appropriate default.
+#.
+#: libnautilus-extensions/nautilus-file.c:2936
+msgid "unknown"
+msgstr "bilinmiyor"
+
+#: libnautilus-extensions/nautilus-file.c:2965
+msgid "program"
+msgstr "uygulama"
+
+#: libnautilus-extensions/nautilus-file.c:3331
+msgid " --"
+msgstr " --"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:132
+msgid "Directory Views"
+msgstr "Dizin bakýþlarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:133
+msgid "Directory Views Settings"
+msgstr "Dizin bakýþlarý ayarlarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:135
+msgid "Window Behavior"
+msgstr "Pencere heybeti"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:142
+msgid "Click Behavior"
+msgstr "Týklama heybeti"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:149
+msgid "Display"
+msgstr "Göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:165
+msgid "Sidebar Panels"
+msgstr "Taraf çubuklarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:166
+msgid "Sidebar Panels Description"
+msgstr "Taraf çubuklarý anlatýmý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:169
+msgid "Choose which panels should appear in the sidebar"
+msgstr "Taraf çubuðunda gösterilecek panelleri seç"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:206
+msgid "Appearance"
+msgstr "Görünüþ"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:207
+msgid "Appearance Settings"
+msgstr "Görünüþla alakalý ayarlar"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:209
+msgid "Smoother Graphics"
+msgstr "Daha düzgün resimler"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:216
+msgid "Fonts"
+msgstr "Yazý tipleri"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:222
+msgid "Views"
+msgstr "Bakýþlar"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:246
+msgid "Speed Tradeoffs"
+msgstr "Hýzlamalar"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:247
+msgid "Speed Tradeoffs Settings"
+msgstr "Hizlandýrma ayarlarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:249
+msgid "Show Text in Icons"
+msgstr "Simgelerde metni göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:256
+msgid "Show Thumbnails for Image Files"
+msgstr "Resim dosyalarý için týrnak resimleri göster"
+
+#. FIXME: This title phrase needs improvement.
+#: libnautilus-extensions/nautilus-global-preferences.c:264
+msgid "Make Directory Appearance Details Public"
+msgstr "Dizin görünümünün ince bilgileri umumi yap"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:277
+msgid "Search Settings"
+msgstr "Arama ayarlarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:279
+msgid "Search Complexity Options"
+msgstr "Arama seçenekleri"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:285
+msgid "Search Tradeoffs"
+msgstr "Arama hýzlandýrmalarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:293
+msgid "Search Locations"
+msgstr "Arama mekaný"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:303
+msgid "Navigation"
+msgstr "Gezme"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:304
+msgid "Navigation Settings"
+msgstr "Gezme ayarlarý"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:306
+msgid "Home Location"
+msgstr "Bark mekaný"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:581
+msgid "always"
+msgstr "daima"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:582
+msgid "Always"
+msgstr "Daima"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:586
+msgid "local only"
+msgstr "sadece yerel"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:587
+msgid "Local Files Only"
+msgstr "Sadece yerel dosyalarda"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:591
+msgid "never"
+msgstr "kat'iyyen"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:592
+msgid "Never"
+msgstr "Kat'iyyen"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:622
+msgid "Open each item in a new window"
+msgstr "Her seçili birimi yeni bir pencerede aç"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:629
+msgid "Click policy"
+msgstr "Týklama heybeti"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:635
+msgid "single"
+msgstr "tek týklama"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:636
+msgid "Activate items with a single click"
+msgstr "Birimleri tek týklamayla seç"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:640
+msgid "double"
+msgstr "çifttýklama"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:641
+msgid "Activate items with a double click"
+msgstr "Birimleri çifttýklamayla seç"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:646
+msgid "Display text in icons"
+msgstr "Simgelerde metinleri göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:652
+msgid "Show thumbnails for image files"
+msgstr "Resim dosyalarý için týrnak resimleri göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:658
+msgid "Read and write metadata in each directory"
+msgstr "Meta bilgilerini her dizinde oku ve yaz"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:668
+msgid "Use smoother (but slower) graphics"
+msgstr "Daha düzgün (fakat daha yavaþ) resimleri kullan"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:674
+msgid "current theme"
+msgstr "geçerli görünüm"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:680
+msgid "Font family used to display file names"
+msgstr "Dosya adlarýnda kullanýlan yazý tipi ailesi"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:687
+msgid "Display tool bar"
+msgstr "Araç çubuðunu göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:693
+msgid "Display location bar"
+msgstr "Mekan çubuðunu göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:699
+msgid "Display status bar"
+msgstr "Durum çubuðunu göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:705
+msgid "Display Sidebar"
+msgstr "Taraf çubuðunu göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:713
+msgid "Always do slow, complete search"
+msgstr "Daima yavaþ, ama ince ince ara"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:720
+msgid "search type to do by default"
+msgstr "önayarlý arama tipi"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:726
+msgid "search by text"
+msgstr "Metinden ara"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:727
+msgid "Search for files by text only"
+msgstr "Sadece metne göre ara"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:731
+msgid "search by text and properties"
+msgstr "metin ve özelliklere göre ara"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:732
+msgid "Search for files by text and by their properties"
+msgstr "Dosyalarý metin ve özelliklere göre ara"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:737
+msgid "Search Web Location"
+msgstr "Web'i arama mekaný"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:744
+msgid "Show hidden files"
+msgstr "Gizli dosyalarý göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:750
+msgid "Show special flags in Properties window"
+msgstr "Özellikler penceresinde özel iþaretleri göster"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:756
+msgid "Can add Content"
+msgstr "Eklenebilir içerik"
+
+#: libnautilus-extensions/nautilus-global-preferences.c:763
+msgid "Sidebar Width"
+msgstr "Taraf çubuðu eni"
+
+#: libnautilus-extensions/nautilus-icon-canvas-item.c:704
+msgid " -_,;.?/&"
+msgstr " -_,;.?/&"
+
+#: libnautilus-extensions/nautilus-icon-dnd.c:690
+msgid ""
+"This directory uses automatic layout. Do you want to switch to manual layout "
+"and leave this item where you dropped it? This will clobber the stored "
+"manual layout."
+msgstr ""
+"Bu dizin otomatik düzenlemeyle çalýþýyor. Bu birimi taþýdýdýn yere býrakýp "
+"ve elle düzenlemeye geçmek ister misin? Bu kaydedilmiþ elle düzenlemeyi "
+"bozacaktýr."
+
+#: libnautilus-extensions/nautilus-icon-dnd.c:694
+msgid ""
+"This directory uses automatic layout. Do you want to switch to manual layout "
+"and leave these items where you dropped them? This will clobber the stored "
+"manual layout."
+msgstr ""
+"Bu dizin otomatik düzenlemeyle çalýþýyor. Bu birimleri taþýdýdýn yere "
+"býrakýp ve elle düzenlemeye geçmek ister misin? Bu kaydedilmiþ elle "
+"düzenlemeyi bozacaktýr."
+
+#: libnautilus-extensions/nautilus-icon-dnd.c:700
+msgid ""
+"This directory uses automatic layout. Do you want to switch to manual layout "
+"and leave this item where you dropped it?"
+msgstr ""
+"Bu dizin otomatik düzenlemeyle çalýþýyor. Bu birimi taþýdýdýn yere býrakýp "
+"ve elle düzenlemeye geçmek ister misin?"
+
+#: libnautilus-extensions/nautilus-icon-dnd.c:703
+msgid ""
+"This directory uses automatic layout. Do you want to switch to manual layout "
+"and leave these items where you dropped them?"
+msgstr ""
+"Bu dizin otomatik düzenlemeyle çalýþýyor. Bu birimleri taþýdýdýn yere "
+"býrakýp ve elle düzenlemeye geçmek ister misin?"
+
+#: libnautilus-extensions/nautilus-icon-dnd.c:710
+msgid "Switch to Manual Layout?"
+msgstr "Elle düzenlemeye geçeyim mi?"
+
+#: libnautilus-extensions/nautilus-icon-dnd.c:711
+msgid "Switch"
+msgstr "Geç"
+
+#: libnautilus-extensions/nautilus-icon-text-item.c:1487
+#: src/file-manager/fm-icon-view.c:1105
+msgid "Rename"
+msgstr "Yeniden adlandýr"
+
+#: libnautilus-extensions/nautilus-icon-text-item.c:1488
+msgid "Undo Rename"
+msgstr "Yeniden adlandýrmayý gerit"
+
+#: libnautilus-extensions/nautilus-icon-text-item.c:1489
+msgid "Restore the old name"
+msgstr "Eski adýna geri dön"
+
+#: libnautilus-extensions/nautilus-icon-text-item.c:1490
+msgid "Redo Rename"
+msgstr "Yeniden adlandýrmayý yeniden yap"
+
+#: libnautilus-extensions/nautilus-icon-text-item.c:1491
+msgid "Restore the changed name"
+msgstr "Deðiþtirilmiþ adý yeniden yap"
+
+#: libnautilus-extensions/nautilus-preferences-dialog.c:201
+msgid "Prefs Box"
+msgstr "Ayarlar kutusu"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:188
+#: src/nautilus-window.c:606
+#, c-format
+msgid "View as %s"
+msgstr "%s olarak göster"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:216
+msgid "not in menu"
+msgstr "mönüde deðil"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:219
+msgid "in menu for this file"
+msgstr "bu dosya için mönülede bulunsun"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:222
+#: libnautilus-extensions/nautilus-program-chooser.c:225
+#, c-format
+msgid "in menu for \"%s\""
+msgstr "\"%s\" mönülerinde varolsun"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:228
+msgid "default for this file"
+msgstr "önayarlýsý olsun"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:231
+#: libnautilus-extensions/nautilus-program-chooser.c:234
+#, c-format
+msgid "default for \"%s\""
+msgstr "\"%s\" için önayarlýsý"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:261
+#, c-format
+msgid "Is not in the menu for \"%s\" items."
+msgstr "\"%s\" mönülerinde bulunmamasýn."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:264
+#, c-format
+msgid "Is in the menu for \"%s\"."
+msgstr "\"%s\" mönülerinde varolsun."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:267
+#, c-format
+msgid "Is in the menu for \"%s\" items."
+msgstr "Yekin \"%s\" için mönülerinde varolsun."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:270
+#, c-format
+msgid "Is in the menu for all \"%s\" items."
+msgstr "Yekin \"%s\" birimleri için mönülerde bulunsun."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:273
+#, c-format
+msgid "Is the default for \"%s\"."
+msgstr "\"%s\" için önayarlýsý olsun ."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:276
+#, c-format
+msgid "Is the default for \"%s\" items."
+msgstr "Yekin \"%s\" için önayarlýsý olsun ."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:279
+#, c-format
+msgid "Is the default for all \"%s\" items."
+msgstr "Yekin \"%s\" birimleri için önayarlýsý olsun ."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:981
+#, c-format
+msgid "Modify \"%s\""
+msgstr "\"%s\"'yi deðiþtir"
+
+#. Radio button for adding to short list for file type.
+#: libnautilus-extensions/nautilus-program-chooser.c:1005
+#, c-format
+msgid "Include in the menu for \"%s\" items"
+msgstr "Yekin \"%s\" birimleri için mönülerinde varolsun."
+
+#. Radio button for setting default for file type.
+#: libnautilus-extensions/nautilus-program-chooser.c:1012
+#, c-format
+msgid "Use as default for \"%s\" items"
+msgstr "Yekin \"%s\" için önayarlýsý olsun"
+
+#. Radio button for adding to short list for specific file.
+#: libnautilus-extensions/nautilus-program-chooser.c:1019
+#, c-format
+msgid "Include in the menu just for \"%s\""
+msgstr "Sadece \"%s\" mönülerinde içer"
+
+#. Radio button for setting default for specific file.
+#: libnautilus-extensions/nautilus-program-chooser.c:1025
+#, c-format
+msgid "Use as default just for \"%s\""
+msgstr "Sadece \"%s\" için önayarlýþi olsun"
+
+#. Radio button for not including program in short list for type or file.
+#: libnautilus-extensions/nautilus-program-chooser.c:1032
+#, c-format
+msgid "Don't include in the menu for \"%s\" items"
+msgstr "Yekin \"%s\" için mönülerde varolmasýn"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1196
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:42
+#: src/file-manager/fm-list-view.c:1581
+#: src/file-manager/fm-search-list-view.c:140
+#: src/nautilus-bookmarks-window.c:172
+msgid "Name"
+msgstr "Isim"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1199
+msgid "Status"
+msgstr "Durum"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1247
+msgid "Nautilus: Open with Other"
+msgstr "Nautilus: Farklý aç"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1248
+#, c-format
+msgid "Choose an application with which to open \"%s\"."
+msgstr "\"%s\"'yiaçacak baþka bir uygulamayý seç."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1252
+msgid "Nautilus: View as Other"
+msgstr "Nautilus: Farklý olarak göster"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1253
+#, c-format
+msgid "Choose a view for \"%s\"."
+msgstr "\"%s\" için bir göstergeyi belirle."
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1260
+msgid "Choose"
+msgstr "Seç"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1262
+msgid "Done"
+msgstr "Oldu"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1324
+msgid "Modify..."
+msgstr "Deðiþtir..."
+
+#. Framed area with button to launch mime type editing capplet.
+#: libnautilus-extensions/nautilus-program-chooser.c:1335
+msgid "File Types and Programs"
+msgstr "DOsya tipleri ve uygulamalar"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1344
+msgid "Go There"
+msgstr "Oraya git"
+
+#: libnautilus-extensions/nautilus-program-chooser.c:1353
+msgid ""
+"You can configure which programs are offered for which file types in the "
+"Gnome Control Center."
+msgstr ""
+"Gnome Ayarlar Merkezinde hangi dosya tipiyle hangi uygulamanýn baðlý "
+"olduðunubelirtebilirsin ."
+
+#. This application can't deal with this uri, because it
+#. * can only handle local files. Tell user. Some day we could offer
+#. * to copy it locally for the user, if we knew where to put it.
+#.
+#: libnautilus-extensions/nautilus-program-choosing.c:247
+#, c-format
+msgid ""
+"Sorry, %s can only open local files, and \"%s\" is remote. If you want to "
+"open it with %s, make a local copy first."
+msgstr ""
+"Maalessef %s sadece yerel dosyalarý açabilir ve \"%s\" uzaktadýr.%s ile o "
+"dosyayý açmak istersen, önceden yerel bir kopya yarat."
+
+#: libnautilus-extensions/nautilus-program-choosing.c:252
+msgid "Can't open remote file"
+msgstr "Uzaktaki dosyayý açamadým"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:43
+msgid "Content"
+msgstr "Içerik"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:44
+#: src/file-manager/fm-list-view.c:1593
+#: src/file-manager/fm-search-list-view.c:152
+msgid "Type"
+msgstr "Tip"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:45
+msgid "Stored"
+msgstr "Kaydedilmiþ"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:46
+#: src/file-manager/fm-list-view.c:1587
+#: src/file-manager/fm-search-list-view.c:146
+msgid "Size"
+msgstr "Boyut"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:47
+msgid "With Emblem"
+msgstr "Rozeti"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:48
+msgid "Last Modified"
+msgstr "Son deðiþimi"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:49
+msgid "Owned By"
+msgstr "Iyesi"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:55
+msgid "contains"
+msgstr "içeriði"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:56
+msgid "starts with"
+msgstr "baþý"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:57
+msgid "ends with"
+msgstr "sonu"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:58
+msgid "matches glob"
+msgstr "glob'a uyan"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:59
+msgid "matches regexp"
+msgstr "erkan-ý tabire uyan"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:64
+msgid "includes"
+msgstr "içeriri"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:65
+msgid "does not include"
+msgstr "içermezi"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:71
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:86
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:141
+msgid "is"
+msgstr " = "
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:72
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:142
+msgid "is not"
+msgstr " != "
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:77
+msgid "regular file"
+msgstr "vasat dosya"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:78
+msgid "text file"
+msgstr "metin dosyasý"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:79
+msgid "application"
+msgstr "Uygulama"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:80
+msgid "directory"
+msgstr "dizin"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:81
+msgid "music"
+msgstr "müzik"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:91
+msgid "on this computer"
+msgstr "bu bilgisayarda"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:92
+msgid "in my vault"
+msgstr "benim gizemde"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:97
+msgid "larger than"
+msgstr " > "
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:98
+msgid "smaller than"
+msgstr " < "
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:103
+msgid "1 KB"
+msgstr "1 KB"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:104
+msgid "10 KB"
+msgstr "10 KB"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:105
+msgid "100 KB"
+msgstr "100 KB"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:106
+msgid "1 MB"
+msgstr "1 MB"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:107
+msgid "10 MB"
+msgstr "10 MB"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:108
+msgid "100 MB"
+msgstr "100 MB"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:115
+msgid "marked with"
+msgstr "ile iþaretle"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:116
+msgid "not marked with"
+msgstr "ile iþaretlenmemiþ"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:128
+msgid "after"
+msgstr "sonra"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:129
+msgid "before"
+msgstr "önce"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:134
+msgid "today"
+msgstr "bugün"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:135
+msgid "this week"
+msgstr "bu hafta"
+
+#: libnautilus-extensions/nautilus-search-bar-criterion.c:136
+msgid "this month"
+msgstr "bu ay"
+
+#: libnautilus-extensions/nautilus-stock-dialogs.c:409
+msgid "Details"
+msgstr "Ince iþler"
+
+#: libnautilus-extensions/nautilus-undo-signal-handlers.c:174
+msgid "Edit"
+msgstr "Deðiþtir"
+
+#: libnautilus-extensions/nautilus-undo-signal-handlers.c:175
+msgid "Undo Edit"
+msgstr "Deðiþimi gerit"
+
+#: libnautilus-extensions/nautilus-undo-signal-handlers.c:176
+msgid "Undo the edit"
+msgstr "Deðiþimi geriye al"
+
+#: libnautilus-extensions/nautilus-undo-signal-handlers.c:177
+msgid "Redo Edit"
+msgstr "Deðiþimi yenile"
+
+#: libnautilus-extensions/nautilus-undo-signal-handlers.c:178
+msgid "Redo the edit"
+msgstr "Deðiþimi yeniden yap"
+
+#: libnautilus/nautilus-clipboard.c:121
+msgid "_Cut"
+msgstr "_Kes"
+
+#: libnautilus/nautilus-clipboard.c:122
+msgid "Remove selected text from selection"
+msgstr "Seçili metni seçili bölgeden sil"
+
+#: libnautilus/nautilus-clipboard.c:126
+msgid "_Copy"
+msgstr "K_opyala"
+
+#: libnautilus/nautilus-clipboard.c:127
+msgid "Copy selected text to the clipboard"
+msgstr "Seçili metni arabelleðe kopyala"
+
+#: libnautilus/nautilus-clipboard.c:131
+msgid "_Paste"
+msgstr "_Yapýþtýr"
+
+#: libnautilus/nautilus-clipboard.c:132
+msgid "Paste text from clipboard into text box"
+msgstr "Arabelleklteki metni metin kutusunu yapýþtýr"
+
+#: libnautilus/nautilus-clipboard.c:136
+msgid "_Clear"
+msgstr "_Sil"
+
+#: libnautilus/nautilus-clipboard.c:137
+msgid "Clear the current selection"
+msgstr "Geçerli seçimi sil"
+
+#: src/file-manager/dfos-corba.c:112
+#, c-format
+msgid "Unknown XferOverwriteMode %d"
+msgstr "Tanýnmayan XferOverwriteMode %d"
+
+#: src/file-manager/dfos-corba.c:126
+#, c-format
+msgid "Unknown XferErrorMode %d"
+msgstr "Tanýnmayan XferErrorMode %d"
+
+#: src/file-manager/dfos-xfer.c:174
+msgid "From:"
+msgstr "Kaynak :"
+
+#: src/file-manager/dfos-xfer.c:188
+msgid "To:"
+msgstr "Hedef :"
+
+#: src/file-manager/dfos-xfer.c:342
+#, c-format
+msgid ""
+"Error while %s \"%s\".\n"
+"%s. Would you like to continue?"
+msgstr ""
+"\"%2$s\"'i %1$s ederken hata oldu.\n"
+"%3$s. Devam etmek ister misin ?"
+
+#: src/file-manager/dfos-xfer.c:351 src/file-manager/dfos-xfer.c:371
+msgid "File copy error"
+msgstr "Dosya kopyalama hatasý"
+
+#: src/file-manager/dfos-xfer.c:352 src/file-manager/dfos-xfer.c:372
+#: src/file-manager/dfos-xfer.c:419 src/file-manager/dfos-xfer.c:430
+msgid "Skip"
+msgstr "Atla"
+
+#: src/file-manager/dfos-xfer.c:364
+#, c-format
+msgid ""
+"Error \"%s\" copying file %s.\n"
+"Would you like to continue?"
+msgstr ""
+"Hata \"%s\", %s'yi kopyalarken oluþtu.\n"
+"Devam etmek ister misin ?"
+
+#: src/file-manager/dfos-xfer.c:372
+msgid "Retry"
+msgstr "Yeniden dene"
+
+#: src/file-manager/dfos-xfer.c:407
+#, c-format
+msgid ""
+"File %s already exists.\n"
+"Would you like to replace it?"
+msgstr ""
+"%s zaten varolan bir dosya .\n"
+"O'nu deðiþtriyim mi ?"
+
+#: src/file-manager/dfos-xfer.c:418 src/file-manager/dfos-xfer.c:429
+msgid "File copy conflict"
+msgstr "Dosya kopyalama çekiþmesi"
+
+#: src/file-manager/dfos-xfer.c:419 src/file-manager/dfos-xfer.c:430
+msgid "Replace"
+msgstr "Üstüne yaz"
+
+#: src/file-manager/dfos-xfer.c:430
+msgid "Replace All"
+msgstr "Hepsinin üstüne yaz"
+
+#: src/file-manager/dfos-xfer.c:526 src/file-manager/dfos-xfer.c:859
+#, c-format
+msgid "Unknown GnomeVFSXferProgressStatus %d"
+msgstr "Tanýnmayan GnomeVFSXferProgressStatus %d"
+
+#: src/file-manager/dfos-xfer.c:591
+#, c-format
+msgid ""
+"The transfer between\n"
+"%s\n"
+"and\n"
+"%s\n"
+"could not be started:\n"
+"%s"
+msgstr ""
+"%s ile \n"
+"%s\n"
+"arasýndaki\n"
+"transfer\n"
+"baþlatýlamadý :\n"
+"%s"
+
+#: src/file-manager/dfos-xfer.c:700
+msgid "Moving files"
+msgstr "Dosyalarý taþýyorum"
+
+#: src/file-manager/dfos-xfer.c:701
+msgid "moved"
+msgstr "taþýndý"
+
+#: src/file-manager/dfos-xfer.c:702 src/file-manager/dfos-xfer.c:963
+msgid "Moving"
+msgstr "Taþýnýyor"
+
+#: src/file-manager/dfos-xfer.c:703
+msgid "Preparing To Move..."
+msgstr "Taþýmayý hazýrlýyorum ..."
+
+#: src/file-manager/dfos-xfer.c:704
+msgid "Finishing Move..."
+msgstr "Taþýmayý bitiriyorum ..."
+
+#: src/file-manager/dfos-xfer.c:713
+msgid "Creating a link to files"
+msgstr "Dosyalara bad kuruyorum"
+
+#: src/file-manager/dfos-xfer.c:714
+msgid "linked"
+msgstr "baðlý"
+
+#: src/file-manager/dfos-xfer.c:715
+msgid "linking"
+msgstr "baðlanýyor"
+
+#: src/file-manager/dfos-xfer.c:716
+msgid "Preparing to Create Links..."
+msgstr "Baðlarý yaratmaya hazýrlanýyorum ..."
+
+#: src/file-manager/dfos-xfer.c:717
+msgid "Finishing linking..."
+msgstr "Baðlamayý bitiriyorum ..."
+
+#: src/file-manager/dfos-xfer.c:723
+msgid "Copying files"
+msgstr "Dosyalarý kopyalýyorum"
+
+#: src/file-manager/dfos-xfer.c:724
+msgid "copied"
+msgstr "kopyalandý"
+
+#: src/file-manager/dfos-xfer.c:725
+msgid "Copying"
+msgstr "Kopyalanýyor"
+
+#: src/file-manager/dfos-xfer.c:726
+msgid "Preparing To Copy..."
+msgstr "Kopyalamayý hazýrlýyorum ..."
+
+#: src/file-manager/dfos-xfer.c:744
+msgid "You cannot copy items into the Trash."
+msgstr "Hiç bir birimi çöp kutusuna kopyalayamazþin."
+
+#: src/file-manager/dfos-xfer.c:745
+msgid "Error copying"
+msgstr "Kopyalanýrken hata oldu"
+
+#: src/file-manager/dfos-xfer.c:746 src/file-manager/dfos-xfer.c:765
+#: src/file-manager/dfos-xfer.c:781 src/file-manager/dfos-xfer.c:924
+#: src/file-manager/dfos-xfer.c:934
+msgid "OK"
+msgstr "Oldu"
+
+#: src/file-manager/dfos-xfer.c:762
+msgid "You cannot move the Trash."
+msgstr "Çöp kutusunu taþýyamazsýn ."
+
+#: src/file-manager/dfos-xfer.c:763
+msgid "You cannot copy the Trash."
+msgstr "Çöp kutusunu kopyalayamazsýn ."
+
+#: src/file-manager/dfos-xfer.c:764 src/file-manager/dfos-xfer.c:780
+#: src/file-manager/dfos-xfer.c:923 src/file-manager/dfos-xfer.c:933
+msgid "Error moving to Trash"
+msgstr "Çöp kutusuna taþýnýrken hata oldu ."
+
+#: src/file-manager/dfos-xfer.c:778
+msgid "You cannot move an item into itself."
+msgstr "Bir birimi kendisine taþýyamazsýn ."
+
+#: src/file-manager/dfos-xfer.c:779
+msgid "You cannot copy an item into itself."
+msgstr "Bir birime kendisine kopyalayamazsýn ."
+
+#: src/file-manager/dfos-xfer.c:922
+msgid "You cannot throw away the Trash."
+msgstr "Çöp kutusunu atamazsýn ."
+
+#: src/file-manager/dfos-xfer.c:929
+#, c-format
+msgid "You cannot throw \"%s\" into the Trash."
+msgstr "\"%s\"'yi çöpe atamazsýn ."
+
+#: src/file-manager/dfos-xfer.c:961
+msgid "Moving files to the Trash"
+msgstr "Dosyalarý çöp kutusuna taþýyorum"
+
+#: src/file-manager/dfos-xfer.c:962
+msgid "thrown out"
+msgstr "dýþarý atýldý"
+
+#: src/file-manager/dfos-xfer.c:964
+msgid "Preparing to Move to Trash..."
+msgstr "Çöp kutusuna taþýmaya hazýrlanýyorum ..."
+
+#: src/file-manager/dfos-xfer.c:1006
+msgid "Deleting files"
+msgstr "Dosyalarý siliyorum"
+
+#: src/file-manager/dfos-xfer.c:1007 src/file-manager/dfos-xfer.c:1057
+msgid "deleted"
+msgstr "silindi"
+
+#: src/file-manager/dfos-xfer.c:1008 src/file-manager/dfos-xfer.c:1058
+msgid "Deleting"
+msgstr "Siliyorum"
+
+#: src/file-manager/dfos-xfer.c:1009
+msgid "Preparing to Delete files..."
+msgstr "Dosyalarý silmeye hazýrlanýyorum ..."
+
+#: src/file-manager/dfos-xfer.c:1056
+msgid "Emptying the Trash"
+msgstr "Çöp kutusunu boþaltýyorum"
+
+#: src/file-manager/dfos-xfer.c:1059
+msgid "Preparing to Empty the Trash..."
+msgstr "Çöp kutusunu boþaltmaya hazýrlanýyorum ..."
+
+#: src/file-manager/fm-desktop-icon-view.c:222
+msgid "New Terminal"
+msgstr "Yeni komuta"
+
+#: src/file-manager/fm-desktop-icon-view.c:234
+msgid "Disks"
+msgstr "Diskler"
+
+#: src/file-manager/fm-directory-view.c:1015
+#, c-format
+msgid "\"%s\" selected"
+msgstr "\"%s\" seçili"
+
+#: src/file-manager/fm-directory-view.c:1017
+msgid "1 directory selected"
+msgstr "1 dizin seçili"
+
+#: src/file-manager/fm-directory-view.c:1020
+#, c-format
+msgid "%d directories selected"
+msgstr "%d dizin seçili"
+
+#: src/file-manager/fm-directory-view.c:1026
+msgid " (containing 0 items)"
+msgstr "( 0 birim içerir )"
+
+#: src/file-manager/fm-directory-view.c:1028
+msgid " (containing 1 item)"
+msgstr "( 1 birim içerir )"
+
+#: src/file-manager/fm-directory-view.c:1030
+#, c-format
+msgid " (containing %d items)"
+msgstr "( %d birim içerir )"
+
+#: src/file-manager/fm-directory-view.c:1041
+#, c-format
+msgid "\"%s\" selected (%s)"
+msgstr "\"%s\" seçili (%s)"
+
+#: src/file-manager/fm-directory-view.c:1045
+#, c-format
+msgid "%d items selected (%s)"
+msgstr "%d birim seçili (%s)"
+
+#: src/file-manager/fm-directory-view.c:1052
+#, c-format
+msgid "1 other item selected (%s)"
+msgstr "1 baþka birim seçili (%s)"
+
+#: src/file-manager/fm-directory-view.c:1055
+#, c-format
+msgid "%d other items selected (%s)"
+msgstr "%d baþka birim seçili (%s)"
+
+#: src/file-manager/fm-directory-view.c:1069
+#, c-format
+msgid "%s%s"
+msgstr "%s%s"
+
+#: src/file-manager/fm-directory-view.c:1073
+#, c-format
+msgid "%s%s, %s"
+msgstr "%s%s, %s"
+
+#: src/file-manager/fm-directory-view.c:1855
+#, c-format
+msgid "Are you sure you want to permanently remove item \"%s\"?"
+msgstr "\"%s\"'yi daimen silmekten emin misin ?"
+
+#: src/file-manager/fm-directory-view.c:1860
+#, c-format
+msgid "Are you sure you want to permanently remove the %d selected items?"
+msgstr "%d seçili birimleri daimen silmekten emin misin ?"
+
+#: src/file-manager/fm-directory-view.c:1864
+msgid "Deleting items"
+msgstr "Birimleri sil"
+
+#: src/file-manager/fm-directory-view.c:1865
+msgid "Delete"
+msgstr "Sil"
+
+#: src/file-manager/fm-directory-view.c:1865
+msgid "Cancel"
+msgstr "Iptal"
+
+#: src/file-manager/fm-directory-view.c:2114
+msgid "_Open"
+msgstr "_Aç"
+
+#: src/file-manager/fm-directory-view.c:2117
+msgid "Open With"
+msgstr "Farklý aç"
+
+#: src/file-manager/fm-directory-view.c:2120
+msgid "Other Application..."
+msgstr "Baþka uygulamayla aç ..."
+
+#: src/file-manager/fm-directory-view.c:2122
+msgid "Other Viewer..."
+msgstr "Baþka göstergeyle aç ..."
+
+#: src/file-manager/fm-directory-view.c:2126
+msgid "Open in _New Window"
+msgstr "_Yeni pencerede aç"
+
+#: src/file-manager/fm-directory-view.c:2128
+#, c-format
+msgid "Open in %d _New Windows"
+msgstr "%d yeni _pencerede aç"
+
+#: src/file-manager/fm-directory-view.c:2140
+#: src/file-manager/fm-directory-view.c:2257
+msgid "New Folder"
+msgstr "Yeni dizin"
+
+#: src/file-manager/fm-directory-view.c:2142
+msgid "_Delete..."
+msgstr "_Sil ..."
+
+#: src/file-manager/fm-directory-view.c:2145
+msgid "_Move to Trash"
+msgstr "Çö_pe taþý"
+
+#: src/file-manager/fm-directory-view.c:2148
+msgid "_Duplicate"
+msgstr "_Kopyala"
+
+#: src/file-manager/fm-directory-view.c:2151
+msgid "Show _Properties"
+msgstr "_Ayarlarý göster"
+
+#: src/file-manager/fm-directory-view.c:2154
+msgid "_Empty Trash"
+msgstr "Çöp kutusunu _boþalt"
+
+#: src/file-manager/fm-directory-view.c:2157 src/nautilus-window-menus.c:1153
+msgid "_Select All"
+msgstr "Hepsini seç"
+
+#: src/file-manager/fm-directory-view.c:2161
+msgid "R_emove Custom Images"
+msgstr "Özelleþtirilmiþ _resimleri sil"
+
+#: src/file-manager/fm-directory-view.c:2163
+msgid "R_emove Custom Image"
+msgstr "Özelleþtirilmiþ _resmi sil"
+
+#: src/file-manager/fm-directory-view.c:2167
+msgid "Reset _Background"
+msgstr "_Ardalaný gerit"
+
+#. FIXME bugzilla.eazel.com 1261:
+#. * Need to think clearly about what items to include here.
+#. * We want the list to be pretty short, but not degenerately short.
+#. * Zoom In and Out don't really seem to belong. Maybe "Show Properties"
+#. * (for the current location, not selection -- but would have to not
+#. * include this item when there's a selection)? Add Bookmark? (same issue).
+#.
+#: src/file-manager/fm-directory-view.c:2268
+msgid "Zoom In"
+msgstr "Yakýnlaþ"
+
+#: src/file-manager/fm-directory-view.c:2270
+msgid "Zoom Out"
+msgstr "Uzaklaþ"
+
+#: src/file-manager/fm-directory-view.c:2272
+msgid "Zoom to Default"
+msgstr "Önayarlý boyutu dön"
+
+#: src/file-manager/fm-directory-view.c:2403
+#: src/file-manager/fm-directory-view.c:2646
+#, c-format
+msgid "%s Viewer"
+msgstr "%s göstergesi"
+
+#: src/file-manager/fm-directory-view.c:2669
+msgid "Move all selected items to the Trash"
+msgstr "Yekin seçili birimleri çöp kutusuna taþý"
+
+#: src/file-manager/fm-directory-view.c:2678
+msgid "Delete all selected items"
+msgstr "Yekin seçili birimleri sil"
+
+#: src/file-manager/fm-directory-view.c:2700
+msgid "Choose a program with which to open the selected item"
+msgstr "Seçili birimi açacak uygulamayý seç"
+
+#: src/file-manager/fm-directory-view.c:2720
+msgid "Choose another application with which to open the selected item"
+msgstr "Seçili birimi açacak baþka bir uygulamayý seç"
+
+#: src/file-manager/fm-directory-view.c:2742
+msgid "Choose another viewer with which to view the selected item"
+msgstr "Seçili birimi gösterecek baþka bir göstergeyi seç"
+
+#: src/file-manager/fm-directory-view.c:2764
+msgid "Create a new folder in this window"
+msgstr "Bu pencerede yeni bir dizin yarat"
+
+#: src/file-manager/fm-directory-view.c:2772
+msgid "Open the selected item in this window"
+msgstr "Seçili birimi bu pencerede aç"
+
+#: src/file-manager/fm-directory-view.c:2780
+msgid "Open each selected item in a new window"
+msgstr "Herbir seçili birimi yeni bir pencerede aç"
+
+#: src/file-manager/fm-directory-view.c:2795
+msgid "View or modify the properties of the selected items"
+msgstr "Seçili birimlerin özelliklerini deðiþtir"
+
+#: src/file-manager/fm-directory-view.c:2806
+msgid "Duplicate all selected items"
+msgstr "Yekin seçili birimleri klonla"
+
+#: src/file-manager/fm-directory-view.c:2814
+msgid "Delete all items in the trash"
+msgstr "Çöp kutusundaki yekin birimleri sil"
+
+#: src/file-manager/fm-directory-view.c:2822
+msgid "Select all items in this window"
+msgstr "Bu penceredeki yekin birimleri seç"
+
+#: src/file-manager/fm-directory-view.c:2836
+msgid "Remove the custom image from each selected icon"
+msgstr "Her seçili simgeden özelleþtirilmiþ resmi sil"
+
+#: src/file-manager/fm-error-reporting.c:50
+#, c-format
+msgid ""
+"The name \"%s\" is already used in this directory.\n"
+"Please use a different name."
+msgstr ""
+"\"%s\" adý bu dizinde zaten kullanýlmakta.\n"
+"Lütfen baþka bir dosya ismini kullan."
+
+#: src/file-manager/fm-error-reporting.c:55
+#, c-format
+msgid "You do not have the permissions necessary to rename \"%s.\""
+msgstr ""
+"\"%s\"'yi yeniden adlandýrmak için gerekli eriþim haklarýna sahip deðilsin."
+
+#: src/file-manager/fm-error-reporting.c:64
+#, c-format
+msgid "Sorry, couldn't rename \"%s\" to \"%s\"."
+msgstr "Maalessef \"%s\"'nin adýný \"%s\"'ye deðiþtirmedim."
+
+#: src/file-manager/fm-error-reporting.c:85
+#, c-format
+msgid ""
+"You do not have the permissions necessary to change the group of \"%s\"."
+msgstr ""
+"\"%s\"'nin kitlesini deðiþtirmek için gerekli eriþim haklarýna sahip "
+"deðilsin ."
+
+#: src/file-manager/fm-error-reporting.c:93
+#, c-format
+msgid "Sorry, couldn't change the group of \"%s\"."
+msgstr "Maalassef \"%s\"'nin kitlesini deðiþtiremedim ."
+
+#: src/file-manager/fm-error-reporting.c:115
+#, c-format
+msgid "Sorry, couldn't change the owner of \"%s\"."
+msgstr "Maalassef \"%s\"'nin iyesini deðiþtiremedim ."
+
+#: src/file-manager/fm-error-reporting.c:137
+#, c-format
+msgid "Sorry, couldn't change the permissions of \"%s\"."
+msgstr "Maalassef \"%s\"'nin eriþim haklarýný deðiþtiremedim ."
+
+#: src/file-manager/fm-error-reporting.c:214
+#, c-format
+msgid "Renaming %s to %s."
+msgstr "%s'nin adý %s'ye deðiþtirildi ."
+
+#: src/file-manager/fm-error-reporting.c:226
+msgid "Cancel Rename?"
+msgstr "Yeniden adlandýrmayý iptal edeyim mi ?"
+
+#: src/file-manager/fm-icon-text-window.c:75
+msgid "size"
+msgstr "boyut"
+
+#: src/file-manager/fm-icon-text-window.c:76
+msgid "type"
+msgstr "tip"
+
+#: src/file-manager/fm-icon-text-window.c:77
+msgid "date modified"
+msgstr "deðiþtirim tarihi"
+
+#: src/file-manager/fm-icon-text-window.c:78
+msgid "date changed"
+msgstr "deðiþim tarihi"
+
+#: src/file-manager/fm-icon-text-window.c:79
+msgid "date accessed"
+msgstr "eriþim tarihi"
+
+#: src/file-manager/fm-icon-text-window.c:80
+msgid "owner"
+msgstr "iye"
+
+#: src/file-manager/fm-icon-text-window.c:81
+msgid "group"
+msgstr "kitle"
+
+#: src/file-manager/fm-icon-text-window.c:82
+msgid "permissions"
+msgstr "eriþim haklarý"
+
+#: src/file-manager/fm-icon-text-window.c:83
+msgid "octal permissions"
+msgstr "onaltýlý eriþim haklarý"
+
+#: src/file-manager/fm-icon-text-window.c:84
+msgid "MIME type"
+msgstr "MIME türü"
+
+#: src/file-manager/fm-icon-text-window.c:85
+msgid "none"
+msgstr "yok"
+
+#: src/file-manager/fm-icon-text-window.c:260
+msgid "Nautilus: Icon Captions"
+msgstr "Nautilus : Simge metni"
+
+#: src/file-manager/fm-icon-text-window.c:267
+msgid ""
+"Choose the order for information to appear beneath icon names. More "
+"information appears as you zoom in closer."
+msgstr ""
+"Bilgilerin gösterim sýrasýný belirle . Simgeleri giderek büyültüðün an , bu "
+"bilgilerden daha fazlasýný göreceksin ."
+
+#: src/file-manager/fm-icon-view.c:109
+msgid "Sort by _Name"
+msgstr "_Isme göre"
+
+#: src/file-manager/fm-icon-view.c:110
+msgid "Keep icons sorted by name in rows"
+msgstr "Simgeleri isimlerine göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:116
+msgid "Sort by _Size"
+msgstr "_Büyüklüðe göre"
+
+#: src/file-manager/fm-icon-view.c:117
+msgid "Keep icons sorted by size in rows"
+msgstr "Simgeleri büyüklüklerine göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:123
+msgid "Sort by _Type"
+msgstr "_Tipe göre"
+
+#: src/file-manager/fm-icon-view.c:124
+msgid "Keep icons sorted by type in rows"
+msgstr "Simgeleri tiplerine göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:130
+msgid "Sort by Modification _Date"
+msgstr "_Deðiþim tarihine göre"
+
+#: src/file-manager/fm-icon-view.c:131
+msgid "Keep icons sorted by modification date in rows"
+msgstr "Simgeleri deðiþim tarihlerine göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:137
+msgid "Sort by _Emblems"
+msgstr "_Rozetlere göre"
+
+#: src/file-manager/fm-icon-view.c:138
+msgid "Keep icons sorted by emblems in rows"
+msgstr "Simgeleri rozetlere göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:310
+msgid "_Stretch Icon"
+msgstr "_Simgeyle oyna"
+
+#: src/file-manager/fm-icon-view.c:318
+msgid "_Restore Icons to Unstretched Size"
+msgstr "I_konalarý vasat boyutlarýný getir"
+
+#: src/file-manager/fm-icon-view.c:320
+msgid "_Restore Icon to Unstretched Size"
+msgstr "S_imgeyi vasat boyutlarýný getir"
+
+#: src/file-manager/fm-icon-view.c:324
+msgid "_Icon Captions..."
+msgstr "_Simge metinleri ..."
+
+#. Modify file name. We only allow this on a single file selection.
+#: src/file-manager/fm-icon-view.c:328
+msgid "_Rename"
+msgstr "Ye_niden adlandýr"
+
+#: src/file-manager/fm-icon-view.c:1025
+msgid "Make the selected icon stretchable"
+msgstr "Seçili simgeyi oynanabilinir duruma getir"
+
+#: src/file-manager/fm-icon-view.c:1030
+msgid "Restore each selected icon to its original size"
+msgstr "Herbir seçili simgeyi vasat boyutunu gerit"
+
+#: src/file-manager/fm-icon-view.c:1039
+msgid "Choose which information appears beneath each icon's name"
+msgstr "Simgenin isminin yanýnda gözükecek bilgileri belirle"
+
+#: src/file-manager/fm-icon-view.c:1052
+msgid "_Layout"
+msgstr "_Düzenleme"
+
+#: src/file-manager/fm-icon-view.c:1060
+msgid "_Manual Layout"
+msgstr "_Elle düzenle"
+
+#: src/file-manager/fm-icon-view.c:1061
+msgid "Leave icons wherever they are dropped"
+msgstr "Simgeleri býrakýldýðý yerlerde býrak"
+
+#: src/file-manager/fm-icon-view.c:1082
+msgid "_Ascending"
+msgstr "_Yukarýya dönük"
+
+#: src/file-manager/fm-icon-view.c:1083
+msgid "Sort icons from \"smallest\" to \"largest\" according to sort criteria"
+msgstr "Simgeleri sýralama þeklini ufaktan büyüðe göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:1089
+msgid "Des_cending"
+msgstr "_Aþaða dönük"
+
+#: src/file-manager/fm-icon-view.c:1090
+msgid "Sort icons from \"largest\" to \"smallest\" according to sort criteria"
+msgstr "Simgeleri sýralama þeklini büyükten ufaða göre sýrala"
+
+#: src/file-manager/fm-icon-view.c:1106
+msgid "Rename selected item"
+msgstr "Seçili birimleri yeniden adlandýr"
+
+#: src/file-manager/fm-icon-view.c:1277
+#, c-format
+msgid "pointing at \"%s\""
+msgstr "\"%s\" gösteriliyor"
+
+#: src/file-manager/fm-list-view.c:1599
+#: src/file-manager/fm-search-list-view.c:158
+msgid "Date Modified"
+msgstr "Deðiþim tarihi"
+
+#: src/file-manager/fm-properties-window.c:410
+#, c-format
+msgid "Nautilus: %s Properties"
+msgstr "Nautilus : %s özellikleri"
+
+#: src/file-manager/fm-properties-window.c:542
+msgid "Cancel Group Change?"
+msgstr "Kitle deðiþimini iptal edeyim mi ?"
+
+#: src/file-manager/fm-properties-window.c:543
+msgid "Changing group"
+msgstr "Kitle deðiþtiriliyor"
+
+#: src/file-manager/fm-properties-window.c:687
+msgid "Cancel Owner Change?"
+msgstr "Iye deðiþimini iptal edeyim mi ?"
+
+#: src/file-manager/fm-properties-window.c:688
+msgid "Changing owner"
+msgstr "Iye deðiþtiriliyor"
+
+#: src/file-manager/fm-properties-window.c:844
+msgid "nothing"
+msgstr "hiçbir þey"
+
+#: src/file-manager/fm-properties-window.c:846
+msgid "unreadable"
+msgstr "okunamýyor"
+
+#: src/file-manager/fm-properties-window.c:856
+#, c-format
+msgid "1 item, with size %s"
+msgstr "1 birim, boyutu %s"
+
+#: src/file-manager/fm-properties-window.c:858
+#, c-format
+msgid "%d items, totalling %s"
+msgstr "%d birim, toplam boyut %s"
+
+#: src/file-manager/fm-properties-window.c:864
+msgid "(some contents unreadable)"
+msgstr "( bazý içerikler okunamadý )"
+
+#. Also set the title field here, with a trailing carriage return & space
+#. * if the value field has two lines. This is a hack to get the
+#. * "Contents:" title to line up with the first line of the 2-line value.
+#. * Maybe there's a better way to do this, but I couldn't think of one.
+#.
+#: src/file-manager/fm-properties-window.c:878
+msgid "Contents:"
+msgstr "Içerik :"
+
+#: src/file-manager/fm-properties-window.c:1031
+msgid "Basic"
+msgstr "Temel"
+
+#: src/file-manager/fm-properties-window.c:1092
+msgid "Where:"
+msgstr "Yer : "
+
+#: src/file-manager/fm-properties-window.c:1094
+msgid "Type:"
+msgstr "Tip : "
+
+#: src/file-manager/fm-properties-window.c:1100
+msgid "Size:"
+msgstr "Büyüklük : "
+
+#: src/file-manager/fm-properties-window.c:1103
+msgid "Modified:"
+msgstr "Deðiþim : "
+
+#: src/file-manager/fm-properties-window.c:1105
+msgid "Accessed:"
+msgstr "Eriþim :"
+
+#: src/file-manager/fm-properties-window.c:1108
+msgid "MIME type:"
+msgstr "MIME türü : "
+
+#: src/file-manager/fm-properties-window.c:1237
+msgid "Emblems"
+msgstr "Rozetler"
+
+#: src/file-manager/fm-properties-window.c:1470
+msgid "Special Flags:"
+msgstr "Özel birimler : "
+
+#: src/file-manager/fm-properties-window.c:1474
+msgid "Set User ID"
+msgstr "Kullanýcý numarasýný belirt"
+
+#: src/file-manager/fm-properties-window.c:1478
+msgid "Set Group ID"
+msgstr "Kitle numarasýný belirt"
+
+#: src/file-manager/fm-properties-window.c:1482
+msgid "Sticky"
+msgstr "Yapýþýk"
+
+#: src/file-manager/fm-properties-window.c:1493
+msgid "Permissions"
+msgstr "Eriþim haklarý"
+
+#: src/file-manager/fm-properties-window.c:1499
+msgid "You are not the owner, so you can't change these permissions."
+msgstr "Iyesi olmadýðýn için, eriþim haklarýný deðiþtiremezsin."
+
+#: src/file-manager/fm-properties-window.c:1526
+msgid "File Owner:"
+msgstr "Dosya iyesi : "
+
+#: src/file-manager/fm-properties-window.c:1536
+msgid "File Group:"
+msgstr "Dosya kitlesi : "
+
+#: src/file-manager/fm-properties-window.c:1554
+msgid "Owner:"
+msgstr "Iye :"
+
+#: src/file-manager/fm-properties-window.c:1557
+msgid "Group:"
+msgstr "Kitle :"
+
+#: src/file-manager/fm-properties-window.c:1560
+msgid "Others:"
+msgstr "Öbürküler : "
+
+#: src/file-manager/fm-properties-window.c:1563
+msgid "Text View:"
+msgstr "Metin bakýþý :"
+
+#: src/file-manager/fm-properties-window.c:1566
+msgid "Number View:"
+msgstr "Sayýsal bakýþ :"
+
+#: src/file-manager/fm-properties-window.c:1569
+msgid "Last Changed:"
+msgstr "Son deðiþim : "
+
+#: src/file-manager/fm-properties-window.c:1573
+msgid "Read"
+msgstr "Oku"
+
+#: src/file-manager/fm-properties-window.c:1577
+msgid "Write"
+msgstr "Yaz"
+
+#: src/file-manager/fm-properties-window.c:1581
+msgid "Execute"
+msgstr "Çalýþtýr"
+
+#: src/file-manager/fm-properties-window.c:1641
+#, c-format
+msgid "The permissions of \"%s\" could not be determined."
+msgstr "\"%s\"'nin eriþim haklarý belirlenemedi."
+
+#: src/file-manager/fm-search-list-view.c:134
+msgid "Directory"
+msgstr "Dizin"
+
+#. Can't register myself due to trouble locating the
+#. * nautilus.oafinfo file. This has happened when you
+#. * launch Nautilus with an LD_LIBRARY_PATH that
+#. * doesn't include the directory containg the oaf
+#. * library. It could also happen if the
+#. * nautilus.oafinfo file was not present for some
+#. * reason. Sometimes killing oafd and gconfd fixes
+#. * this problem but we don't exactly understand why,
+#. * since neither of the above causes explain it.
+#.
+#: src/nautilus-application.c:349
+msgid ""
+"Nautilus can't be used now. Rebooting the computer or installing Nautilus "
+"again may fix the problem."
+msgstr ""
+"Nautilus'u þimdi kullanýlýnamaz. Bilgisayarý yeniden baþlatýp, Nautilus'u "
+"yeniden yüklemekle bu sorunu çözebilir ."
+
+#. FIXME: The guesses and stuff here are lame.
+#: src/nautilus-application.c:353
+msgid ""
+"Nautilus can't be used now. Rebooting the computer or installing Nautilus "
+"again may fix the problem.\n"
+"\n"
+"OAF couldn't locate the nautilus.oafinfo file. One cause of this seems to be "
+"an LD_LIBRARY_PATH that does not include the oaf library's directory. "
+"Another possible cause would be bad install with a missing nautilus.oafinfo "
+"file.\n"
+"\n"
+"Sometimes killing oafd and gconfd fixes the problem, but we don't know why.\n"
+"\n"
+"We need a much less confusing message here for Nautilus 1.0."
+msgstr ""
+"Nautilus þimdilik kullanýlanamaz. Bilgisayarý yeniden baþlatmak yada "
+"Nautilus'u yeniden yüklemek sorunu çözebilir. \n"
+"\n"
+"OAF nautilus.oafinfo dosyasýnýbulamadý . OAF kütüphanelerinin dizininin "
+"LD_LIBRARY_PATH verisinde varolmamasý yada yüklemede oluþan bir hatadan "
+"dolayý eksik bir nautilus.oafinfo dosyasý sebep olabilir . \n"
+"\n"
+"Bazen oafd ve gconfd'yi öldürmek sorunu anlaþýlýnamaz bir nedenle çözüyor. \n"
+"\n"
+"Buraya 1.0 nesli için iþe yarar bir hata iletisi lazým ."
+
+#. Some misc. error (can never happen with current
+#. * version of OAF). Show dialog and terminate the
+#. * program.
+#.
+#. FIXME: Looks like this does happen with the
+#. * current OAF. I guess I read the code
+#. * wrong. Need to figure out when and make a
+#. * good message.
+#.
+#: src/nautilus-application.c:378 src/nautilus-application.c:396
+msgid "Nautilus can't be used now, due to an unexpected error."
+msgstr "Nautilus þimdi beklenmedik bir hatadan dolayý kullanýlýnamaz ."
+
+#: src/nautilus-application.c:379
+msgid ""
+"Nautilus can't be used now, due to an unexpected error from OAF when "
+"attempting to register the file manager view server."
+msgstr ""
+"Nautilus þimdi beklenmedik bir OAF hatasýndan dolayý kullanýlýnamaz .OAF'a "
+"dosya yöneticisi bakýþlar sunucusunu baþlatýrken hata oldu ."
+
+#: src/nautilus-application.c:397
+msgid ""
+"Nautilus can't be used now, due to an unexpected error from OAF when "
+"attempting to locate the factory."
+msgstr ""
+"Nautilus þimdilik kullanýlýnamaz. Zira OAF'da beklenmedik bir hata oluþtu. "
+"Parçalar kervanýný bulamadým."
+
+#: src/nautilus-application.c:549
+msgid ""
+"You are running Nautilus as root.\n"
+"\n"
+"As root, you can damage your system if you are not careful, and\n"
+"Nautilus will not stop you from doing it."
+msgstr ""
+"Nautilus'u 'root' olarak çalýþtýrýyorsun.\n"
+"\n"
+"'Root' olarak sistemi dikkatsiz davranýþlarla virane hale getirebilirsin\n"
+"ve Nautilus bu meylimlerine engel olmayacaktýr."
+
+#: src/nautilus-application.c:614
+msgid ""
+"Existence of this file indicates that the Nautilus configuration wizard\n"
+"has been presented.\n"
+"\n"
+"You can manually erase this file to present the wizard again.\n"
+"\n"
+msgstr ""
+"Bu dosyanýn varoluþu Nautilus'un ayarlama sihirbazýný çalýþtýrmýþ\n"
+"olduðunu gösteriyor.\n"
+"\n"
+"Sihirbazý yeniden ortaya çýkarmak için bu dosyayý silebilirsin.\n"
+"\n"
+
+#: src/nautilus-bookmarks-window.c:136
+msgid "Nautilus: Bookmarks"
+msgstr "Nautilus : Niþanlar"
+
+#: src/nautilus-bookmarks-window.c:185
+msgid "Location"
+msgstr "Mekan"
+
+#: src/nautilus-bookmarks-window.c:198 src/nautilus-window-menus.c:588
+msgid "Remove"
+msgstr "Sil"
+
+#: src/nautilus-bookmarks-window.c:203
+msgid "Include built-in bookmarks in menu"
+msgstr "Önayarlý baðlarý mönüde içer"
+
+#. allocate a descriptive label
+#: src/nautilus-first-time-druid.c:161
+msgid ""
+"User levels provide a way to adjust the software to your level of technical "
+"expertise.  Pick an initial level that you feel comfortable with; you can "
+"always change it later."
+msgstr ""
+"Kullanýcý seviyeleri uygulamayý senin bilgi ve tecrübe seviyesine göre "
+"ayarlamanýnbir yoludur. Sana uygun gözüken ve baþlamak istediðin seviyeyi "
+"seç; bu ayarý sonradan istediðin zaman deðiþtirebilirsin."
+
+#: src/nautilus-first-time-druid.c:167
+msgid "User Levels"
+msgstr "Kullanýcý seviyeleri"
+
+#: src/nautilus-first-time-druid.c:184
+msgid "Novice"
+msgstr "Yeni kullanýcý"
+
+#: src/nautilus-first-time-druid.c:185
+msgid "Intermediate"
+msgstr "Normal"
+
+#: src/nautilus-first-time-druid.c:186
+msgid "Hacker"
+msgstr "Bilgin"
+
+#: src/nautilus-first-time-druid.c:192
+msgid "For beginning users"
+msgstr "Ilk kullanýcýlar için"
+
+#: src/nautilus-first-time-druid.c:193
+msgid "For non-technical users"
+msgstr "Normal, teknik bilgisiz kullanýcý icýn"
+
+#: src/nautilus-first-time-druid.c:194
+msgid "For expert users"
+msgstr "Bilgin kullanýcýlar için"
+
+#. allocate a descriptive label
+#: src/nautilus-first-time-druid.c:224
+msgid ""
+"Eazel offers a growing number of services to help you install and maintain "
+"new software and manage your files across the network.  If you want to find "
+"out more about Eazel services, just press the 'Next' button. "
+msgstr ""
+"Eazel gündittikca sayýsý büyüyen hizmetleri sunmakta. Bu hizmetler sayesinde "
+"yeni uygulamalarý yükleyip, yönetebilirsin. Tabii ki, aðlar üzerinde "
+"de.Eazel hizmetleri hakkýnda daha fazla bilgi edinmek istersen, 'Ileri''ye "
+"bas. "
+
+#: src/nautilus-first-time-druid.c:230 src/nautilus-window-toolbars.c:161
+msgid "Eazel Services"
+msgstr "Eazel Hizmetleri"
+
+#: src/nautilus-first-time-druid.c:238
+msgid "I want to learn more about Eazel services."
+msgstr "Eazel hizmetleri hakkýnda daha fazla bilgi edinmek isterim."
+
+#: src/nautilus-first-time-druid.c:239
+msgid "I want to sign up for Eazel services now."
+msgstr "Eazel hizmetleri için kayýt olmak istiyorum."
+
+#: src/nautilus-first-time-druid.c:240
+#, fuzzy
+msgid "I don't want to learn about Eazel services at this time."
+msgstr "Eazel hizmetleri hakkýnda þimdilik hiç bir þey öðrenmek istemiyorum."
+
+#: src/nautilus-first-time-druid.c:272
+msgid "Nautilus: Initial Preferences"
+msgstr "Nautilus : Ilk ayarlar"
+
+#. set up the initial page
+#: src/nautilus-first-time-druid.c:286
+msgid "Welcome to Nautilus!"
+msgstr "Nautilus'a hoþgeldin !"
+
+#: src/nautilus-first-time-druid.c:287
+msgid ""
+"Welcome to Nautilus!\n"
+"\n"
+"Since this is the first time that you've launched\n"
+"Nautilus, we'd like to ask you a few questions\n"
+"to help personalize it for your use.\n"
+"\n"
+"Press the next button to continue."
+msgstr ""
+"Nautilus'a hoþgeldin !\n"
+"\n"
+"Bu Nautilus'u ilk çalýþtýrman olduðu için\n"
+"sana bazý sorularý sorup, Nautilus'u\n"
+"isteðin tip çalýþtýrmaný saðlayacaðýz.\n"
+"\n"
+"Devam etmek için \"Ileri\"'ye bas."
+
+#. set up the final page
+#: src/nautilus-first-time-druid.c:290
+msgid "Finished"
+msgstr "Bitirildi"
+
+#: src/nautilus-first-time-druid.c:291
+msgid ""
+"Click to finish button to launch Nautilus.\n"
+"\n"
+"We hope that you enjoying using it!"
+msgstr ""
+"Bitir basmasýyla Nautilus'u baþlatabilirsin.\n"
+"\n"
+"Nautilus'u kullanmak hoþuna gitmesi dileðiyle!"
+
+#. set the window title
+#: src/nautilus-link-set-window.c:185
+msgid "Link sets"
+msgstr "Bað takýmlarý"
+
+#. add a descriptive label
+#: src/nautilus-link-set-window.c:197
+msgid "Add or remove sets of links by clicking on the checkboxes below."
+msgstr ""
+"Alttaki seçim basmalardaki seçiminle bað takýmlarýný ekleyip, silebilirsin"
+
+#: src/nautilus-location-bar.c:127
+#, c-format
+msgid "Do you want to view these %d locations in separate windows?"
+msgstr "Bu %d mekanlarý hep deðiþik pencerelerde görmek istiyor musun ?"
+
+#: src/nautilus-location-bar.c:133
+msgid "View in Multiple Windows?"
+msgstr "Çoklu pencerelerde gösterilsin mi ?"
+
+#: src/nautilus-location-bar.c:401
+msgid "Location:"
+msgstr "Mekan :"
+
+#: src/nautilus-main.c:63
+msgid "Perform high-speed self-check tests."
+msgstr "Çok hýzlý doðrulama deneylerini yap."
+
+#: src/nautilus-main.c:65
+msgid "Quit Nautilus."
+msgstr "Nautilusdan çýk."
+
+#: src/nautilus-main.c:66
+msgid "Don't draw background and icons on desktop."
+msgstr "Masaüstünde ardalan ve simgeleri gösterme."
+
+#: src/nautilus-main.c:67
+msgid "Draw background and icons on desktop."
+msgstr "Masaüstünde ardalan ve simgeleri göster."
+
+#: src/nautilus-main.c:117
+msgid "nautilus: --quit cannot be used with URIs.\n"
+msgstr "nautilus : --quit URI'lerle beraber kullanýlamaz.\n"
+
+#: src/nautilus-main.c:119
+msgid "nautiluls: --quit and --start-desktop cannot be used together.\n"
+msgstr "nautilus : --quit ve --start-desktop beraberen kullanýlamaz.\n"
+
+#: src/nautilus-main.c:121
+msgid ""
+"nautiluls: --stop-desktop and --start-desktop cannot be used together.\n"
+msgstr "nautilus : --stop-desktop ve --start-desktop beraberen kullanýlamaz.\n"
+
+#. set the title
+#: src/nautilus-property-browser.c:205
+msgid "Nautilus Property Browser"
+msgstr "Nautilus Özellikler gezgini"
+
+#. add the title label
+#: src/nautilus-property-browser.c:263 src/nautilus-property-browser.c:1977
+msgid "Select A Category:"
+msgstr "Bir rumuz seç :"
+
+#: src/nautilus-property-browser.c:296
+msgid "Add new..."
+msgstr "Ekle ..."
+
+#: src/nautilus-property-browser.c:307
+msgid "Remove..."
+msgstr "Sil ..."
+
+#: src/nautilus-property-browser.c:826 src/nautilus-property-browser.c:920
+#, c-format
+msgid "Sorry, but '%s' is not an image file!"
+msgstr "Maalessef `%s' bir resim deðildir!"
+
+#: src/nautilus-property-browser.c:853
+msgid "Create a New Emblem:"
+msgstr "Yeni bir rozet yarat :"
+
+#. make the keyword label and field
+#: src/nautilus-property-browser.c:858
+msgid "Keyword:"
+msgstr "Anahtar sözcük :"
+
+#. set up a gnome file entry to pick the image file
+#: src/nautilus-property-browser.c:875
+msgid "Select an image file for the new emblem:"
+msgstr "Yeni rozet için bir resim belirle :"
+
+#: src/nautilus-property-browser.c:985
+msgid "Select an image file to add as a background:"
+msgstr "Ardalan olarak eklenecek bir resmi seç :"
+
+#: src/nautilus-property-browser.c:1083
+msgid "Select a color to add:"
+msgstr "Eklenecek bir rengi belirle :"
+
+#: src/nautilus-property-browser.c:1985
+msgid "Cancel Remove"
+msgstr "Silmeyi iptal et"
+
+#: src/nautilus-property-browser.c:1987
+#, c-format
+msgid "Add a new %s"
+msgstr "Yeni bir %s ekle"
+
+#. strip trailing s
+#: src/nautilus-property-browser.c:2002
+#, c-format
+msgid "Click on a %s to remove it"
+msgstr "Bir %s'ye týklayarak onu silebilirsin."
+
+#: src/nautilus-property-browser.c:2014
+#, c-format
+msgid "Remove a %s"
+msgstr "Bir %s'yi sil"
+
+#: src/nautilus-shell.c:157
+msgid "Nautilus: caveat"
+msgstr "Nautilus : kendini koru"
+
+#: src/nautilus-shell.c:186
+msgid ""
+"Welcome to Nautilus Preview Release 1.\n"
+"\n"
+"Thanks for your interest in using Nautilus.  As a user of the Preview "
+"Release, you try out and provide feedback on an early version of Eazel's "
+"powerful new desktop manager for GNOME.\n"
+"\n"
+"As with any software under development, you should exercise caution when "
+"running this program.  Some features are not yet complete or still unstable. "
+" You will encounter many more bugs than in the completed version.  Eazel can "
+"provide no guarantee that it will work properly, or assume liability for "
+"your use of it.  Use it at your own risk.\n"
+"\n"
+"We hope that you will enjoy using Nautilus.  For more information, please go "
+"to http://www.eazel.com."
+msgstr ""
+
+#. add the reset background item, possibly disabled
+#: src/nautilus-sidebar.c:424
+msgid "Reset Background"
+msgstr "Ardalaný gerit"
+
+#: src/nautilus-sidebar.c:1145
+#, c-format
+msgid "Open with %s"
+msgstr "%s ile aç"
+
+#. Catch-all button after all the others.
+#: src/nautilus-sidebar.c:1174
+msgid "Open with..."
+msgstr "Farklý aç ..."
+
+#: src/nautilus-simple-search-bar.c:108
+msgid "Find Them!"
+msgstr ""
+
+#: src/nautilus-switchable-search-bar.c:95
+msgid "Search For:"
+msgstr "Bul :"
+
+#: src/nautilus-window-manage-views.c:173
+msgid "(untitled)"
+msgstr "(isimsiz)"
+
+#: src/nautilus-window-manage-views.c:184
+#: src/nautilus-window-manage-views.c:217
+#: src/nautilus-window-manage-views.c:218 src/nautilus-window-menus.c:437
+msgid "Nautilus"
+msgstr "Nautilus"
+
+#: src/nautilus-window-manage-views.c:220
+#, c-format
+msgid "Nautilus: %s"
+msgstr "Nautilus: %s"
+
+#: src/nautilus-window-manage-views.c:648
+#, c-format
+msgid "You do not have the permissions necessary to view \"%s\"."
+msgstr "\"%s\"'ye bakmak için gerekli eriþim haklarýna sahip deðilsin."
+
+#: src/nautilus-window-manage-views.c:1241
+#, c-format
+msgid "Couldn't find \"%s\". Please check the spelling and try again."
+msgstr ""
+"\"%s\"'yi bulamadým. Lütfen yazmak istediðini doðru yazýp yazmadýðýný gözden "
+"geçir."
+
+#: src/nautilus-window-manage-views.c:1247
+#, c-format
+msgid ""
+"\"%s\" is not a valid location. Please check the spelling and try again."
+msgstr ""
+"\"%s\" geçerli bir mekan deðil. Lütfen, yazmak istediðini doðru yazýp "
+"yazmadýðýnýgözden geçir."
+
+#: src/nautilus-window-manage-views.c:1265
+#, c-format
+msgid ""
+"Couldn't display \"%s\", because Nautilus cannot handle items of this type."
+msgstr ""
+"\"%s\"'i gösteremedim, zira Nautilus'un bu tip için bir yöneticisi yok."
+
+#: src/nautilus-window-manage-views.c:1269
+#, c-format
+msgid ""
+"Couldn't display \"%s\", because Nautilus cannot handle items of type \"%s\"."
+msgstr ""
+"\"%s\"'i gösteremedim, zira Nautilus'un \"%s\" tipi için bir yöneticisi yok."
+
+#. Shouldn't have gotten this error unless there's a : separator.
+#: src/nautilus-window-manage-views.c:1281
+#, c-format
+msgid "Couldn't display \"%s\", because Nautilus cannot handle %s: locations."
+msgstr ""
+"\"%s\"'i gösteremedim, zira Nautilus'un %s: mekanlarý için bir yöneticisi "
+"yok."
+
+#: src/nautilus-window-manage-views.c:1287
+#, c-format
+msgid "Couldn't display \"%s\", because the attempt to log in failed."
+msgstr ""
+"\"%s\"'i gösteremedim, zira Nautilus'un kayýt etme deneyi baþarýsýz oldu."
+
+#. FIXME: Need to give the user some advice about what to do here.
+#: src/nautilus-window-manage-views.c:1294
+msgid ""
+"Sorry, searching can't be used now. In the future this message will be more "
+"helpful."
+msgstr ""
+
+#: src/nautilus-window-manage-views.c:1299
+#, c-format
+msgid "Nautilus cannot display \"%s\"."
+msgstr "\"%s\" Nautilus tarafýndan gösterilemiyor ."
+
+#: src/nautilus-window-menus.c:434
+#, c-format
+msgid ""
+"The Gnome Shell\n"
+"%s"
+msgstr ""
+"Gnome komutasý\n"
+"%s"
+
+#: src/nautilus-window-menus.c:584
+#, c-format
+msgid ""
+"The location \"%s\" does not exist. Do you want to remove any bookmarks with "
+"this location from your list?"
+msgstr ""
+"\"%s\" mekan yoktur. Bu mekanla alakalý yekin niþanlarýný listeden "
+"silmekistermisin ?"
+
+#: src/nautilus-window-menus.c:599
+msgid "Bookmark for Bad Location"
+msgstr "Kötü mekan için niþan"
+
+#: src/nautilus-window-menus.c:602
+#, c-format
+msgid ""
+"The location \"%s\" no longer exists. It was probably moved, deleted, or "
+"renamed."
+msgstr ""
+"\"%s\" mekaný yok olmuþtur. Taþýnmýþ, silinmiþ yada yeniden adlandýrýlmýþ "
+"olabilir."
+
+#: src/nautilus-window-menus.c:605
+msgid "Go To Bad Location"
+msgstr "Kötü mekana git"
+
+#: src/nautilus-window-menus.c:670
+msgid "Go to the specified location"
+msgstr "Verilen mekana git"
+
+#. File menu
+#: src/nautilus-window-menus.c:1046
+msgid "_File"
+msgstr "_Dosya"
+
+#: src/nautilus-window-menus.c:1050
+msgid "_New Window"
+msgstr "_Yeni pencere"
+
+#: src/nautilus-window-menus.c:1051
+msgid "Create a new window"
+msgstr "Yeni bir pencere yarat"
+
+#: src/nautilus-window-menus.c:1062
+msgid "_Close Window"
+msgstr "Pencereyi _kapat"
+
+#: src/nautilus-window-menus.c:1063
+msgid "Close this window"
+msgstr "Bu pencereyi kapat"
+
+#: src/nautilus-window-menus.c:1074
+msgid "Close All Windows"
+msgstr "Yekin Pencereleri Kapat"
+
+#: src/nautilus-window-menus.c:1075
+msgid "Close all windows"
+msgstr "Yekin pencereleri kapat"
+
+#. Edit menu
+#: src/nautilus-window-menus.c:1085
+msgid "_Edit"
+msgstr "_Deðiþtir"
+
+#: src/nautilus-window-menus.c:1089 src/nautilus-window-menus.c:1459
+msgid "_Undo"
+msgstr "_Gerit"
+
+#: src/nautilus-window-menus.c:1090 src/nautilus-window-menus.c:1459
+msgid "Undo the last text change"
+msgstr "Son metin deðiþikliðini geri al"
+
+#: src/nautilus-window-menus.c:1103
+msgid "_Cut Text"
+msgstr "Metni _kes"
+
+#: src/nautilus-window-menus.c:1104
+msgid "Cuts the selected text to the clipboard"
+msgstr "Seçili metni arabelleðe keser"
+
+#: src/nautilus-window-menus.c:1115
+msgid "_Copy Text"
+msgstr "Metni k_opyala"
+
+#: src/nautilus-window-menus.c:1116
+msgid "Copies the selected text to the clipboard"
+msgstr "Seçili metni arabelleðe kopyalar"
+
+#: src/nautilus-window-menus.c:1127
+msgid "_Paste Text"
+msgstr "Metni y_apýþtýr"
+
+#: src/nautilus-window-menus.c:1128
+msgid "Pastes the text stored on the clipboard"
+msgstr "Seçili metni arabelleðe yapýþtýrýr"
+
+#: src/nautilus-window-menus.c:1139
+msgid "C_lear Text"
+msgstr "Metni _temizle"
+
+#: src/nautilus-window-menus.c:1140
+msgid "Removes the selected text without putting it on the clipboard"
+msgstr "Seçili metni arabelleðe koyamadan siler"
+
+#: src/nautilus-window-menus.c:1170
+msgid "_Customize..."
+msgstr "Ö_zelleþtir ..."
+
+#: src/nautilus-window-menus.c:1171
+msgid ""
+"Displays the Property Browser, to add properties to objects and customize "
+"appearance"
+msgstr ""
+"Özellikler gezginini gösterip ve nesnelere özellikleri eklemeye ve görünümü "
+"deðiþtirmeye yarar "
+
+#. Go menu
+#: src/nautilus-window-menus.c:1181
+msgid "_Go"
+msgstr "G_it"
+
+#: src/nautilus-window-menus.c:1185
+msgid "_Back"
+msgstr "_Geri"
+
+#: src/nautilus-window-menus.c:1186
+msgid "Go to the previous visited location"
+msgstr "Önceki yere git"
+
+#: src/nautilus-window-menus.c:1197
+msgid "_Forward"
+msgstr "_Ileri"
+
+#: src/nautilus-window-menus.c:1198
+msgid "Go to the next visited location"
+msgstr "Ilerideki yere git"
+
+#: src/nautilus-window-menus.c:1209
+msgid "_Up"
+msgstr "_Yukarý"
+
+#: src/nautilus-window-menus.c:1210
+msgid "Go to the location that contains this one"
+msgstr "Bunu içeren yere git"
+
+#: src/nautilus-window-menus.c:1221
+msgid "_Home"
+msgstr "_Bark"
+
+#: src/nautilus-window-menus.c:1222
+msgid "Go to the home location"
+msgstr "Bark'ýma git"
+
+#. Bookmarks
+#: src/nautilus-window-menus.c:1235
+msgid "_Bookmarks"
+msgstr "_Niþanlar"
+
+#: src/nautilus-window-menus.c:1239
+msgid "_Add Bookmark"
+msgstr "_Niþan ekle"
+
+#: src/nautilus-window-menus.c:1240
+msgid "Add a bookmark for the current location to this menu"
+msgstr "Burasý için bir niþan ekle"
+
+#: src/nautilus-window-menus.c:1251
+msgid "_Edit Bookmarks..."
+msgstr "Niþanlarý _deðiþtir ..."
+
+#: src/nautilus-window-menus.c:1252
+msgid "Display a window that allows editing the bookmarks in this menu"
+msgstr ""
+"Bu mönünün içinde niþanlarý deðiþtirilmesine izin veren pencereyi göster"
+
+#: src/nautilus-window-menus.c:1269
+msgid "Toolbar"
+msgstr "Araç çubuðu"
+
+#: src/nautilus-window-menus.c:1270 src/nautilus-window-menus.c:1282
+#: src/nautilus-window-menus.c:1293 src/nautilus-window-menus.c:1304
+#: src/nautilus-window-menus.c:1315
+msgid "Show/Hide Stuff"
+msgstr "Zýmpýrtýyý gizle/göster"
+
+#: src/nautilus-window-menus.c:1281
+msgid "Locationbar"
+msgstr "Mekan çubuðu"
+
+#: src/nautilus-window-menus.c:1292
+msgid "Statusbar"
+msgstr "Durum çubuðu"
+
+#: src/nautilus-window-menus.c:1303
+msgid "Sidebar"
+msgstr "Taraf çubuðu"
+
+#: src/nautilus-window-menus.c:1314
+msgid "Normalize Menu"
+msgstr "Mönüyü normalleþtir"
+
+#. Help
+#: src/nautilus-window-menus.c:1325
+msgid "_Help"
+msgstr "_Yardým"
+
+#: src/nautilus-window-menus.c:1329
+#, fuzzy
+msgid "_About Nautilus"
+msgstr "_Nautilus hakkýnda ..."
+
+#: src/nautilus-window-menus.c:1330
+msgid "Displays information about the Nautilus program"
+msgstr "Nautilus uygulamasý hakkýnda bilgi gösterir"
+
+#: src/nautilus-window-menus.c:1341
+msgid "_Preview Release Feedback"
+msgstr ""
+
+#: src/nautilus-window-menus.c:1342
+#, fuzzy
+msgid "Displays a feedback form for the Nautilus Preview"
+msgstr "Nautilus uygulamasý hakkýnda bilgi gösterir"
+
+#: src/nautilus-window-menus.c:1353
+msgid "_Preview Release Info"
+msgstr ""
+
+#: src/nautilus-window-menus.c:1354
+#, fuzzy
+msgid "Displays an information blurb for the Nautilus Preview"
+msgstr "Nautilus uygulamasý hakkýnda bilgi gösterir"
+
+#: src/nautilus-window-menus.c:1397
+msgid " Novice"
+msgstr " Yeni kullanýcý"
+
+#: src/nautilus-window-menus.c:1398
+msgid "Set Novice User Level"
+msgstr "Yeni kullanýcý seviyesi"
+
+#: src/nautilus-window-menus.c:1411
+msgid " Intermediate"
+msgstr " Normal"
+
+#: src/nautilus-window-menus.c:1412
+msgid "Set Intermediate User Level"
+msgstr "Vasat kullanýcý seviyesi"
+
+#: src/nautilus-window-menus.c:1426
+msgid " Expert"
+msgstr " Bilgin"
+
+#: src/nautilus-window-menus.c:1427
+msgid "Set Expert User Level"
+msgstr "Bilgin kullanýcý seviyesi"
+
+#: src/nautilus-window-menus.c:1443
+msgid "Edit Settings..."
+msgstr "Ayarlarý deðiþtir ..."
+
+#: src/nautilus-window-menus.c:1444
+msgid "Edit Settings for the Current User Level"
+msgstr "Geçerli kullanýcý ayarlarýný deðiþtir"
+
+#: src/nautilus-window-toolbars.c:117
+msgid "Go to the previously visited directory"
+msgstr "Önceden ziyaret ettiðin dizine git"
+
+#: src/nautilus-window-toolbars.c:122
+msgid "Forward"
+msgstr "Ileri"
+
+#: src/nautilus-window-toolbars.c:122
+msgid "Go to the next directory"
+msgstr "Ilerideki dizine git"
+
+#: src/nautilus-window-toolbars.c:127
+msgid "Up"
+msgstr "Yukarý"
+
+#: src/nautilus-window-toolbars.c:127
+msgid "Go up a level in the directory hierarchy"
+msgstr "Dizinleme'de bir seviye yukarý çýk"
+
+#: src/nautilus-window-toolbars.c:132
+msgid "Reload"
+msgstr "Yenile"
+
+#: src/nautilus-window-toolbars.c:132
+msgid "Reload this view"
+msgstr "Bu bakýþý yeniden yükle"
+
+#: src/nautilus-window-toolbars.c:139
+msgid "Home"
+msgstr "Bark"
+
+#: src/nautilus-window-toolbars.c:139
+msgid "Go to your home directory"
+msgstr "Bark dizinine git"
+
+#: src/nautilus-window-toolbars.c:144
+msgid "Search this computer for files"
+msgstr "Dosyalarý bu bilgisayarda bul"
+
+#: src/nautilus-window-toolbars.c:149
+msgid "Web Search"
+msgstr "Web'de ara"
+
+#: src/nautilus-window-toolbars.c:149
+msgid "Search the web"
+msgstr "Web'de ara"
+
+#: src/nautilus-window-toolbars.c:156
+msgid "Interrupt loading"
+msgstr "Yüklemeyi durdur"
+
+#: src/nautilus-window-toolbars.c:161
+msgid "Services"
+msgstr "Hizmetler"
+
+#: src/nautilus-window.c:818
+#, c-format
+msgid "View as %s..."
+msgstr "%s olarak göster ...."
+
+#: src/nautilus-window.c:843
+msgid "View as Other..."
+msgstr "Farklý göster ..."
+
+#: src/nautilus-window.c:1267
+msgid "Close"
+msgstr "Kapat"
+
+#: src/nautilus-zoom-control.c:481
+msgid "%.0f%%"
+msgstr "%% %.f"
+
+#~ msgid "*** Could not generate xml package list! ***\n"
+#~ msgstr "*** Xml pakaj listesini yaratamadým ! ***\n"
+
+#~ msgid "XML package list successfully generated ...\n"
+#~ msgstr "XML pakaj listesi baþarýyla yaratýldý ...\n"
+
+#~ msgid "*** Could not create temporary directory! ***\n"
+#~ msgstr "*** Geçici yükleme dizinini yaratamadým ! ***\n"
+
+#~ msgid "Getting package-list.xml from remote server ...\n"
+#~ msgstr "Sunucu'dan pakaj listesini ( package-list.xml ) alýyorum ...\n"
+
+#~ msgid "*** You must run eazel-install as root! ***\n"
+#~ msgstr "*** eazel-install'ý 'root' olarak çalýþtýrmak zorundasým ! ***\n"
+
+#~ msgid "*** eazel-install can only be used on RedHat! ***\n"
+#~ msgstr ""
+#~ "*** eazel-install sadece RedHat daðýtýmlarýnda kullanýlabilinir ! ***\n"
+
+#~ msgid "*** Downgrade Mode not supported yet! ***\n"
+#~ msgstr "*** Geriye dönük yenilemeler þimdilik desteklenmiyor ! ***\n"
+
+#~ msgid "Reading the eazel services configuration ...\n"
+#~ msgstr "Eazel hizmetleri ayarlarý okuyorum ...\n"
+
+#~ msgid "*** Logging not currently supported! ***\n"
+#~ msgstr "*** Kayýt yaratma þimdilik desteklenmiyor ! ***\n"
+
+#~ msgid "*** FTP installs are not currently supported! ***\n"
+#~ msgstr "*** FTP yüklemleri þimdilik desteklenmiyor ! ***\n"
+
+#~ msgid "*** The uninstall failed! ***\n"
+#~ msgstr "*** Kaldýrma baþarýsýz oldu ! ***\n"
+
+#~ msgid "*** The install failed! ***\n"
+#~ msgstr "*** Yükleme baþarýsýz oldu ! ***\n"
+
+#~ msgid "Transaction completed normally...\n"
+#~ msgstr "Iletiþim baþarýyla bitirildi ...\n"
+
+#~ msgid ""
+#~ "This is a warning, you're running\n"
+#~ "the installer for real, without \n"
+#~ "the --test flag... Beware!"
+#~ msgstr ""
+#~ "Bu sana yükleyici gerçekten çalýþtýrmandan\n"
+#~ "dolayý gösterilen bir ikazdýr\n"
+#~ "( yani bir de --test'le yapmadýn ya !"
+
+#~ msgid "Nautilus install tool"
+#~ msgstr "Nautilus yükleme çerezi"
+
+#~ msgid "Step one:"
+#~ msgstr "Ilk adým :"
+
+#~ msgid ""
+#~ "This is the internal Nautilus installer.\n"
+#~ "\n"
+#~ "Lots of text should go here letting you know what you need\n"
+#~ "to have installed before you should even begin to think about\n"
+#~ "using this. For example:\n"
+#~ "\n"
+#~ "  * Stuff\n"
+#~ "  * More stuff\n"
+#~ "  * Other stuff\n"
+#~ "\n"
+#~ "If you meet these requirements, hit the \"Next\" button to continue!\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Nautilus'un yükleyicisine hoþgeldin.\n"
+#~ "\n"
+#~ "Buraya nelerin mümkün olduðunu ve baþlamadan önce gereken her\n"
+#~ "her zýmpýrtýyý sýralayan bir metnin yerleþmesi lazým.\n"
+#~ "Mesela :\n"
+#~ "\n"
+#~ "  * Zýmpýrtý\n"
+#~ "  * Daha fazla zýmpýrtý\n"
+#~ "  * Baþka zýmpýrtý\n"
+#~ "\n"
+#~ "Bu gereksenimleri yerine getirebiliyorsan, \"Ileri\" basmasýna basýp devam "
+#~ "et!\n"
+#~ "\n"
+
+#~ msgid "What to do ?"
+#~ msgstr "Ne yapýlacak ?"
+
+#~ msgid ""
+#~ "You have several choices for what you would like the installer to do.\n"
+#~ "Please choose one and click on the \"Next\" button."
+#~ msgstr ""
+#~ "Yükleyici deðiþik yollarda ilerleyebilir.\n"
+#~ "Lütfen bir yolu seç ve \"Ileri\"'ye bas."
+
+#~ msgid "Most recent build"
+#~ msgstr "En son sürüm"
+
+#~ msgid "Stable Nautilus"
+#~ msgstr "Düzgün Nautilus sürümü"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Progress..."
+#~ msgstr "Ilerleme ..."
+
+#~ msgid ""
+#~ "Press the big begin button, and watch the installer do it's thing...\n"
+#~ "(between download and install, we'll take a small break)"
+#~ msgstr ""
+#~ "Büyük baþlama basmasýna bas, ve yükleyicinin çalýþmasýna seyret ...\n"
+#~ "( dosyalarý yerel bilgisayar kopyalama ve yükleme arasýnda ufak bir ara "
+#~ "vereceðiz )"
+
+#~ msgid "Package :"
+#~ msgstr "Pakaj :"
+
+#~ msgid "Begin"
+#~ msgstr "Baþla"
+
+#~ msgid ""
+#~ "If the installation was successfull, you can\n"
+#~ " findthe nautilus icon in the applications menu.\n"
+#~ "\n"
+#~ "Thanks for taking the time to try out Nautilus.\n"
+#~ "\n"
+#~ "May your life be a healthy and happy one."
+#~ msgstr ""
+#~ "Yükleme baþarýyla bitirildiyse, Nautilus'un simgesini\n"
+#~ " uygulamalar mönüsünde bulacaksýn.\n"
+#~ "\n"
+#~ "Nautilus'u denemeye zaman ayýrdýðýn için teþekkür ederiz.\n"
+#~ "\n"
+#~ "Hayatýn saðlýklý ve kývanç verici olsun."
+
+#~ msgid "Couldn't find pixmap file: %s"
+#~ msgstr "Resim dosyasýný bulamadým : %s"
+
+#~ msgid "Couldn't create pixmap from file: %s"
+#~ msgstr "Dosyadan resim yaratamadým : %s"
+
+#~ msgid ""
+#~ "The Nautilus shell is under development; it's not ready for daily use. Many "
+#~ "features, including some of the best ones, are not yet done, partly done, or "
+#~ "unstable. The program doesn't look or act the way it will in version 1.0.\n"
+#~ "\n"
+#~ "If you do decide to test this version of Nautilus, beware. The program could "
+#~ "do something unpredictable and may even delete or overwrite files on your "
+#~ "computer.\n"
+#~ "\n"
+#~ "For more information, visit http://nautilus.eazel.com."
+#~ msgstr ""
+#~ "Nautilus ortamý daha geliþim içindedir; daha günlük kullaným için hazýr "
+#~ "deðildir. Çoðu özellikleri, en iyi özellikleri dahil, daha yazýlmamýþtýr "
+#~ "yada sadece bir bölümü yazýlmýþtýr. Nautilus 1.0 nesline benzeme bile "
+#~ "benzemiyor.\n"
+#~ "\n"
+#~ "Nautilus'un bu neslini denemek istemeye karar verdin, ama lütfen dikkatli "
+#~ "ol. Nautilus bilgisayarýnda öngörülemeyen birþeyler yapabilir ve hatta "
+#~ "dosyalarý ansýzýnsilebilir yada üstüne yazabilir.\n"
+#~ "\n"
+#~ "Daha fazla bilgi için http://nautilus.eazel.com'u ziyaret et."

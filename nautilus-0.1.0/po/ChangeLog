@@ -1,0 +1,456 @@
+2000-08-05  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-08-04  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-08-03  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-08-02  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-08-02  Pablo Saratxaga <pablo@mandrakesoft.com>
+
+	* ko.po,tr.po,zh_TW.Big5.po: corrected some syntax errors
+
+2000-07-31  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-31  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-26  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-26  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-25  Fatih Demir	<kabalak@gmx.net>
+
+	* ko.po: Commited updated Korean translation
+		by Young-Ho Cha <ganadist@dacome.co.kr>.
+
+2000-07-25  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-24  Matthias Warkus  <mawa@iname.com>
+
+	* de.po: Updated German translation.
+
+2000-07-24  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-23  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-07-22  Richard Hult  <rhult@hem.passagen.se>
+
+	* sv.po: Updated Swedish translation.
+
+2000-07-22  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-20  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-18  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-17  Andreas Hyden  <a.hyden@cyberpoint.se>
+
+	* sv.po: Updated Swedish translation.
+
+2000-07-16  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-16  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-07-15  Matthias Warkus  <mawa@iname.com>
+
+	* de.po: Updated.
+
+2000-07-15  Andreas Hyden  <a.hyden@cyberpoint.se>
+
+	* sv.po: Updated Swedish translation.
+
+2000-07-11  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-10  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-09  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-09  Matthias Warkus  <mawa@iname.com>
+
+	* de.po: Updated.
+
+2000-07-06  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-07-05  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-07-01  Eric Brayeur <eb@ibelgique.com>
+
+	* fr.po: updated French translation. 
+
+2000-06-30  Fatih Demir	<kabalak@gmx.net>
+	
+	* .cvsignore: Ignore the messages file
+		produced by msgfmt ( on update ).
+	
+	* tr.po: ( Guess it .. ) Updated the Turkish
+		translation.
+
+2000-06-30  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-27  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-27  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-06-24  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-23  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po: Updated the Turkish translation.	
+
+2000-06-21  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-06-16  Matthias Warkus  <mawa@iname.com>
+
+	* de.po: Updated German translation.
+
+2000-06-15  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-15 Kenneth Christiansen <kenneth@gnu.org>
+
+        * da.po: update
+
+2000-06-14  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-06-14  Benedikt Roth  <Benedikt.Roth@gmx.net>
+
+	* de.po: Updated German translation.
+
+2000-06-14  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-13  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-06-13  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-10  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-10  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-06-09  Ramiro Estrugo  <ramiro@eazel.com>
+	* po/POTFILES.in:
+	Move the nautilus-widgets classes to libnautilus-extensions.
+
+2000-06-09  Fatih Demir  <kabalak@gmx.net> 
+
+        * tr.po: Updated the Turkish translation.
+
+2000-06-08  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-06-08  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-06  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po: Updated the Turkish translation.
+
+2000-06-05  Valek Filippov  <frob@df.ru>
+
+	* POTFILES.in: added some files.
+
+2000-06-04  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po: Updated the Turkish translation.
+	
+	* ko.po: Committed updated Korean translation.
+
+2000-06-03  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-01  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-06-01  Benedikt Roth  <Benedikt.Roth@gmx.net>
+
+	* de.po: Added a very beta german translation
+
+2000-05-31  Kenneth Christiansen <kenneth@gnu.org>
+
+	* README.tools: Added readme file, which explains the
+	use of the newly checked in po tools.
+
+	Please go read.
+
+2000-05-31  Fatih Demir	<kabalak@gmx.net>
+
+	* tr.po: Corrected some typos.
+	
+	* tr.po: Updated the Turkish translation.
+
+2000-05-31  Kenneth Christiansen <kenneth@gnu.org>
+
+	* POTFILES.in: Added files
+	* desk.pl: Script for finding missing translations
+	in desktop files
+	* update.pl: Script for updating and finding missing
+	files for POTFILES.in
+
+2000-05-28  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po: Die, all you fuzzy entries...
+
+2000-05-26  Valek Filippov  <frob@df.ru>
+
+	* updated russian translation.
+
+2000-05-25  Robin * Slomkowski <rslomkow@eazel.com>
+
+	* fr.po (added)
+	This was create by Jean-Michel Ardantz <jmardantz@ifrance.com>
+
+2000-05-25  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po: Updated the Turkish translation.
+
+2000-05-24  Valek Filippov  <frob@df.ru>
+
+	* ru.po: Updated russian translation.
+
+2000-05-23  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-05-22  Valek Filippov  <frob@df.ru>
+
+	* ru.po: Updated russian translation.
+	* update.sh: version 1.2.5.
+
+2000-05-22  Yukihiro Nakai  <nakai@gnome.gr.jp>
+
+	* ja.po: Update from Akira TAGOH.
+
+2000-05-20  Fatih Demir	<kabalak@gmx.net>
+
+	* tr.po : Updated the Turkish translation.
+	
+	* ko.po : Committed ko.po's update.
+
+2000-05-20  Yukihiro Nakai <nakai@gnome.gr.jp>
+
+	* ja.po: Update from Akira TAGOH.
+
+2000-05-19  Yukihiro Nakai <nakai@gnome.gr.jp>
+
+	* ja.po: Initial Japanese translation from Akira Tagoh.
+
+2000-05-18  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-05-17  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-05-17  Jesus Bravo Alvarez  <jba@pobox.com>
+
+	* gl.po: Updated Galician translation.
+
+2000-05-17  Valek Filippov  <frob@df.ru>
+
+	* ru.po: Updated russian translation.
+	* update.sh: new version.
+	
+2000-05-13  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-05-12  Fatih Demir	<kabalak@gmx.net>
+	
+	* ko.po : Committed the updated Korean translation.
+
+2000-05-11  Fatih Demir <kabalak@gmx.net>
+	
+	* tr.po : Updated the Turkish translation.
+
+2000-05-10  Fatih Demir	<kabalak@gmx.net>
+	
+	* ko.po : Updated Korean translation from
+	
+	  Young-Ho Cha <ganadist@dacome.co.kr>.
+
+2000-05-08  Andreas Hyden  <a.hyden@cyberpoint.se>
+
+	* sv.po: Updated Swedish translation.
+
+2000-05-07  Andreas Hyden  <a.hyden@cyberpoint.se>
+
+	* sv.po: Updated Swedish translation.
+
+2000-05-07  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-05-06  Jesus Bravo Alvarez  <jba@pobox.com>
+
+	* gl.po: Added Galician translation.
+
+2000-05-04  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po : Updated the Turkish translation .
+
+2000-05-04  Valek Filippov  <frob@df.ru>
+
+	* ru.po: updated russian translation.
+
+2000-05-03  Kjartan Maraas  <kmaraas@online.no>
+
+	* POTFILES.in: Added music view.
+	* no.po: Updated Norwegian translation.
+	
+2000-05-03  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po : Updated the Turkish translation .
+	
+	* ko.po : Added Korean translation by :
+	  
+	  Young-Ho Cha <ganadist@dacome.co.kr>
+
+2000-05-02  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	* POTFILES.in: Added some more files.
+	
+2000-05-01  Valek Filippov  <frob@df.ru>
+
+	* ru.po: Updated russian translation.
+
+2000-04-30  Fatih Demir	<kabalak@gmx.net>
+	
+	* tr.po : Updated it .
+
+2000-04-29  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-04-27  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-04-27  Ramiro Estrugo  <ramiro@eazel.com>
+
+	* POTFILES.in: s/main/ntl-web-browser.c
+
+2000-04-27  Valek Filippov  <frob@df.ru>
+
+	* ru.po: Small updated russian translation.
+
+2000-04-25  Valek Filippov  <frob@df.ru>
+
+	* ru.po: Small updated russian translation.
+
+2000-04-25  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Updated Norwegian translation.
+	
+2000-04-21  Fatih Demir	<kabalak@gmx.net>
+
+	* update.sh : Added a nicer version of it .
+	
+	* tr.po : Updated the Turkish translation .
+
+2000-04-20  Andreas Hyden  <a.hyden@cyberpoint.se>
+
+	sv.po: Added Swedish translation.
+
+2000-04-19  Pablo Saratxaga <pablo@mandrakesoft.com>
+
+	* da.po: Added Danish file
+
+2000-04-18  Kjartan Maraas  <kmaraas@online.no>
+
+	* no.po: Added Norwegian translation.
+	
+2000-04-15  Fatih Demir	<kabalak@gmx.net>
+
+	* tr.po : Update ++++
+
+2000-04-15  Valek Filippov  <frob@df.ru>
+
+	* Updatetd russian translation.
+
+2000-04-14  Ramiro Estrugo  <ramiro@eazel.com>
+
+	* .cvsignore: ignore *.gmo and *.mo generated files.
+
+2000-04-14  Ramiro Estrugo  <ramiro@eazel.com>
+
+	* POTFILES.in: Updated for libnautilus -> libnautilus-extensions
+	changes.
+
+2000-04-14  Fatih Demir	<kabalak@gmx.net>
+
+	* tr.po : Added the Turkish translation .
+
+2000-04-14  Ramiro Estrugo  <ramiro@eazel.com>
+
+	* ChangeLog: Added this thing to make 'make dist' happy.
+	

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.Todo.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Todo</name>
+  <name xml:lang="pl">Zadania</name>
+  <name xml:lang="sk">Úlohy</name>
+  <summary>Todo manager for GNOME</summary>
+  <summary xml:lang="pl">Menedżer zadań dla środowiska GNOME</summary>
+  <summary xml:lang="sk">Správca úloh prostredia GNOME</summary>
+
+  <description>
+    <p>GNOME Todo is a simple task management application designed to integrate with GNOME.</p>
+    <p xml:lang="pl">Menedżer zadań GNOME to prosty program do zarządzania zadaniami, zaprojektowany do integracji ze środowiskiem GNOME.</p>
+    <p xml:lang="sk">Úlohy prostredia GNOME je jednoduchá aplikácia na správu úloh, integrovaná s prostredím GNOME.</p>
+  </description>
+
+  <url type="homepage">https://github.com/GeorgesStavracas/gnome-todo</url>
+  <url type="bugtracker">https://github.com/GeorgesStavracas/gnome-todo/issues</url>
+  <project_group>GNOME</project_group>
+
+  <update_contact>georges.stavracas@gmail.com.</update_contact>
+</component>

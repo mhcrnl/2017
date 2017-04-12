@@ -1,0 +1,32 @@
+================
+Version 3.17.3.1
+================
+
+Project:
+        * Show 'Today' and 'Scheduled' task lists
+        * Use colors to represent priorities
+        * Fixed some very annoying bugs
+
+Translations:
+        * Polish (Piotr Drag)
+        * Slovak (Dušan Kazik)
+
+==============
+Version 3.17.3
+==============
+
+Project:
+        * Many improvements on the Evolution-Data-Server backend
+        * Ability to create new tasklists
+        * Much better thumbnails for tasklists
+        * Initial setup dialog
+        * Task fields update is now possible
+
+==============
+Version 3.17.2
+==============
+
+Project:
+        * Initial release
+        * Simple and unfinished task management
+        * Evolution-Data-Server as data backend
