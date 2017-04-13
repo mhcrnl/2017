@@ -1,0 +1,16 @@
+[Application]
+name=org.gnome.Myproject01
+runtime=org.gnome.Platform/x86_64/3.22
+sdk=org.gnome.Sdk/x86_64/3.22
+command=myproject01
+
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;
+filesystems=xdg-run/dconf;~/.config/dconf:ro;
+
+[Session Bus Policy]
+ca.desrt.dconf=talk
+
+[Environment]
+DCONF_USER_CONFIG_DIR=.config/dconf

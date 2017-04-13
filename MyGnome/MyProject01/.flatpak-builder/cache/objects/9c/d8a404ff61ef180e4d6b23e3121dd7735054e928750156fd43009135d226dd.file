@@ -1,0 +1,49 @@
+{
+  "id" : "org.gnome.Myproject01",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "3.22",
+  "runtime-commit" : "b40e05d828f0994dcc30d0439ba23e68acc90e7c0433a8a2493bc3fce1110f7e",
+  "sdk" : "org.gnome.Sdk",
+  "sdk-commit" : "dd0de2810a7353c31435e15c6071da20b15dbaee7b60c11dbd7eacd02f9f3a7d",
+  "build-options" : {
+    "cflags" : "-O2 -g",
+    "cxxflags" : "-O2 -g",
+    "env" : {
+      "V" : "1"
+    }
+  },
+  "command" : "myproject01",
+  "modules" : [
+    {
+      "name" : "myproject01",
+      "sources" : [
+        {
+          "url" : "file:///home/mhcrnl/Documents/2017/MyGnome/MyProject01",
+          "type" : "git"
+        }
+      ]
+    }
+  ],
+  "cleanup" : [
+    "/include",
+    "/lib/pkgconfig",
+    "/man",
+    "/share/aclocal",
+    "/share/doc",
+    "/share/gtk-doc",
+    "/share/man",
+    "/share/pkgconfig",
+    "*.la",
+    "*.a"
+  ],
+  "finish-args" : [
+    "--share=network",
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=wayland",
+    "--filesystem=xdg-run/dconf",
+    "--filesystem=~/.config/dconf:ro",
+    "--talk-name=ca.desrt.dconf",
+    "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+  ]
+}

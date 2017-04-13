@@ -224,7 +224,7 @@ do
   as_found=:
   case $as_dir in @%:@(
 	 /*)
-	   for as_base in bash sh ksh sh5; do
+	   for as_base in sh bash ksh sh5; do
 	     # Try only shells that exist, to save several forks.
 	     as_shell=$as_dir/$as_base
 	     if { test -f "$as_shell" || test -f "$as_shell.exe"; } &&
@@ -830,7 +830,7 @@ enable_static
 with_pic
 enable_fast_install
 with_aix_soname
-with_libtool_sysroot
+with_sysroot
 enable_libtool_lock
 '
       ac_precious_vars='build_alias
@@ -1471,7 +1471,8 @@ Optional Features:
   --disable-maintainer-mode 
                           disable make rules and dependencies not useful (and
                           sometimes confusing) to the casual installer
-  --enable-debug@<:@=no@:>@     compile with debugging; one of yes/info/profile/no
+  --enable-debug=@<:@yes/info/profile/no@:>@ 
+                          compile with debugging
   --disable-nls           do not use Native Language Support
   --enable-dependency-tracking 
                           do not reject slow dependency extractors
@@ -1507,8 +1508,7 @@ Optional Packages:
                           shared library versioning (aka "SONAME") variant to
                           provide on AIX, @<:@default=aix@:>@.
   --with-gnu-ld           assume the C compiler uses GNU ld @<:@default=no@:>@
-  --with-libtool-sysroot@<:@=DIR@:>@ 
-                          Search for dependent libraries within DIR (or the
+  --with-sysroot@<:@=DIR@:>@    Search for dependent libraries within DIR (or the
                           compiler's sysroot if not specified).
 
 Some influential environment variables:
@@ -2109,6 +2109,7 @@ _ACEOF
 # Let the site file select an alternate cache file if it wants to.
 # Prefer an explicitly selected file to automatically selected ones.
 ac_site_file1=NONE
+ac_site_file2=NONE
 if test -n "$CONFIG_SITE"; then
   # We do not want a PATH search for config.site.
   case $CONFIG_SITE in @%:@((
@@ -2116,8 +2117,14 @@ if test -n "$CONFIG_SITE"; then
     */*) ac_site_file1=$CONFIG_SITE;;
     *)   ac_site_file1=./$CONFIG_SITE;;
   esac
+elif test "x$prefix" != xNONE; then
+  ac_site_file1=$prefix/share/config.site
+  ac_site_file2=$prefix/etc/config.site
+else
+  ac_site_file1=$ac_default_prefix/share/config.site
+  ac_site_file2=$ac_default_prefix/etc/config.site
 fi
-for ac_site_file in $ac_site_file1
+for ac_site_file in "$ac_site_file1" "$ac_site_file2"
 do
   test "x$ac_site_file" = xNONE && continue
   if test /dev/null != "$ac_site_file" && test -r "$ac_site_file"; then
@@ -3113,7 +3120,7 @@ GENERATE_CHANGELOG_RULES='
 #  - CHANGELOG_GIT_DIR: .git directory to use. (Default: $(top_srcdir)/.git)
 
 # git-specific
-CHANGELOG_GIT_FLAGS ?= --stat -M -C --name-status --no-color
+CHANGELOG_GIT_FLAGS ?= --stat -M -C --name-status --no-color --no-decorate
 CHANGELOG_GIT_DIR ?= $(top_srcdir)/.git
 
 ifeq ($(CHANGELOG_START),)
@@ -3144,7 +3151,14 @@ dist-ChangeLog:
     { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether to enable debugging" >&5
 $as_echo_n "checking whether to enable debugging... " >&6; }
 
-    
+    ax_enable_debug_default=no
+    ax_enable_debug_is_release=$ax_is_release
+
+    # If this is a release, override the default.
+    if test "$ax_enable_debug_is_release" = "yes"; then :
+  ax_enable_debug_default="no"
+fi
+
     
     
 
@@ -3152,10 +3166,19 @@ $as_echo_n "checking whether to enable debugging... " >&6; }
 if test "${enable_debug+set}" = set; then :
   enableval=$enable_debug; 
 else
-  enable_debug=no
+  enable_debug=$ax_enable_debug_default
 fi
 
-    if test "x$enable_debug" = "xyes" || test "x$enable_debug" = "x"; then
+
+    # empty mean debug yes
+    if test "x$enable_debug" = "x"; then :
+  enable_debug="yes"
+fi
+
+    # case of debug
+    case $enable_debug in @%:@(
+  yes) :
+    
         { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
 $as_echo "yes" >&6; }
         CFLAGS="${CFLAGS} -g -O0"
@@ -3163,56 +3186,63 @@ $as_echo "yes" >&6; }
         FFLAGS="${FFLAGS} -g -O0"
         FCFLAGS="${FCFLAGS} -g -O0"
         OBJCFLAGS="${OBJCFLAGS} -g -O0"
+       ;; @%:@(
+  info) :
+    
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: info" >&5
+$as_echo "info" >&6; }
+        CFLAGS="${CFLAGS} -g"
+        CXXFLAGS="${CXXFLAGS} -g"
+        FFLAGS="${FFLAGS} -g"
+        FCFLAGS="${FCFLAGS} -g"
+        OBJCFLAGS="${OBJCFLAGS} -g"
+       ;; @%:@(
+  profile) :
+    
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: profile" >&5
+$as_echo "profile" >&6; }
+        CFLAGS="${CFLAGS} -g -pg"
+        CXXFLAGS="${CXXFLAGS} -g -pg"
+        FFLAGS="${FFLAGS} -g -pg"
+        FCFLAGS="${FCFLAGS} -g -pg"
+        OBJCFLAGS="${OBJCFLAGS} -g -pg"
+        LDFLAGS="${LDFLAGS} -pg"
+       ;; @%:@(
+  *) :
+    
+        { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+$as_echo "no" >&6; }
+                        if test "x${CFLAGS+set}" != "xset"; then :
+  CFLAGS=""
+fi
+        if test "x${CXXFLAGS+set}" != "xset"; then :
+  CXXFLAGS=""
+fi
+        if test "x${FFLAGS+set}" != "xset"; then :
+  FFLAGS=""
+fi
+        if test "x${FCFLAGS+set}" != "xset"; then :
+  FCFLAGS=""
+fi
+        if test "x${OBJCFLAGS+set}" != "xset"; then :
+  OBJCFLAGS=""
+fi
+       ;;
+esac
 
-                
+            if test "x$enable_debug" = "xyes"; then :
+  
 $as_echo "@%:@define G_DISABLE_ASSERT /**/" >>confdefs.h
 
 $as_echo "@%:@define G_DISABLE_CHECKS /**/" >>confdefs.h
 
 $as_echo "@%:@define G_DISABLE_CAST_CHECKS /**/" >>confdefs.h
 
-    else
-        if test "x$enable_debug" = "xinfo"; then
-            { $as_echo "$as_me:${as_lineno-$LINENO}: result: info" >&5
-$as_echo "info" >&6; }
-            CFLAGS="${CFLAGS} -g"
-            CXXFLAGS="${CXXFLAGS} -g"
-            FFLAGS="${FFLAGS} -g"
-            FCFLAGS="${FCFLAGS} -g"
-            OBJCFLAGS="${OBJCFLAGS} -g"
-        elif test "x$enable_debug" = "xprofile"; then
-            { $as_echo "$as_me:${as_lineno-$LINENO}: result: profile" >&5
-$as_echo "profile" >&6; }
-            CFLAGS="${CFLAGS} -g -pg"
-            CXXFLAGS="${CXXFLAGS} -g -pg"
-            FFLAGS="${FFLAGS} -g -pg"
-            FCFLAGS="${FCFLAGS} -g -pg"
-            OBJCFLAGS="${OBJCFLAGS} -g -pg"
-            LDFLAGS="${LDFLAGS} -pg"
-        else
-            { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
-$as_echo "no" >&6; }
-                                    if test "x${CFLAGS+set}" != "xset"; then
-                CFLAGS=""
-            fi
-            if test "x${CXXFLAGS+set}" != "xset"; then
-                CXXFLAGS=""
-            fi
-            if test "x${FFLAGS+set}" != "xset"; then
-                FFLAGS=""
-            fi
-            if test "x${FCFLAGS+set}" != "xset"; then
-                FCFLAGS=""
-            fi
-            if test "x${OBJCFLAGS+set}" != "xset"; then
-                OBJCFLAGS=""
-            fi
-        fi
-
-                        
+else
+  
 $as_echo "@%:@define NDEBUG /**/" >>confdefs.h
 
-    fi
+fi
     ax_enable_debug=$enable_debug
 
 
@@ -8409,6 +8439,47 @@ else
 fi
 
 
+    # Check that -Wno-suggest-attribute=format is supported
+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether C compiler accepts -Wno-suggest-attribute=format" >&5
+$as_echo_n "checking whether C compiler accepts -Wno-suggest-attribute=format... " >&6; }
+if ${ax_cv_check_cflags___Wno_suggest_attribute_format+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  
+  ax_check_save_flags=$CFLAGS
+  CFLAGS="$CFLAGS  -Wno-suggest-attribute=format"
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+int
+main ()
+{
+
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_compile "$LINENO"; then :
+  ax_cv_check_cflags___Wno_suggest_attribute_format=yes
+else
+  ax_cv_check_cflags___Wno_suggest_attribute_format=no
+fi
+rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
+  CFLAGS=$ax_check_save_flags
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ax_cv_check_cflags___Wno_suggest_attribute_format" >&5
+$as_echo "$ax_cv_check_cflags___Wno_suggest_attribute_format" >&6; }
+if test "x$ax_cv_check_cflags___Wno_suggest_attribute_format" = xyes; then :
+  
+        ax_compiler_no_suggest_attribute_flags="-Wno-suggest-attribute=format"
+    
+else
+  
+        ax_compiler_no_suggest_attribute_flags=""
+    
+fi
+
+
     # Base flags
       
 
@@ -8610,7 +8681,7 @@ fi
 
   
 
-for flag in              -Wno-suggest-attribute=format         ; do
+for flag in              $ax_compiler_no_suggest_attribute_flags         ; do
   as_CACHEVAR=`$as_echo "ax_cv_check_cflags_$ax_compiler_flags_test_$flag" | $as_tr_sh`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether C compiler accepts $flag" >&5
 $as_echo_n "checking whether C compiler accepts $flag... " >&6; }
@@ -8793,6 +8864,8 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
       
 
+      
+
 
     # Variable names
     
@@ -8842,12 +8915,133 @@ else
 fi
 
 
+    # macOS linker does not have --as-needed
+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the linker accepts -Wl,--no-as-needed" >&5
+$as_echo_n "checking whether the linker accepts -Wl,--no-as-needed... " >&6; }
+if ${ax_cv_check_ldflags___Wl___no_as_needed+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  
+  ax_check_save_flags=$LDFLAGS
+  LDFLAGS="$LDFLAGS  -Wl,--no-as-needed"
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+int
+main ()
+{
+
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ax_cv_check_ldflags___Wl___no_as_needed=yes
+else
+  ax_cv_check_ldflags___Wl___no_as_needed=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+  LDFLAGS=$ax_check_save_flags
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ax_cv_check_ldflags___Wl___no_as_needed" >&5
+$as_echo "$ax_cv_check_ldflags___Wl___no_as_needed" >&6; }
+if test "x$ax_cv_check_ldflags___Wl___no_as_needed" = xyes; then :
+  
+        ax_compiler_flags_as_needed_option="-Wl,--no-as-needed"
+    
+else
+  
+        ax_compiler_flags_as_needed_option=""
+    
+fi
+
+
+    # macOS linker speaks with a different accent
+    ax_compiler_flags_fatal_warnings_option=""
+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the linker accepts -Wl,--fatal-warnings" >&5
+$as_echo_n "checking whether the linker accepts -Wl,--fatal-warnings... " >&6; }
+if ${ax_cv_check_ldflags___Wl___fatal_warnings+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  
+  ax_check_save_flags=$LDFLAGS
+  LDFLAGS="$LDFLAGS  -Wl,--fatal-warnings"
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+int
+main ()
+{
+
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ax_cv_check_ldflags___Wl___fatal_warnings=yes
+else
+  ax_cv_check_ldflags___Wl___fatal_warnings=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+  LDFLAGS=$ax_check_save_flags
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ax_cv_check_ldflags___Wl___fatal_warnings" >&5
+$as_echo "$ax_cv_check_ldflags___Wl___fatal_warnings" >&6; }
+if test "x$ax_cv_check_ldflags___Wl___fatal_warnings" = xyes; then :
+  
+        ax_compiler_flags_fatal_warnings_option="-Wl,--fatal-warnings"
+    
+else
+  :
+fi
+
+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the linker accepts -Wl,-fatal_warnings" >&5
+$as_echo_n "checking whether the linker accepts -Wl,-fatal_warnings... " >&6; }
+if ${ax_cv_check_ldflags___Wl__fatal_warnings+:} false; then :
+  $as_echo_n "(cached) " >&6
+else
+  
+  ax_check_save_flags=$LDFLAGS
+  LDFLAGS="$LDFLAGS  -Wl,-fatal_warnings"
+  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+/* end confdefs.h.  */
+
+int
+main ()
+{
+
+  ;
+  return 0;
+}
+_ACEOF
+if ac_fn_c_try_link "$LINENO"; then :
+  ax_cv_check_ldflags___Wl__fatal_warnings=yes
+else
+  ax_cv_check_ldflags___Wl__fatal_warnings=no
+fi
+rm -f core conftest.err conftest.$ac_objext \
+    conftest$ac_exeext conftest.$ac_ext
+  LDFLAGS=$ax_check_save_flags
+fi
+{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ax_cv_check_ldflags___Wl__fatal_warnings" >&5
+$as_echo "$ax_cv_check_ldflags___Wl__fatal_warnings" >&6; }
+if test "x$ax_cv_check_ldflags___Wl__fatal_warnings" = xyes; then :
+  
+        ax_compiler_flags_fatal_warnings_option="-Wl,-fatal_warnings"
+    
+else
+  :
+fi
+
+
     # Base flags
       
 
   
 
-for flag in          -Wl,--no-as-needed              ; do
+for flag in          $ax_compiler_flags_as_needed_option              ; do
   as_CACHEVAR=`$as_echo "ax_cv_check_ldflags_$ax_compiler_flags_test_$flag" | $as_tr_sh`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the linker accepts $flag" >&5
 $as_echo_n "checking whether the linker accepts $flag... " >&6; }
@@ -9012,7 +9206,7 @@ fi
 
   
 
-for flag in              -Wl,--fatal-warnings         ; do
+for flag in              $ax_compiler_flags_fatal_warnings_option         ; do
   as_CACHEVAR=`$as_echo "ax_cv_check_ldflags_$ax_compiler_flags_test_$flag" | $as_tr_sh`
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether the linker accepts $flag" >&5
 $as_echo_n "checking whether the linker accepts $flag... " >&6; }
@@ -11475,34 +11669,29 @@ fi
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for sysroot" >&5
 $as_echo_n "checking for sysroot... " >&6; }
 
-@%:@ Check whether --with-libtool-sysroot was given.
-if test "${with_libtool_sysroot+set}" = set; then :
-  withval=$with_libtool_sysroot; 
+@%:@ Check whether --with-sysroot was given.
+if test "${with_sysroot+set}" = set; then :
+  withval=$with_sysroot; 
 else
-  with_libtool_sysroot=no
+  with_sysroot=no
 fi
 
 
 lt_sysroot=
-case $with_libtool_sysroot in #(
- no)
+case $with_sysroot in #(
+ yes)
    if test yes = "$GCC"; then
      lt_sysroot=`$CC --print-sysroot 2>/dev/null`
-     # Treat "/" the same a an unset sysroot. It seems to be more
-     # compatible across host platforms that way!?
-     if test "$lt_sysroot" = /; then
-       lt_sysroot=
-     fi
    fi
    ;; #(
- yes|''|/)
-   ;; #(
  /*)
-   lt_sysroot=`echo "$with_libtool_sysroot" | sed -e "$sed_quote_subst"`
+   lt_sysroot=`echo "$with_sysroot" | sed -e "$sed_quote_subst"`
+   ;; #(
+ no|'')
    ;; #(
  *)
-   { $as_echo "$as_me:${as_lineno-$LINENO}: result: $with_libtool_sysroot" >&5
-$as_echo "$with_libtool_sysroot" >&6; }
+   { $as_echo "$as_me:${as_lineno-$LINENO}: result: $with_sysroot" >&5
+$as_echo "$with_sysroot" >&6; }
    as_fn_error $? "The sysroot must be an absolute path." "$LINENO" 5
    ;;
 esac
@@ -16051,6 +16240,9 @@ fi
   # before this can be enabled.
   hardcode_into_libs=yes
 
+  # Add ABI-specific directories to the system library path.
+  sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib"
+
   # Ideally, we could use ldconfig to report *all* directores which are
   # searched for libraries, however this is still not possible.  Aside from not
   # being certain /sbin/ldconfig is available, command
@@ -16059,7 +16251,7 @@ fi
   # appending ld.so.conf contents (and includes) to the search path.
   if test -f /etc/ld.so.conf; then
     lt_ld_extra=`awk '/^include / { system(sprintf("cd /etc; cat %s 2>/dev/null", \$2)); skip = 1; } { if (!skip) print \$0; skip = 0; }' < /etc/ld.so.conf | $SED -e 's/#.*//;/^[	 ]*hwcap[	 ]/d;s/[:,	]/ /g;s/=[^=]*$//;s/=[^= ]* / /g;s/"//g;/^$/d' | tr '\n' ' '`
-    sys_lib_dlsearch_path_spec="/lib /usr/lib $lt_ld_extra"
+    sys_lib_dlsearch_path_spec="$sys_lib_dlsearch_path_spec $lt_ld_extra"
   fi
 
   # We used to test for /lib/ld.so.1 and disable shared libraries on

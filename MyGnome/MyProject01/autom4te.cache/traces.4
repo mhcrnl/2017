@@ -4,7 +4,7 @@ for flag in $1; do
   AX_CHECK_LINK_FLAG([$flag], [AX_APPEND_FLAG([$flag], [m4_default([$2], [LDFLAGS])])], [], [$3], [$4])
 done
 ])
-m4trace:/usr/share/aclocal/ax_check_enable_debug.m4:46: -1- AC_DEFUN([AX_CHECK_ENABLE_DEBUG], [
+m4trace:/usr/share/aclocal/ax_check_enable_debug.m4:47: -1- AC_DEFUN([AX_CHECK_ENABLE_DEBUG], [
     AC_BEFORE([$0],[AC_PROG_CC])dnl
     AC_BEFORE([$0],[AC_PROG_CXX])dnl
     AC_BEFORE([$0],[AC_PROG_F77])dnl
@@ -12,64 +12,74 @@ m4trace:/usr/share/aclocal/ax_check_enable_debug.m4:46: -1- AC_DEFUN([AX_CHECK_E
 
     AC_MSG_CHECKING(whether to enable debugging)
 
-    m4_define(ax_enable_debug_default,[m4_tolower(m4_normalize(ifelse([$1],,[no],[$1])))])
+    ax_enable_debug_default=m4_tolower(m4_normalize(ifelse([$1],,[no],[$1])))
+    ax_enable_debug_is_release=m4_tolower(m4_normalize(ifelse([$4],,
+                                                              [$ax_is_release],
+                                                              [$4])))
+
+    # If this is a release, override the default.
+    AS_IF([test "$ax_enable_debug_is_release" = "yes"],
+      [ax_enable_debug_default="no"])
+
     m4_define(ax_enable_debug_vars,[m4_normalize(ifelse([$2],,,[$2]))])
     m4_define(ax_disable_debug_vars,[m4_normalize(ifelse([$3],,[NDEBUG],[$3]))])
 
     AC_ARG_ENABLE(debug,
-        [AS_HELP_STRING([--enable-debug]@<:@=ax_enable_debug_default@:>@,[compile with debugging; one of yes/info/profile/no])],
-        [],enable_debug=ax_enable_debug_default)
-    if test "x$enable_debug" = "xyes" || test "x$enable_debug" = "x"; then
+        [AS_HELP_STRING([--enable-debug=]@<:@yes/info/profile/no@:>@,[compile with debugging])],
+        [],enable_debug=$ax_enable_debug_default)
+
+    # empty mean debug yes
+    AS_IF([test "x$enable_debug" = "x"],
+      [enable_debug="yes"])
+
+    # case of debug
+    AS_CASE([$enable_debug],
+      [yes],[
         AC_MSG_RESULT(yes)
         CFLAGS="${CFLAGS} -g -O0"
         CXXFLAGS="${CXXFLAGS} -g -O0"
         FFLAGS="${FFLAGS} -g -O0"
         FCFLAGS="${FCFLAGS} -g -O0"
         OBJCFLAGS="${OBJCFLAGS} -g -O0"
+      ],
+      [info],[
+        AC_MSG_RESULT(info)
+        CFLAGS="${CFLAGS} -g"
+        CXXFLAGS="${CXXFLAGS} -g"
+        FFLAGS="${FFLAGS} -g"
+        FCFLAGS="${FCFLAGS} -g"
+        OBJCFLAGS="${OBJCFLAGS} -g"
+      ],
+      [profile],[
+        AC_MSG_RESULT(profile)
+        CFLAGS="${CFLAGS} -g -pg"
+        CXXFLAGS="${CXXFLAGS} -g -pg"
+        FFLAGS="${FFLAGS} -g -pg"
+        FCFLAGS="${FCFLAGS} -g -pg"
+        OBJCFLAGS="${OBJCFLAGS} -g -pg"
+        LDFLAGS="${LDFLAGS} -pg"
+      ],
+      [
+        AC_MSG_RESULT(no)
+        dnl Ensure AC_PROG_CC/CXX/F77/FC/OBJC will not enable debug flags
+        dnl by setting any unset environment flag variables
+        AS_IF([test "x${CFLAGS+set}" != "xset"],
+          [CFLAGS=""])
+        AS_IF([test "x${CXXFLAGS+set}" != "xset"],
+          [CXXFLAGS=""])
+        AS_IF([test "x${FFLAGS+set}" != "xset"],
+          [FFLAGS=""])
+        AS_IF([test "x${FCFLAGS+set}" != "xset"],
+          [FCFLAGS=""])
+        AS_IF([test "x${OBJCFLAGS+set}" != "xset"],
+          [OBJCFLAGS=""])
+      ])
 
-        dnl Define various variables if debugging is enabled.
-        m4_map_args_w(ax_enable_debug_vars, [AC_DEFINE(], [,,[Define if debugging is enabled])])
-    else
-        if test "x$enable_debug" = "xinfo"; then
-            AC_MSG_RESULT(info)
-            CFLAGS="${CFLAGS} -g"
-            CXXFLAGS="${CXXFLAGS} -g"
-            FFLAGS="${FFLAGS} -g"
-            FCFLAGS="${FCFLAGS} -g"
-            OBJCFLAGS="${OBJCFLAGS} -g"
-        elif test "x$enable_debug" = "xprofile"; then
-            AC_MSG_RESULT(profile)
-            CFLAGS="${CFLAGS} -g -pg"
-            CXXFLAGS="${CXXFLAGS} -g -pg"
-            FFLAGS="${FFLAGS} -g -pg"
-            FCFLAGS="${FCFLAGS} -g -pg"
-            OBJCFLAGS="${OBJCFLAGS} -g -pg"
-            LDFLAGS="${LDFLAGS} -pg"
-        else
-            AC_MSG_RESULT(no)
-            dnl Ensure AC_PROG_CC/CXX/F77/FC/OBJC will not enable debug flags
-            dnl by setting any unset environment flag variables
-            if test "x${CFLAGS+set}" != "xset"; then
-                CFLAGS=""
-            fi
-            if test "x${CXXFLAGS+set}" != "xset"; then
-                CXXFLAGS=""
-            fi
-            if test "x${FFLAGS+set}" != "xset"; then
-                FFLAGS=""
-            fi
-            if test "x${FCFLAGS+set}" != "xset"; then
-                FCFLAGS=""
-            fi
-            if test "x${OBJCFLAGS+set}" != "xset"; then
-                OBJCFLAGS=""
-            fi
-        fi
-
-        dnl Define various variables if debugging is disabled.
-        dnl assert.h is a NOP if NDEBUG is defined, so define it by default.
-        m4_map_args_w(ax_disable_debug_vars, [AC_DEFINE(], [,,[Define if debugging is disabled])])
-    fi
+    dnl Define various variables if debugging is disabled.
+    dnl assert.h is a NOP if NDEBUG is defined, so define it by default.
+    AS_IF([test "x$enable_debug" = "xyes"],
+      [m4_map_args_w(ax_enable_debug_vars, [AC_DEFINE(], [,,[Define if debugging is enabled])])],
+      [m4_map_args_w(ax_disable_debug_vars, [AC_DEFINE(], [,,[Define if debugging is disabled])])])
     ax_enable_debug=$enable_debug
 ])
 m4trace:/usr/share/aclocal/ax_compiler_flags.m4:113: -1- AC_DEFUN([AX_COMPILER_FLAGS], [
@@ -125,7 +135,7 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_cflags.m4:30: -1- AC_DEFUN([AX_COMP
     AX_REQUIRE_DEFINED([AX_CHECK_COMPILE_FLAG])
 
     # Variable names
-    m4_define(ax_warn_cflags_variable,
+    m4_define([ax_warn_cflags_variable],
               [m4_normalize(ifelse([$1],,[WARN_CFLAGS],[$1]))])
 
     AC_LANG_PUSH([C])
@@ -139,6 +149,13 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_cflags.m4:30: -1- AC_DEFUN([AX_COMP
         ax_compiler_flags_test="-Werror=unknown-warning-option"
     ],[
         ax_compiler_flags_test=""
+    ])
+
+    # Check that -Wno-suggest-attribute=format is supported
+    AX_CHECK_COMPILE_FLAG([-Wno-suggest-attribute=format],[
+        ax_compiler_no_suggest_attribute_flags="-Wno-suggest-attribute=format"
+    ],[
+        ax_compiler_no_suggest_attribute_flags=""
     ])
 
     # Base flags
@@ -199,7 +216,7 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_cflags.m4:30: -1- AC_DEFUN([AX_COMP
         AX_APPEND_FLAG([-Werror],ax_warn_cflags_variable)
 
         AX_APPEND_COMPILE_FLAGS([ dnl
-            -Wno-suggest-attribute=format dnl
+            [$ax_compiler_no_suggest_attribute_flags] dnl
         ],ax_warn_cflags_variable,[$ax_compiler_flags_test])
     ])
 
@@ -226,7 +243,7 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_gir.m4:31: -1- AC_DEFUN([AX_COMPILE
     AX_REQUIRE_DEFINED([AX_APPEND_FLAG])
 
     # Variable names
-    m4_define(ax_warn_scannerflags_variable,
+    m4_define([ax_warn_scannerflags_variable],
               [m4_normalize(ifelse([$1],,[WARN_SCANNERFLAGS],[$1]))])
 
     # Base flags
@@ -256,9 +273,10 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_ldflags.m4:30: -1- AC_DEFUN([AX_COM
     AX_REQUIRE_DEFINED([AX_APPEND_LINK_FLAGS])
     AX_REQUIRE_DEFINED([AX_APPEND_FLAG])
     AX_REQUIRE_DEFINED([AX_CHECK_COMPILE_FLAG])
+    AX_REQUIRE_DEFINED([AX_CHECK_LINK_FLAG])
 
     # Variable names
-    m4_define(ax_warn_ldflags_variable,
+    m4_define([ax_warn_ldflags_variable],
               [m4_normalize(ifelse([$1],,[WARN_LDFLAGS],[$1]))])
 
     # Always pass -Werror=unknown-warning-option to get Clang to fail on bad
@@ -272,9 +290,25 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_ldflags.m4:30: -1- AC_DEFUN([AX_COM
         ax_compiler_flags_test=""
     ])
 
+    # macOS linker does not have --as-needed
+    AX_CHECK_LINK_FLAG([-Wl,--no-as-needed], [
+        ax_compiler_flags_as_needed_option="-Wl,--no-as-needed"
+    ], [
+        ax_compiler_flags_as_needed_option=""
+    ])
+
+    # macOS linker speaks with a different accent
+    ax_compiler_flags_fatal_warnings_option=""
+    AX_CHECK_LINK_FLAG([-Wl,--fatal-warnings], [
+        ax_compiler_flags_fatal_warnings_option="-Wl,--fatal-warnings"
+    ])
+    AX_CHECK_LINK_FLAG([-Wl,-fatal_warnings], [
+        ax_compiler_flags_fatal_warnings_option="-Wl,-fatal_warnings"
+    ])
+
     # Base flags
     AX_APPEND_LINK_FLAGS([ dnl
-        -Wl,--no-as-needed dnl
+        $ax_compiler_flags_as_needed_option dnl
         $3 dnl
     ],ax_warn_ldflags_variable,[$ax_compiler_flags_test])
 
@@ -291,7 +325,7 @@ m4trace:/usr/share/aclocal/ax_compiler_flags_ldflags.m4:30: -1- AC_DEFUN([AX_COM
         # suggest-attribute=format is disabled because it gives too many false
         # positives
         AX_APPEND_LINK_FLAGS([ dnl
-            -Wl,--fatal-warnings dnl
+            $ax_compiler_flags_fatal_warnings_option dnl
         ],ax_warn_ldflags_variable,[$ax_compiler_flags_test])
     ])
 
@@ -317,7 +351,7 @@ GENERATE_CHANGELOG_RULES='
 #  - CHANGELOG_GIT_DIR: .git directory to use. (Default: $(top_srcdir)/.git)
 
 # git-specific
-CHANGELOG_GIT_FLAGS ?= --stat -M -C --name-status --no-color
+CHANGELOG_GIT_FLAGS ?= --stat -M -C --name-status --no-color --no-decorate
 CHANGELOG_GIT_DIR ?= $(top_srcdir)/.git
 
 ifeq ($(CHANGELOG_START),)
@@ -341,13 +375,13 @@ dist-ChangeLog:
 	AC_SUBST([GENERATE_CHANGELOG_RULES])
 	m4_ifdef([_AM_SUBST_NOTMAKE], [_AM_SUBST_NOTMAKE([GENERATE_CHANGELOG_RULES])])
 ])
-m4trace:/usr/share/aclocal/ax_is_release.m4:44: -1- AC_DEFUN([AX_IS_RELEASE], [
+m4trace:/usr/share/aclocal/ax_is_release.m4:49: -1- AC_DEFUN([AX_IS_RELEASE], [
     AC_BEFORE([AC_INIT],[$0])
 
     m4_case([$1],
       [git-directory],[
         # $is_release = (.git directory does not exist)
-        AS_IF([test -d .git],[ax_is_release=no],[ax_is_release=yes])
+        AS_IF([test -d ${srcdir}/.git],[ax_is_release=no],[ax_is_release=yes])
       ],
       [minor-version],[
         # $is_release = ($minor_version is even)
@@ -361,10 +395,16 @@ m4trace:/usr/share/aclocal/ax_is_release.m4:44: -1- AC_DEFUN([AX_IS_RELEASE], [
         AS_IF([test "$(( $micro_version % 2 ))" -ne 0],
               [ax_is_release=no],[ax_is_release=yes])
       ],
+      [dash-version],[
+        # $is_release = ($PACKAGE_VERSION has a dash)
+        AS_CASE([$PACKAGE_VERSION],
+                [*-*], [ax_is_release=no],
+                [*], [ax_is_release=yes])
+      ],
       [always],[ax_is_release=yes],
       [never],[ax_is_release=no],
       [
-        AC_MSG_ERROR([Invalid policy. Valid policies: git-directory, minor-version.])
+        AC_MSG_ERROR([Invalid policy. Valid policies: git-directory, minor-version, micro-version, dash-version, always, never.])
       ])
 ])
 m4trace:/usr/share/aclocal/ltargz.m4:12: -1- AC_DEFUN([LT_FUNC_ARGZ], [
@@ -4523,33 +4563,28 @@ m4trace:m4/libtool.m4:919: -1- AC_DEFUN([AC_LIBTOOL_RC], [AC_DIAGNOSE([obsolete]
 You should run autoupdate.])dnl
 LT_LANG(Windows Resource)])
 m4trace:m4/libtool.m4:1247: -1- AC_DEFUN([_LT_WITH_SYSROOT], [AC_MSG_CHECKING([for sysroot])
-AC_ARG_WITH([libtool-sysroot],
-[AS_HELP_STRING([--with-libtool-sysroot@<:@=DIR@:>@],
+AC_ARG_WITH([sysroot],
+[AS_HELP_STRING([--with-sysroot@<:@=DIR@:>@],
   [Search for dependent libraries within DIR (or the compiler's sysroot
    if not specified).])],
-[], [with_libtool_sysroot=no])
+[], [with_sysroot=no])
 
 dnl lt_sysroot will always be passed unquoted.  We quote it here
 dnl in case the user passed a directory name.
 lt_sysroot=
-case $with_libtool_sysroot in #(
- no)
+case $with_sysroot in #(
+ yes)
    if test yes = "$GCC"; then
      lt_sysroot=`$CC --print-sysroot 2>/dev/null`
-     # Treat "/" the same a an unset sysroot. It seems to be more
-     # compatible across host platforms that way!?
-     if test "$lt_sysroot" = /; then
-       lt_sysroot=
-     fi
    fi
    ;; #(
- yes|''|/)
-   ;; #(
  /*)
-   lt_sysroot=`echo "$with_libtool_sysroot" | sed -e "$sed_quote_subst"`
+   lt_sysroot=`echo "$with_sysroot" | sed -e "$sed_quote_subst"`
+   ;; #(
+ no|'')
    ;; #(
  *)
-   AC_MSG_RESULT([$with_libtool_sysroot])
+   AC_MSG_RESULT([$with_sysroot])
    AC_MSG_ERROR([The sysroot must be an absolute path.])
    ;;
 esac
@@ -4557,7 +4592,7 @@ esac
  AC_MSG_RESULT([${lt_sysroot:-no}])
 _LT_DECL([], [lt_sysroot], [0], [The root where to search for ]dnl
 [dependent libraries, and where our libraries should be installed.])])
-m4trace:m4/libtool.m4:1583: -1- AC_DEFUN([_LT_COMPILER_OPTION], [m4_require([_LT_FILEUTILS_DEFAULTS])dnl
+m4trace:m4/libtool.m4:1578: -1- AC_DEFUN([_LT_COMPILER_OPTION], [m4_require([_LT_FILEUTILS_DEFAULTS])dnl
 m4_require([_LT_DECL_SED])dnl
 AC_CACHE_CHECK([$1], [$2],
   [$2=no
@@ -4596,11 +4631,11 @@ else
     m4_if([$6], , :, [$6])
 fi
 ])
-m4trace:m4/libtool.m4:1625: -1- AU_DEFUN([AC_LIBTOOL_COMPILER_OPTION], [m4_if($#, 0, [_LT_COMPILER_OPTION], [_LT_COMPILER_OPTION($@)])])
-m4trace:m4/libtool.m4:1625: -1- AC_DEFUN([AC_LIBTOOL_COMPILER_OPTION], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_COMPILER_OPTION' is obsolete.
+m4trace:m4/libtool.m4:1620: -1- AU_DEFUN([AC_LIBTOOL_COMPILER_OPTION], [m4_if($#, 0, [_LT_COMPILER_OPTION], [_LT_COMPILER_OPTION($@)])])
+m4trace:m4/libtool.m4:1620: -1- AC_DEFUN([AC_LIBTOOL_COMPILER_OPTION], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_COMPILER_OPTION' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [_LT_COMPILER_OPTION], [_LT_COMPILER_OPTION($@)])])
-m4trace:m4/libtool.m4:1634: -1- AC_DEFUN([_LT_LINKER_OPTION], [m4_require([_LT_FILEUTILS_DEFAULTS])dnl
+m4trace:m4/libtool.m4:1629: -1- AC_DEFUN([_LT_LINKER_OPTION], [m4_require([_LT_FILEUTILS_DEFAULTS])dnl
 m4_require([_LT_DECL_SED])dnl
 AC_CACHE_CHECK([$1], [$2],
   [$2=no
@@ -4632,11 +4667,11 @@ else
     m4_if([$5], , :, [$5])
 fi
 ])
-m4trace:m4/libtool.m4:1669: -1- AU_DEFUN([AC_LIBTOOL_LINKER_OPTION], [m4_if($#, 0, [_LT_LINKER_OPTION], [_LT_LINKER_OPTION($@)])])
-m4trace:m4/libtool.m4:1669: -1- AC_DEFUN([AC_LIBTOOL_LINKER_OPTION], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_LINKER_OPTION' is obsolete.
+m4trace:m4/libtool.m4:1664: -1- AU_DEFUN([AC_LIBTOOL_LINKER_OPTION], [m4_if($#, 0, [_LT_LINKER_OPTION], [_LT_LINKER_OPTION($@)])])
+m4trace:m4/libtool.m4:1664: -1- AC_DEFUN([AC_LIBTOOL_LINKER_OPTION], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_LINKER_OPTION' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [_LT_LINKER_OPTION], [_LT_LINKER_OPTION($@)])])
-m4trace:m4/libtool.m4:1676: -1- AC_DEFUN([LT_CMD_MAX_LEN], [AC_REQUIRE([AC_CANONICAL_HOST])dnl
+m4trace:m4/libtool.m4:1671: -1- AC_DEFUN([LT_CMD_MAX_LEN], [AC_REQUIRE([AC_CANONICAL_HOST])dnl
 # find the maximum length of command line arguments
 AC_MSG_CHECKING([the maximum length of command line arguments])
 AC_CACHE_VAL([lt_cv_sys_max_cmd_len], [dnl
@@ -4772,11 +4807,11 @@ max_cmd_len=$lt_cv_sys_max_cmd_len
 _LT_DECL([], [max_cmd_len], [0],
     [What is the maximum length of a command?])
 ])
-m4trace:m4/libtool.m4:1815: -1- AU_DEFUN([AC_LIBTOOL_SYS_MAX_CMD_LEN], [m4_if($#, 0, [LT_CMD_MAX_LEN], [LT_CMD_MAX_LEN($@)])])
-m4trace:m4/libtool.m4:1815: -1- AC_DEFUN([AC_LIBTOOL_SYS_MAX_CMD_LEN], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_SYS_MAX_CMD_LEN' is obsolete.
+m4trace:m4/libtool.m4:1810: -1- AU_DEFUN([AC_LIBTOOL_SYS_MAX_CMD_LEN], [m4_if($#, 0, [LT_CMD_MAX_LEN], [LT_CMD_MAX_LEN($@)])])
+m4trace:m4/libtool.m4:1810: -1- AC_DEFUN([AC_LIBTOOL_SYS_MAX_CMD_LEN], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_SYS_MAX_CMD_LEN' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_CMD_MAX_LEN], [LT_CMD_MAX_LEN($@)])])
-m4trace:m4/libtool.m4:1926: -1- AC_DEFUN([LT_SYS_DLOPEN_SELF], [m4_require([_LT_HEADER_DLFCN])dnl
+m4trace:m4/libtool.m4:1921: -1- AC_DEFUN([LT_SYS_DLOPEN_SELF], [m4_require([_LT_HEADER_DLFCN])dnl
 if test yes != "$enable_dlopen"; then
   enable_dlopen=unknown
   enable_dlopen_self=unknown
@@ -4898,11 +4933,11 @@ _LT_DECL([dlopen_self], [enable_dlopen_self], [0],
 _LT_DECL([dlopen_self_static], [enable_dlopen_self_static], [0],
 	 [Whether dlopen of statically linked programs is supported])
 ])
-m4trace:m4/libtool.m4:2051: -1- AU_DEFUN([AC_LIBTOOL_DLOPEN_SELF], [m4_if($#, 0, [LT_SYS_DLOPEN_SELF], [LT_SYS_DLOPEN_SELF($@)])])
-m4trace:m4/libtool.m4:2051: -1- AC_DEFUN([AC_LIBTOOL_DLOPEN_SELF], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_DLOPEN_SELF' is obsolete.
+m4trace:m4/libtool.m4:2046: -1- AU_DEFUN([AC_LIBTOOL_DLOPEN_SELF], [m4_if($#, 0, [LT_SYS_DLOPEN_SELF], [LT_SYS_DLOPEN_SELF($@)])])
+m4trace:m4/libtool.m4:2046: -1- AC_DEFUN([AC_LIBTOOL_DLOPEN_SELF], [AC_DIAGNOSE([obsolete], [The macro `AC_LIBTOOL_DLOPEN_SELF' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_SYS_DLOPEN_SELF], [LT_SYS_DLOPEN_SELF($@)])])
-m4trace:m4/libtool.m4:3160: -1- AC_DEFUN([_LT_PATH_TOOL_PREFIX], [m4_require([_LT_DECL_EGREP])dnl
+m4trace:m4/libtool.m4:3158: -1- AC_DEFUN([_LT_PATH_TOOL_PREFIX], [m4_require([_LT_DECL_EGREP])dnl
 AC_MSG_CHECKING([for $1])
 AC_CACHE_VAL(lt_cv_path_MAGIC_CMD,
 [case $MAGIC_CMD in
@@ -4961,11 +4996,11 @@ fi
 _LT_DECL([], [MAGIC_CMD], [0],
 	 [Used to examine libraries when file_magic_cmd begins with "file"])dnl
 ])
-m4trace:m4/libtool.m4:3222: -1- AU_DEFUN([AC_PATH_TOOL_PREFIX], [m4_if($#, 0, [_LT_PATH_TOOL_PREFIX], [_LT_PATH_TOOL_PREFIX($@)])])
-m4trace:m4/libtool.m4:3222: -1- AC_DEFUN([AC_PATH_TOOL_PREFIX], [AC_DIAGNOSE([obsolete], [The macro `AC_PATH_TOOL_PREFIX' is obsolete.
+m4trace:m4/libtool.m4:3220: -1- AU_DEFUN([AC_PATH_TOOL_PREFIX], [m4_if($#, 0, [_LT_PATH_TOOL_PREFIX], [_LT_PATH_TOOL_PREFIX($@)])])
+m4trace:m4/libtool.m4:3220: -1- AC_DEFUN([AC_PATH_TOOL_PREFIX], [AC_DIAGNOSE([obsolete], [The macro `AC_PATH_TOOL_PREFIX' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [_LT_PATH_TOOL_PREFIX], [_LT_PATH_TOOL_PREFIX($@)])])
-m4trace:m4/libtool.m4:3245: -1- AC_DEFUN([LT_PATH_LD], [AC_REQUIRE([AC_PROG_CC])dnl
+m4trace:m4/libtool.m4:3243: -1- AC_DEFUN([LT_PATH_LD], [AC_REQUIRE([AC_PROG_CC])dnl
 AC_REQUIRE([AC_CANONICAL_HOST])dnl
 AC_REQUIRE([AC_CANONICAL_BUILD])dnl
 m4_require([_LT_DECL_SED])dnl
@@ -5051,15 +5086,15 @@ AC_SUBST([LD])
 
 _LT_TAGDECL([], [LD], [1], [The linker used to build libraries])
 ])
-m4trace:m4/libtool.m4:3334: -1- AU_DEFUN([AM_PROG_LD], [m4_if($#, 0, [LT_PATH_LD], [LT_PATH_LD($@)])])
-m4trace:m4/libtool.m4:3334: -1- AC_DEFUN([AM_PROG_LD], [AC_DIAGNOSE([obsolete], [The macro `AM_PROG_LD' is obsolete.
+m4trace:m4/libtool.m4:3332: -1- AU_DEFUN([AM_PROG_LD], [m4_if($#, 0, [LT_PATH_LD], [LT_PATH_LD($@)])])
+m4trace:m4/libtool.m4:3332: -1- AC_DEFUN([AM_PROG_LD], [AC_DIAGNOSE([obsolete], [The macro `AM_PROG_LD' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_PATH_LD], [LT_PATH_LD($@)])])
-m4trace:m4/libtool.m4:3335: -1- AU_DEFUN([AC_PROG_LD], [m4_if($#, 0, [LT_PATH_LD], [LT_PATH_LD($@)])])
-m4trace:m4/libtool.m4:3335: -1- AC_DEFUN([AC_PROG_LD], [AC_DIAGNOSE([obsolete], [The macro `AC_PROG_LD' is obsolete.
+m4trace:m4/libtool.m4:3333: -1- AU_DEFUN([AC_PROG_LD], [m4_if($#, 0, [LT_PATH_LD], [LT_PATH_LD($@)])])
+m4trace:m4/libtool.m4:3333: -1- AC_DEFUN([AC_PROG_LD], [AC_DIAGNOSE([obsolete], [The macro `AC_PROG_LD' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_PATH_LD], [LT_PATH_LD($@)])])
-m4trace:m4/libtool.m4:3664: -1- AC_DEFUN([LT_PATH_NM], [AC_REQUIRE([AC_PROG_CC])dnl
+m4trace:m4/libtool.m4:3662: -1- AC_DEFUN([LT_PATH_NM], [AC_REQUIRE([AC_PROG_CC])dnl
 AC_CACHE_CHECK([for BSD- or MS-compatible name lister (nm)], lt_cv_path_NM,
 [if test -n "$NM"; then
   # Let the user override the test.
@@ -5151,15 +5186,15 @@ AC_CACHE_CHECK([the name lister ($NM) interface], [lt_cv_nm_interface],
   fi
   rm -f conftest*])
 ])
-m4trace:m4/libtool.m4:3759: -1- AU_DEFUN([AM_PROG_NM], [m4_if($#, 0, [LT_PATH_NM], [LT_PATH_NM($@)])])
-m4trace:m4/libtool.m4:3759: -1- AC_DEFUN([AM_PROG_NM], [AC_DIAGNOSE([obsolete], [The macro `AM_PROG_NM' is obsolete.
+m4trace:m4/libtool.m4:3757: -1- AU_DEFUN([AM_PROG_NM], [m4_if($#, 0, [LT_PATH_NM], [LT_PATH_NM($@)])])
+m4trace:m4/libtool.m4:3757: -1- AC_DEFUN([AM_PROG_NM], [AC_DIAGNOSE([obsolete], [The macro `AM_PROG_NM' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_PATH_NM], [LT_PATH_NM($@)])])
-m4trace:m4/libtool.m4:3760: -1- AU_DEFUN([AC_PROG_NM], [m4_if($#, 0, [LT_PATH_NM], [LT_PATH_NM($@)])])
-m4trace:m4/libtool.m4:3760: -1- AC_DEFUN([AC_PROG_NM], [AC_DIAGNOSE([obsolete], [The macro `AC_PROG_NM' is obsolete.
+m4trace:m4/libtool.m4:3758: -1- AU_DEFUN([AC_PROG_NM], [m4_if($#, 0, [LT_PATH_NM], [LT_PATH_NM($@)])])
+m4trace:m4/libtool.m4:3758: -1- AC_DEFUN([AC_PROG_NM], [AC_DIAGNOSE([obsolete], [The macro `AC_PROG_NM' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_PATH_NM], [LT_PATH_NM($@)])])
-m4trace:m4/libtool.m4:3831: -1- AC_DEFUN([_LT_DLL_DEF_P], [dnl
+m4trace:m4/libtool.m4:3829: -1- AC_DEFUN([_LT_DLL_DEF_P], [dnl
   test DEF = "`$SED -n dnl
     -e '\''s/^[[	 ]]*//'\'' dnl Strip leading whitespace
     -e '\''/^\(;.*\)*$/d'\'' dnl      Delete empty lines and comments
@@ -5167,7 +5202,7 @@ m4trace:m4/libtool.m4:3831: -1- AC_DEFUN([_LT_DLL_DEF_P], [dnl
     -e q dnl                          Only consider the first "real" line
     $1`" dnl
 ])
-m4trace:m4/libtool.m4:3845: -1- AC_DEFUN([LT_LIB_M], [AC_REQUIRE([AC_CANONICAL_HOST])dnl
+m4trace:m4/libtool.m4:3843: -1- AC_DEFUN([LT_LIB_M], [AC_REQUIRE([AC_CANONICAL_HOST])dnl
 LIBM=
 case $host in
 *-*-beos* | *-*-cegcc* | *-*-cygwin* | *-*-haiku* | *-*-pw32* | *-*-darwin*)
@@ -5183,30 +5218,30 @@ case $host in
 esac
 AC_SUBST([LIBM])
 ])
-m4trace:m4/libtool.m4:3864: -1- AU_DEFUN([AC_CHECK_LIBM], [m4_if($#, 0, [LT_LIB_M], [LT_LIB_M($@)])])
-m4trace:m4/libtool.m4:3864: -1- AC_DEFUN([AC_CHECK_LIBM], [AC_DIAGNOSE([obsolete], [The macro `AC_CHECK_LIBM' is obsolete.
+m4trace:m4/libtool.m4:3862: -1- AU_DEFUN([AC_CHECK_LIBM], [m4_if($#, 0, [LT_LIB_M], [LT_LIB_M($@)])])
+m4trace:m4/libtool.m4:3862: -1- AC_DEFUN([AC_CHECK_LIBM], [AC_DIAGNOSE([obsolete], [The macro `AC_CHECK_LIBM' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_LIB_M], [LT_LIB_M($@)])])
-m4trace:m4/libtool.m4:8127: -1- AC_DEFUN([LT_PROG_GCJ], [m4_ifdef([AC_PROG_GCJ], [AC_PROG_GCJ],
+m4trace:m4/libtool.m4:8125: -1- AC_DEFUN([LT_PROG_GCJ], [m4_ifdef([AC_PROG_GCJ], [AC_PROG_GCJ],
   [m4_ifdef([A][M_PROG_GCJ], [A][M_PROG_GCJ],
     [AC_CHECK_TOOL(GCJ, gcj,)
       test set = "${GCJFLAGS+set}" || GCJFLAGS="-g -O2"
       AC_SUBST(GCJFLAGS)])])[]dnl
 ])
-m4trace:m4/libtool.m4:8136: -1- AU_DEFUN([LT_AC_PROG_GCJ], [m4_if($#, 0, [LT_PROG_GCJ], [LT_PROG_GCJ($@)])])
-m4trace:m4/libtool.m4:8136: -1- AC_DEFUN([LT_AC_PROG_GCJ], [AC_DIAGNOSE([obsolete], [The macro `LT_AC_PROG_GCJ' is obsolete.
+m4trace:m4/libtool.m4:8134: -1- AU_DEFUN([LT_AC_PROG_GCJ], [m4_if($#, 0, [LT_PROG_GCJ], [LT_PROG_GCJ($@)])])
+m4trace:m4/libtool.m4:8134: -1- AC_DEFUN([LT_AC_PROG_GCJ], [AC_DIAGNOSE([obsolete], [The macro `LT_AC_PROG_GCJ' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_PROG_GCJ], [LT_PROG_GCJ($@)])])
-m4trace:m4/libtool.m4:8143: -1- AC_DEFUN([LT_PROG_GO], [AC_CHECK_TOOL(GOC, gccgo,)
+m4trace:m4/libtool.m4:8141: -1- AC_DEFUN([LT_PROG_GO], [AC_CHECK_TOOL(GOC, gccgo,)
 ])
-m4trace:m4/libtool.m4:8150: -1- AC_DEFUN([LT_PROG_RC], [AC_CHECK_TOOL(RC, windres,)
+m4trace:m4/libtool.m4:8148: -1- AC_DEFUN([LT_PROG_RC], [AC_CHECK_TOOL(RC, windres,)
 ])
-m4trace:m4/libtool.m4:8155: -1- AU_DEFUN([LT_AC_PROG_RC], [m4_if($#, 0, [LT_PROG_RC], [LT_PROG_RC($@)])])
-m4trace:m4/libtool.m4:8155: -1- AC_DEFUN([LT_AC_PROG_RC], [AC_DIAGNOSE([obsolete], [The macro `LT_AC_PROG_RC' is obsolete.
+m4trace:m4/libtool.m4:8153: -1- AU_DEFUN([LT_AC_PROG_RC], [m4_if($#, 0, [LT_PROG_RC], [LT_PROG_RC($@)])])
+m4trace:m4/libtool.m4:8153: -1- AC_DEFUN([LT_AC_PROG_RC], [AC_DIAGNOSE([obsolete], [The macro `LT_AC_PROG_RC' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [LT_PROG_RC], [LT_PROG_RC($@)])])
-m4trace:m4/libtool.m4:8275: -1- AU_DEFUN([LT_AC_PROG_SED], [m4_if($#, 0, [AC_PROG_SED], [AC_PROG_SED($@)])])
-m4trace:m4/libtool.m4:8275: -1- AC_DEFUN([LT_AC_PROG_SED], [AC_DIAGNOSE([obsolete], [The macro `LT_AC_PROG_SED' is obsolete.
+m4trace:m4/libtool.m4:8273: -1- AU_DEFUN([LT_AC_PROG_SED], [m4_if($#, 0, [AC_PROG_SED], [AC_PROG_SED($@)])])
+m4trace:m4/libtool.m4:8273: -1- AC_DEFUN([LT_AC_PROG_SED], [AC_DIAGNOSE([obsolete], [The macro `LT_AC_PROG_SED' is obsolete.
 You should run autoupdate.])dnl
 m4_if($#, 0, [AC_PROG_SED], [AC_PROG_SED($@)])])
 m4trace:m4/lock.m4:9: -1- AC_DEFUN([gl_LOCK], [
@@ -7072,6 +7107,11 @@ m4trace:configure.ac:81: -1- AX_CHECK_COMPILE_FLAG([-Werror=unknown-warning-opti
     ], [
         ax_compiler_flags_test=""
     ])
+m4trace:configure.ac:81: -1- AX_CHECK_COMPILE_FLAG([-Wno-suggest-attribute=format], [
+        ax_compiler_no_suggest_attribute_flags="-Wno-suggest-attribute=format"
+    ], [
+        ax_compiler_no_suggest_attribute_flags=""
+    ])
 m4trace:configure.ac:81: -1- AX_APPEND_COMPILE_FLAGS([ dnl
         -fno-strict-aliasing dnl
          dnl
@@ -7126,7 +7166,7 @@ m4trace:configure.ac:81: -1- AX_CHECK_COMPILE_FLAG([$flag], [AX_APPEND_FLAG([$fl
 m4trace:configure.ac:81: -1- AX_APPEND_FLAG([$flag], [WARN_CFLAGS])
 m4trace:configure.ac:81: -1- AX_APPEND_FLAG([-Werror], [WARN_CFLAGS])
 m4trace:configure.ac:81: -1- AX_APPEND_COMPILE_FLAGS([ dnl
-            -Wno-suggest-attribute=format dnl
+            [$ax_compiler_no_suggest_attribute_flags] dnl
         ], [WARN_CFLAGS], [$ax_compiler_flags_test])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_CHECK_COMPILE_FLAG])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_APPEND_FLAG])
@@ -7142,13 +7182,25 @@ m4trace:configure.ac:81: -1- AX_COMPILER_FLAGS_LDFLAGS([], [$ax_compiler_flags_i
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_APPEND_LINK_FLAGS])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_APPEND_FLAG])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_CHECK_COMPILE_FLAG])
+m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_CHECK_LINK_FLAG])
 m4trace:configure.ac:81: -1- AX_CHECK_COMPILE_FLAG([-Werror=unknown-warning-option], [
         ax_compiler_flags_test="-Werror=unknown-warning-option"
     ], [
         ax_compiler_flags_test=""
     ])
+m4trace:configure.ac:81: -1- AX_CHECK_LINK_FLAG([-Wl,--no-as-needed], [
+        ax_compiler_flags_as_needed_option="-Wl,--no-as-needed"
+    ], [
+        ax_compiler_flags_as_needed_option=""
+    ])
+m4trace:configure.ac:81: -1- AX_CHECK_LINK_FLAG([-Wl,--fatal-warnings], [
+        ax_compiler_flags_fatal_warnings_option="-Wl,--fatal-warnings"
+    ])
+m4trace:configure.ac:81: -1- AX_CHECK_LINK_FLAG([-Wl,-fatal_warnings], [
+        ax_compiler_flags_fatal_warnings_option="-Wl,-fatal_warnings"
+    ])
 m4trace:configure.ac:81: -1- AX_APPEND_LINK_FLAGS([ dnl
-        -Wl,--no-as-needed dnl
+        $ax_compiler_flags_as_needed_option dnl
          dnl
     ], [WARN_LDFLAGS], [$ax_compiler_flags_test])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_CHECK_LINK_FLAG])
@@ -7161,7 +7213,7 @@ m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_APPEND_FLAG])
 m4trace:configure.ac:81: -1- AX_CHECK_LINK_FLAG([$flag], [AX_APPEND_FLAG([$flag], [m4_default([WARN_LDFLAGS], [LDFLAGS])])], [], [$ax_compiler_flags_test], [])
 m4trace:configure.ac:81: -1- AX_APPEND_FLAG([$flag], [m4_default([WARN_LDFLAGS], [LDFLAGS])])
 m4trace:configure.ac:81: -1- AX_APPEND_LINK_FLAGS([ dnl
-            -Wl,--fatal-warnings dnl
+            $ax_compiler_flags_fatal_warnings_option dnl
         ], [WARN_LDFLAGS], [$ax_compiler_flags_test])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_CHECK_LINK_FLAG])
 m4trace:configure.ac:81: -1- AX_REQUIRE_DEFINED([AX_APPEND_FLAG])
