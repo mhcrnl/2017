@@ -1,0 +1,12 @@
+#!/usr/bin/ruby -w
+
+#puts "Salut din Ruby!";
+
+class Calcul
+    def adunare(nr1, nr2)
+        return nr1+nr2
+    end
+end
+
+clasa1 = Calcul.new;
+clasa1.adunare(5,5);
