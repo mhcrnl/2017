@@ -18,11 +18,16 @@ class Carte
 	#......................................................
 	# Metoda de afisare a datelor
 	def to_s
-		puts @isbn+" "+@autor+" "+@titlu+" "+@editura
+		puts "Carte: #{@isbn} #{@autor} #{@titlu} #{@editura}"
 	end
 	#......................................................
 	# Metoda de modificare a cartii
 	def modificare_carte
-		
+		puts ">>>MODIFICARE CARTE<<<"
+		puts "Introduceti noul titlu: "
+		@titlu = gets
+		puts "Modificati numele autorului: "
+		@autor = gets
+		puts "Modificarea s-a executat cu succes!"
 	end
 end

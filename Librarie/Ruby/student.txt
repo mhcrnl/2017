@@ -1,0 +1,24 @@
+#<Student:0x005646b55aad28>
+
+
+#<Student:0x00558fb395a1f8>
+
+
+
+STUDENT: 8
+ Mihai Cornel
+ 
+STUDENT: 9
+ Mihai Vasile
+ 
+STUDENT: 9
+ Mihai Cornel
+ 
+STUDENT: 1--Mihai Alexandru
+ 
+STUDENT: 1--Vasile Radu
+ 
+1--Mihai Cornel
+--1234
+1--mihai cornel
+--1234
