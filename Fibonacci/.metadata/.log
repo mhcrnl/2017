@@ -1,0 +1,82 @@
+!SESSION Sat Jun 03 19:07:42 EEST 2017 -----------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-03 19:07:42.056
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-03 19:07:41.482 -----------------------------------------------
+eclipse.buildId=4.6.1.v20160915-0852
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-03 19:07:45.599
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Sat Jun 03 19:15:22 EEST 2017 -----------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-03 19:15:22.927
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-03 19:15:19.405 -----------------------------------------------
+eclipse.buildId=4.6.1.v20160915-0852
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data file:/home/mhcrnl/Documents/2017/Fibonacci/ -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-03 19:15:52.272
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Sat Jun 03 19:49:33 EEST 2017 -----------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-03 19:49:33.418
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-03 19:49:32.928 -----------------------------------------------
+eclipse.buildId=4.6.1.v20160915-0852
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-03 19:49:38.167
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+!SESSION Sat Jun 03 20:01:32 EEST 2017 -----------------------------------------
+!ENTRY org.eclipse.equinox.launcher 4 0 2017-06-03 20:01:32.210
+!MESSAGE Could not find extension: org.eclipse.wst.jsdt.nashorn.extension
+!SESSION 2017-06-03 20:01:29.786 -----------------------------------------------
+eclipse.buildId=4.6.1.v20160915-0852
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data file:/home/mhcrnl/Documents/2017/Fibonacci/ -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2017-06-03 20:01:49.130
+!MESSAGE Bundle org.eclipse.wst.jsdt.nashorn.extension not found.
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-06-03 20:02:33.519
+!MESSAGE [SCR] Enabling components of bundle org.eclipse.ui.trace did not complete in 30000 ms 
+
+!ENTRY org.eclipse.equinox.ds 2 0 2017-06-03 20:02:33.521
+!MESSAGE [SCR - WorkThread] Timeout occurred! Thread was blocked on processing [QueuedJob] WorkPerformer: org.eclipse.equinox.internal.ds.SCRManager@6461e467; actionType 1
+
+!ENTRY org.eclipse.core.runtime 4 0 2017-06-03 20:02:38.548
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="3.12.0.v20160915-0852"; osgi.identity="org.eclipse.core.runtime"; singleton:="true" [id=1814] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	... 8 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:334)
+	at org.eclipse.osgi.container.Module.start(Module.java:401)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
