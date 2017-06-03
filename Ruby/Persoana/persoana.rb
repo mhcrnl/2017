@@ -14,26 +14,31 @@
 class Persoana
     #Variabile de clasa
     @@instantePersoana = 0
-    #1. Metoda Constructor
+    #................................................
+	# 1. Metoda Constructor
     def initialize(nume, prenume)
         #Variabile de instanta
         @nume = nume
         @prenume = prenume
     end
+	#..........................................................
     #2. Metoda display_details() - afiseaza numele si prenumele
     def display_details()
         puts "Numele persoanei: #@nume"
         puts "Prenumele persoanei: #@prenume"
     end
+	#...............................................................
     #3. Metoda numarulTotalDePersoane() - instantele clasei Persoana
     def numarulTotalDePersoane()
         @@instantePersoana += 1
         puts "Numarul total de persoane: #@@instantePersoana"
     end
+	#.................................................................
     #4. Metoda to_s() - toString
     def to_s()
         puts "Nume: "+@nume+" Prenume: "+@prenume
     end
+	#..................................................................
     #5. citesteFila(filename, mode) - citeste si afiseaza fila de text
     def citesteFila(filename, mode)
         aFile = File.new(filename, mode)
@@ -44,6 +49,7 @@ class Persoana
             puts "Fila nu a fost deschisa."
         end
     end
+	#..................................................................
     def scrieFila(filename, mode, persoana)
        aFile = File.new(filename, mode)
        #nume = persoana.to_s()
