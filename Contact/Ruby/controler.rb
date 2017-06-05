@@ -35,6 +35,9 @@ class Controler
                 puts "#{@pers_array}"
             elsif optiune ==="2"
                 puts "Salveaza"
+            elsif optiune === "3"
+                puts "Sterge"
+                
             else
                 puts "Exit."
             end
