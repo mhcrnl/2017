@@ -2,13 +2,22 @@
 #include <stdlib.h>
 //Declararea functiilor
 int fibonacci(int nr);
-void afisare_array(int nr);
+void afisare_array(int arr[],int nr);
 void save_to_file(const char* filename, const char* mode, int nr);
 void read_from_file(const char* filename, const char* mode);
+void copiere(int nr);
 //Variabilele
 int fibo_array[30];
+int fibo_copie[30];
 FILE *fp;
 // Definirea functiilor
+void copiere(int nr){
+    int i;
+    for(i=0; i<nr; i++){
+        fibo_copie[i] = fibo_array[i];
+    }
+    printf("Copiere array cu succes!");
+}
 void read_from_file(const char* filename, const char* mode){
     //char buff[255];
     char ch;
@@ -38,11 +47,11 @@ int fibonacci(int nr){
         return fibonacci(nr-1)+fibonacci(nr-2);
     }
 }
-void afisare_array(int nr){
+void afisare_array(int arr[],int nr){
     // Afisarea numerelor din array
     int i;
     for(i =0; i<nr; i++){
-        printf("Tablou[%d]= %d\n", i, fibo_array[i]);
+        printf("Tablou[%d]= %d\n", i, arr[i]);
     }
 }
 int main()
@@ -57,8 +66,10 @@ int main()
         printf("Numerele %d Fibonacii %d\n", i, fibonacci(i));
         fibo_array[i]= fibonacci(i);
     }
-    afisare_array(30);
+    afisare_array(fibo_array,30);
     save_to_file("fibonacci.txt", "w", 30);
     read_from_file("fibonacci.txt", "r");
+    copiere(30);
+    afisare_array(fibo_copie, 30);
     return 0;
 }
