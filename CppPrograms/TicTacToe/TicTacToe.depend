@@ -5,3 +5,14 @@
 
 1487386005 c:\users\mhcrnl\documents\2017\cppprograms\tictactoe\tictactoe.h
 
+1488038461 source:/home/mhcrnl/Documents/2017/CppPrograms/TicTacToe/main.cpp
+	<iostream>
+	"TicTacToe.h"
+
+1488038461 /home/mhcrnl/Documents/2017/CppPrograms/TicTacToe/TicTacToe.h
+
+1488038461 source:/home/mhcrnl/Documents/2017/CppPrograms/TicTacToe/TicTacToe.cpp
+	"TicTacToe.h"
+	<cstdlib>
+	<iostream>
+
